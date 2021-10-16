@@ -8,20 +8,13 @@ import SimpleValidatable from "@dikac/t-validator/validatable/simple";
 import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
 
-export default class Negative<MessageT>
-    implements
-        Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>,
-        Message<(result:Readonly<Value<number> & Validatable>)=>MessageT>
-{
-    constructor(
-       public message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-    ) {
-    }
+export default function Negative<MessageT>(
+    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
+) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
 
-    validate<Argument extends number>(value: Argument):
-        SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void> {
+    return function (value) {
 
-        return <SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void>>
-            NegativeValidatable(value, this.message);
-    }
+        return NegativeValidatable(value, message);
+
+    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>
 }

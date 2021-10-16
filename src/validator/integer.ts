@@ -8,21 +8,13 @@ import SimpleValidatable from "@dikac/t-validator/validatable/simple";
 import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
 
-export default class Integer<MessageT>
-    implements
-        Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>,
-        Message<(result:Readonly<Value<number>> & Readonly<Validatable>)=>MessageT>
-{
+export default function Integer<MessageT>(
+    message : (result:Readonly<Value<number>> & Readonly<Validatable>)=>MessageT
+) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
 
-    constructor(
-       public message : (result:Readonly<Value<number>> & Readonly<Validatable>)=>MessageT
-    ) {
-    }
+    return function (value) {
 
-    validate<Argument extends number>(value: Argument):
-        SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void> {
+        return IntegerValidatable(value, message);
 
-        return <SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void>>
-            IntegerValidatable(value, this.message);
-    }
+    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>
 }

@@ -1,10 +1,7 @@
 import IntegerValidatable from "../validatable/integer";
-export default class Integer {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return IntegerValidatable(value, this.message);
-    }
+export default function Integer(message) {
+    return function (value) {
+        return IntegerValidatable(value, message);
+    };
 }
 //# sourceMappingURL=integer.js.map

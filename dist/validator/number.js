@@ -1,10 +1,7 @@
 import NumberValidatable from "../validatable/number";
-export default class Number {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return NumberValidatable(value, this.message);
-    }
+export default function Number(message) {
+    return function (value) {
+        return NumberValidatable(value, message);
+    };
 }
 //# sourceMappingURL=number.js.map

@@ -1,7 +1,9 @@
 import Greater from "./greater";
 import GreaterString from "../validatable/string/greater";
+import Validator from "@dikac/t-validator/validator";
+import GreaterValidatable from "../validatable/greater";
 
-export default function GreaterStandard(minimum : number, inclusive : boolean) : Greater<string> {
+export default function GreaterStandard(minimum : number, inclusive : boolean) : Validator<number, number, boolean, boolean, GreaterValidatable<number, string>>  {
 
-    return new Greater(minimum, inclusive, GreaterString);
+    return Greater(minimum, inclusive, GreaterString);
 }

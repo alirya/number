@@ -1,10 +1,7 @@
 import NegativeValidatable from "../validatable/negative";
-export default class Negative {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return NegativeValidatable(value, this.message);
-    }
+export default function Negative(message) {
+    return function (value) {
+        return NegativeValidatable(value, message);
+    };
 }
 //# sourceMappingURL=negative.js.map

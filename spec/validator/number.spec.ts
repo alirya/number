@@ -7,8 +7,8 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validator = new Validator(NumberMessage);
-        let validatable = validator.validate(<unknown>10);
+        let validator = Validator(NumberMessage);
+        let validatable = validator(<unknown>10);
 
         if(validatable.valid) {
 
@@ -26,8 +26,8 @@ describe(`compiler compatible`,function() {
 
     it(`invalid value`,function() {
 
-        let validator = new Validator(NumberMessage);
-        let validatable = validator.validate({});
+        let validator = Validator(NumberMessage);
+        let validatable = validator({});
 
         if(validatable.valid) {
 
@@ -46,8 +46,8 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validator = new Validator(NumberMessage);
-        let validatable = validator.validate(1);
+        let validator = Validator(NumberMessage);
+        let validatable = validator(1);
 
         try {
             // @ts-expect-error
@@ -74,8 +74,8 @@ describe(`compiler compatible`,function() {
 
 it(`valid`,function() {
 
-    let validator = new Validator(NumberMessage);
-    let validatable = validator.validate(1);
+    let validator = Validator(NumberMessage);
+    let validatable = validator(1);
 
     expect(validatable.valid).toBe(true);
     expect(validatable.value).toBe(1);
@@ -85,8 +85,8 @@ it(`valid`,function() {
 
 it(`invalid`,function() {
 
-    let validator = new Validator(NumberMessage);
-    let validatable = validator.validate('a');
+    let validator = Validator(NumberMessage);
+    let validatable = validator('a');
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toBe('a');

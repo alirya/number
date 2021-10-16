@@ -1,2 +1,3 @@
-import Infinite from "./infinite";
-export default function InfiniteStandard(): Infinite<string>;
+import Validator from "@dikac/t-validator/validator";
+import Instance from "@dikac/t-validator/validatable/validatable";
+export default function InfiniteStandard(): Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;

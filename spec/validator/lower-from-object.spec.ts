@@ -6,7 +6,7 @@ it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 describe(`compiler compatible`,function() {
 
     let validator = LowerFromObject<string>({maximum:1, inclusive:false, message:LowerString});
-    let validatable = validator.validate(2);
+    let validatable = validator(2);
 
     it('set valid', ()=>{
 
@@ -68,7 +68,7 @@ describe(`value equal to minimum`,function() {
     describe(`inclusive`,function() {
 
         let validator = LowerFromObject<string>({maximum:1, inclusive:true, message:LowerString});
-        let validatable = validator.validate(1);
+        let validatable = validator(1);
 
         it('validate object', ()=>{
 
@@ -83,7 +83,7 @@ describe(`value equal to minimum`,function() {
     describe(`exclusive`,function() {
 
         let validator = LowerFromObject<string>({maximum:1, inclusive:false, message:LowerString});
-        let validatable = validator.validate(1);
+        let validatable = validator(1);
 
         it('validate object', ()=>{
 
@@ -101,7 +101,7 @@ describe(`value greater to minimum`,function() {
     describe(`inclusive`,function() {
 
         let validator = LowerFromObject<string>( {maximum:1, inclusive:true, message:LowerString});
-        let validatable = validator.validate(2);
+        let validatable = validator(2);
 
         it('validate object', ()=>{
 
@@ -116,7 +116,7 @@ describe(`value greater to minimum`,function() {
     describe(`exclusive`,function() {
 
         let validator = LowerFromObject<string>( {maximum:1, inclusive:false, message:LowerString});
-        let validatable = validator.validate(2);
+        let validatable = validator(2);
 
         it('validate object', ()=>{
 
@@ -134,7 +134,7 @@ describe(`value lower to minimum`,function() {
     describe(`inclusive`,function() {
 
         let validator = LowerFromObject<string>({maximum:1, inclusive:true, message:LowerString});
-        let validatable = validator.validate(-1);
+        let validatable = validator(-1);
 
         it('validate object', ()=>{
 
@@ -149,7 +149,7 @@ describe(`value lower to minimum`,function() {
     describe(`exclusive`,function() {
 
         let validator = LowerFromObject<string>({maximum:1, inclusive:false, message:LowerString});
-        let validatable = validator.validate(-1);
+        let validatable = validator(-1);
 
         it('validate object', ()=>{
 

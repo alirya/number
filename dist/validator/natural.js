@@ -1,10 +1,7 @@
 import NaturalValidatable from "../validatable/natural";
-export default class Natural {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return NaturalValidatable(value, this.message);
-    }
+export default function Natural(message) {
+    return function (value) {
+        return NaturalValidatable(value, message);
+    };
 }
 //# sourceMappingURL=natural.js.map

@@ -7,21 +7,22 @@ import Instance from "@dikac/t-validator/validatable/validatable";
 import SimpleValidatable from "@dikac/t-validator/validatable/simple";
 import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
+import FiniteString from "../validatable/string/finite";
 
-export default class Finite<MessageT>
-    implements
-        Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>,
-        Message<(result:Readonly<Value<number> & Validatable>)=>MessageT>
-{
+export default function Finite()
+    : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
 
-    constructor(
-       public message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-    ) {
-    }
+export default function Finite<MessageType>(
+    message : (result:Readonly<Value<number> & Validatable>)=>MessageType
+) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageType>>>;
 
-    validate<Argument extends number>(value: Argument): SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void> {
+export default function Finite<MessageType>(
+    message = FiniteString
+) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageType|string>>> {
 
-        return <SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void>>
-            FiniteValidatable(value, this.message);
-    }
+    return function (value) {
+
+        return FiniteValidatable(value, message);
+
+    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageType|string>>>
 }

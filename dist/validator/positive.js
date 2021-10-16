@@ -1,10 +1,7 @@
 import PositiveValidatable from "../validatable/positive";
-export default class Positive {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return PositiveValidatable(value, this.message);
-    }
+export default function Positive(message) {
+    return function (value) {
+        return PositiveValidatable(value, message);
+    };
 }
 //# sourceMappingURL=positive.js.map

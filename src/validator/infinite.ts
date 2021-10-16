@@ -8,21 +8,13 @@ import SimpleValidatable from "@dikac/t-validator/validatable/simple";
 import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
 
-export default class Infinite<MessageT>
-    implements
-        Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>,
-        Message<(result:Readonly<Value<number> & Validatable>)=>MessageT>
-{
+export default function Infinite<MessageT>(
+    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
+) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
 
-    constructor(
-       public message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-    ) {
-    }
+    return function (value) {
 
-    validate<Argument extends number>(value: Argument):
-        SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void> {
+        return InfiniteValidatable(value, message);
 
-        return <SimpleValidatable<number, Argument, number, Readonly<Instance<number, MessageT>>>  & ValueOf<number> & ToString<number|void>>
-            InfiniteValidatable(value, this.message);
-    }
+    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>
 }

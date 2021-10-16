@@ -1,12 +1,7 @@
 import GreaterValidatable from "../validatable/greater";
-export default class Greater {
-    constructor(minimum, inclusive, message) {
-        this.minimum = minimum;
-        this.inclusive = inclusive;
-        this.message = message;
-    }
-    validate(value) {
-        return new GreaterValidatable(value, this.minimum, this.inclusive, this.message);
-    }
+export default function Greater(minimum, inclusive, message) {
+    return function (value) {
+        return new GreaterValidatable(value, minimum, inclusive, message);
+    };
 }
 //# sourceMappingURL=greater.js.map

@@ -1,10 +1,7 @@
 import InfiniteValidatable from "../validatable/infinite";
-export default class Infinite {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return InfiniteValidatable(value, this.message);
-    }
+export default function Infinite(message) {
+    return function (value) {
+        return InfiniteValidatable(value, message);
+    };
 }
 //# sourceMappingURL=infinite.js.map

@@ -1,10 +1,8 @@
 import FiniteValidatable from "../validatable/finite";
-export default class Finite {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return FiniteValidatable(value, this.message);
-    }
+import FiniteString from "../validatable/string/finite";
+export default function Finite(message = FiniteString) {
+    return function (value) {
+        return FiniteValidatable(value, message);
+    };
 }
 //# sourceMappingURL=finite.js.map

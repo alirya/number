@@ -1,10 +1,7 @@
-import GreaterTHanMinimumValidatable from "../validatable/greater-than-minimum";
-export default class GreaterThanMinimum {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return new GreaterTHanMinimumValidatable(value, this.message);
-    }
+import GreaterThanMinimumValidatable from "../validatable/greater-than-minimum";
+export default function GreaterThanMinimum(message) {
+    return function (value) {
+        return new GreaterThanMinimumValidatable(value, message);
+    };
 }
 //# sourceMappingURL=greater-than-minimum.js.map
