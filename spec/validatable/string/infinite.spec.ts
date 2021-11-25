@@ -1,4 +1,4 @@
-import Infinite from "../../../dist/validatable/string/infinite";
+import Infinite from "../../../dist/assert/string/infinite-parameter";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 

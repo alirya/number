@@ -1,20 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import NaturalParameters from "./natural-parameters";
+import NaturalParameter from "./natural-parameter";
 
-export default function Natural(
-    valid : boolean,
-    value : number,
-    subject : string = ''
-) : string {
+namespace Natural {
 
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['natural number'];
-    sentence.comma.push('expect');
-
-    if(!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = NaturalParameters
+    export const Parameter = NaturalParameter
 }
+
+export default Natural;

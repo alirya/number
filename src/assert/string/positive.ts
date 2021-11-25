@@ -1,21 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import PositiveParameters from "./positive-parameters";
+import PositiveParameter from "./positive-parameter";
 
-export default function Positive(
-    valid : boolean,
-    value : number,
-    subject : string = '',
-) : string {
+namespace Positive {
 
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['positive number'];
-    sentence.comma.push('expect');
-
-    if(!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = PositiveParameters
+    export const Parameter = PositiveParameter
 }
 
+export default Positive;

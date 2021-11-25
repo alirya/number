@@ -1,6 +1,6 @@
 import IsInteger from "../boolean/integer";
-import IntegerError from "./throwable/integer";
-import Callback from "@dikac/t-function/assert/callback";
+import IntegerError from "./throwable/integer-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 /**
  * assert if {@param number} is integer
  * @param number

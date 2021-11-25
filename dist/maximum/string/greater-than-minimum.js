@@ -1,16 +1,9 @@
-export default function GreaterThanMinimum(object) {
-    let parts = [];
-    parts.push(`maximum "${object.maximum}"`);
-    if (object.valid) {
-        parts.push(`is greater`);
-    }
-    else {
-        parts.push(`must greater`);
-    }
-    if (object.inclusive) {
-        parts.push('or equal');
-    }
-    parts.push(`than minimum "${object.minimum}"`);
-    return parts.join(' ');
-}
+import LowerThanMaximumParameters from "./greater-than-minimum-parameter";
+import LowerThanMaximumParameter from "./greater-than-minimum-parameters";
+var LowerThanMaximum;
+(function (LowerThanMaximum) {
+    LowerThanMaximum.Parameters = LowerThanMaximumParameters;
+    LowerThanMaximum.Parameter = LowerThanMaximumParameter;
+})(LowerThanMaximum || (LowerThanMaximum = {}));
+export default LowerThanMaximum;
 //# sourceMappingURL=greater-than-minimum.js.map

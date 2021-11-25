@@ -1,11 +1,10 @@
-import GreaterType from "../string/greater";
+import GreaterParameters from "./greater-parameters";
+import GreaterParameter from "./greater-parameter";
 
-export default function Greater(
-    number : number,
-    minimum : number,
-    inclusive : boolean,
-    subject ?: string
-) : Error {
+namespace Greater {
 
-    return new Error(GreaterType(false, number, minimum, inclusive, subject))
+    export const Parameters = GreaterParameters
+    export const Parameter = GreaterParameter
 }
+
+export default Greater;

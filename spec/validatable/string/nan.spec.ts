@@ -1,4 +1,4 @@
-import Nan from "../../../dist/validatable/string/nan";
+import Nan from "../../../dist/assert/string/nan-parameter";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 

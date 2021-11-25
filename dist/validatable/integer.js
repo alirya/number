@@ -1,6 +1,9 @@
-import Callback from "./callback";
-import IntegerValidation from "../boolean/integer";
-export default function Integer(number, message) {
-    return new Callback(number, IntegerValidation, message);
-}
+import IntegerParameters from "./integer-parameters";
+import IntegerParameter from "./integer-parameter";
+var Integer;
+(function (Integer) {
+    Integer.Parameters = IntegerParameters;
+    Integer.Parameter = IntegerParameter;
+})(Integer || (Integer = {}));
+export default Integer;
 //# sourceMappingURL=integer.js.map

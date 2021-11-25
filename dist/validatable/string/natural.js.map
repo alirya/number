@@ -1,1 +1,1 @@
-{"version":3,"file":"natural.js","sourceRoot":"","sources":["../../../src/validatable/string/natural.ts"],"names":[],"mappings":"AAEA,OAAO,aAAa,MAAM,6BAA6B,CAAC;AAExD,MAAM,CAAC,OAAO,UAAU,OAAO,CAAC,MAA8C;IAE1E,OAAO,aAAa,CAAC,MAAM,CAAC,KAAK,EAAE,MAAM,CAAC,KAAK,EAAE,OAAO,CAAC,CAAA;AAC7D,CAAC"}
+{"version":3,"file":"natural.js","sourceRoot":"","sources":["../../../src/validatable/string/natural.ts"],"names":[],"mappings":"AAAA,4CAA4C;AAC5C,8DAA8D;AAC9D,2DAA2D;AAC3D,EAAE;AACF,6FAA6F;AAC7F,EAAE;AACF,gEAAgE;AAChE,IAAI"}

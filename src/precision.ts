@@ -1,13 +1,10 @@
-export default function Precision(number: number, precision : number) : number {
+import PrecisionParameters from "./precision-parameters";
+import PrecisionParameter from "./precision-parameter";
 
-    let strings = number.toString().split('.');
+namespace Precision {
 
-    if(strings[1] !== undefined) {
-
-        strings[1] = strings[1].substr(0, precision);
-
-        number = parseFloat(strings.join('.'));
-    }
-
-    return number;
+    export const Parameters = PrecisionParameters
+    export const Parameter = PrecisionParameter
 }
+
+export default Precision;

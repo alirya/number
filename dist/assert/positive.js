@@ -1,6 +1,6 @@
 import IsPositive from "../boolean/positive";
-import PositiveError from "./throwable/positive";
-import Callback from "@dikac/t-function/assert/callback";
+import PositiveError from "./throwable/positive-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 /**
  * assert if {@param number} is positive
  *

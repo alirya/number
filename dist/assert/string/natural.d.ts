@@ -1,1 +1,7 @@
-export default function Natural(valid: boolean, value: number, subject?: string): string;
+import NaturalParameters from "./natural-parameters";
+import NaturalParameter from "./natural-parameter";
+declare namespace Natural {
+    const Parameters: typeof NaturalParameters;
+    const Parameter: typeof NaturalParameter;
+}
+export default Natural;

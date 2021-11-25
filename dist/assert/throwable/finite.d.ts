@@ -1,1 +1,7 @@
-export default function Finite(number: number, subject?: string): Error;
+import FiniteParameters from "./finite-parameters";
+import FiniteParameter from "./finite-parameter";
+declare namespace Finite {
+    const Parameters: typeof FiniteParameters;
+    const Parameter: typeof FiniteParameter;
+}
+export default Finite;

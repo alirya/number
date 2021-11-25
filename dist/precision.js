@@ -1,9 +1,9 @@
-export default function Precision(number, precision) {
-    let strings = number.toString().split('.');
-    if (strings[1] !== undefined) {
-        strings[1] = strings[1].substr(0, precision);
-        number = parseFloat(strings.join('.'));
-    }
-    return number;
-}
+import PrecisionParameters from "./precision-parameters";
+import PrecisionParameter from "./precision-parameter";
+var Precision;
+(function (Precision) {
+    Precision.Parameters = PrecisionParameters;
+    Precision.Parameter = PrecisionParameter;
+})(Precision || (Precision = {}));
+export default Precision;
 //# sourceMappingURL=precision.js.map

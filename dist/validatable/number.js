@@ -1,6 +1,9 @@
-import Callback from "@dikac/t-validator/validatable/callback-function";
-import NumberGuard from "../boolean/number";
-export default function Number(value, message) {
-    return Callback(value, NumberGuard, message);
-}
+import NumberParameters from "./number-parameters";
+import NumberParameter from "./number-parameter";
+var Number;
+(function (Number) {
+    Number.Parameters = NumberParameters;
+    Number.Parameter = NumberParameter;
+})(Number || (Number = {}));
+export default Number;
 //# sourceMappingURL=number.js.map

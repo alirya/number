@@ -1,7 +1,9 @@
-import LowerValidatable from "../validatable/lower";
-export default function Lower(maximum, inclusive, message) {
-    return function (value) {
-        return new LowerValidatable(value, maximum, inclusive, message);
-    };
-}
+import LowerParameters from "./lower-parameters";
+import LowerParameter from "./lower-parameter";
+var Lower;
+(function (Lower) {
+    Lower.Parameters = LowerParameters;
+    Lower.Parameter = LowerParameter;
+})(Lower || (Lower = {}));
+export default Lower;
 //# sourceMappingURL=lower.js.map

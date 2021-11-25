@@ -1,11 +1,11 @@
-import Greater from "../../dist/validator/greater";
-import GreaterString from "../../dist/validatable/string/greater";
+import Greater from "../../dist/validator/greater-parameters";
+import GreaterString from "../../dist/assert/string/greater-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let validator = Greater<string>( 1, false, GreaterString);
+    let validator = Greater<string>(1, false, GreaterString);
     let validatable = validator(2);
 
     it('set valid', ()=>{

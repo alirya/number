@@ -1,7 +1,7 @@
-/**
- * get random integer
- * @param minimum
- * @param maximum
- * @param inclusive
- */
-export default function RandomInteger(minimum: number, maximum: number, inclusive?: boolean): number;
+import RandomIntegerParameters from "./random-integer-parameters";
+import RandomIntegerParameter from "./random-integer-parameter";
+declare namespace RandomInteger {
+    const Parameters: typeof RandomIntegerParameters;
+    const Parameter: typeof RandomIntegerParameter;
+}
+export default RandomInteger;

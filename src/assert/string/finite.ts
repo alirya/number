@@ -1,20 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import FiniteParameters from "./finite-parameters";
+import FiniteParameter from "./finite-parameter";
 
-export default function Finite(
-    valid : boolean,
-    value : number,
-    subject : string = ''
-) : string {
+namespace Finite {
 
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['finite number'];
-    sentence.comma.push('expect');
-
-    if(!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = FiniteParameters
+    export const Parameter = FiniteParameter
 }
+
+export default Finite;

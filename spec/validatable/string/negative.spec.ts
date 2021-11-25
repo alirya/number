@@ -1,4 +1,4 @@
-import Negative from "../../../dist/validatable/string/negative";
+import Negative from "../../../dist/assert/string/negative-parameter";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 

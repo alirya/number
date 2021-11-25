@@ -1,0 +1,1 @@
+{"version":3,"file":"natural-parameter.js","sourceRoot":"","sources":["../../../src/assert/throwable/natural-parameter.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAiB,MAAM,sBAAsB,CAAC;AAGrD,MAAM,CAAC,OAAO,UAAU,gBAAgB;AACpC,kBAAkB;AAClB,qBAAqB;AACrB,EACI,KAAK,EACL,OAAO,GAC4B;IAGvC,OAAO,iBAAiB,CAAC,KAAK,EAAE,OAAO,CAAC,CAAC;AAC7C,CAAC"}

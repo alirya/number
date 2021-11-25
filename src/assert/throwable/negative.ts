@@ -1,9 +1,10 @@
-import NegativeType from "../string/negative";
+import NegativeParameters from "./negative-parameters";
+import NegativeParameter from "./negative-parameter";
 
-export default function Integer(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Negative {
 
-    return new Error(NegativeType(false, number))
+    export const Parameters = NegativeParameters
+    export const Parameter = NegativeParameter
 }
+
+export default Negative;

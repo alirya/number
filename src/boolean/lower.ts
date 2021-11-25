@@ -1,11 +1,10 @@
-/**
- * check if {@param number} is lower than {@param maximum} or equal if {@param inclusive} is true
- *
- * @param number
- * @param maximum
- * @param inclusive
- */
-export default function Lower(number : number, maximum : number, inclusive : boolean = false) : boolean {
+import LowerParameters from "./lower-parameters";
+import LowerParameter from "./lower-parameter";
 
-    return inclusive ? number <= maximum : number < maximum;
+namespace Lower {
+
+    export const Parameters = LowerParameters
+    export const Parameter = LowerParameter
 }
+
+export default Lower;

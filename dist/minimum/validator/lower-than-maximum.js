@@ -1,7 +1,9 @@
-import GreaterThanMinimumValidatable from "../validatable/lower-than-maximum";
-export default function LowerThanMaximum(message) {
-    return function (value) {
-        return new GreaterThanMinimumValidatable(value, message);
-    };
-}
+import LowerThanMaximumParameters from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
+var LowerThanMaximum;
+(function (LowerThanMaximum) {
+    LowerThanMaximum.Parameters = LowerThanMaximumParameters;
+    LowerThanMaximum.Parameter = LowerThanMaximumParameter;
+})(LowerThanMaximum || (LowerThanMaximum = {}));
+export default LowerThanMaximum;
 //# sourceMappingURL=lower-than-maximum.js.map

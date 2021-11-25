@@ -1,5 +1,7 @@
-import Minimum from "../../minimum/minimum";
-import Maximum from "../maximum";
-import Validatable from "@dikac/t-validatable/validatable";
-import Inclusive from "../../inclusive/inclusive";
-export default function GreaterThanMinimum(object: Readonly<Minimum & Maximum & Validatable & Inclusive>): string;
+import LowerThanMaximumParameters from "./greater-than-minimum-parameter";
+import LowerThanMaximumParameter from "./greater-than-minimum-parameters";
+declare namespace LowerThanMaximum {
+    const Parameters: typeof LowerThanMaximumParameters;
+    const Parameter: typeof LowerThanMaximumParameter;
+}
+export default LowerThanMaximum;

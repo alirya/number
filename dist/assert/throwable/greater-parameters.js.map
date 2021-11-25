@@ -1,0 +1,1 @@
+{"version":3,"file":"greater-parameters.js","sourceRoot":"","sources":["../../../src/assert/throwable/greater-parameters.ts"],"names":[],"mappings":"AAAA,OAAO,WAAW,MAAM,8BAA8B,CAAC;AAEvD,MAAM,CAAC,OAAO,UAAU,iBAAiB,CACrC,MAAe,EACf,OAAgB,EAChB,SAAmB,EACnB,OAAiB;IAGjB,OAAO,IAAI,KAAK,CAAC,WAAW,CAAC,MAAM,EAAE,KAAK,EAAE,OAAO,EAAE,SAAS,EAAE,OAAO,CAAC,CAAC,CAAA;AAC7E,CAAC"}

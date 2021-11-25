@@ -1,5 +1,9 @@
-import InfiniteType from "../string/infinite";
-export default function Infinite(number, subject) {
-    return new Error(InfiniteType(false, number, subject));
-}
+import InfiniteParameters from "./infinite-parameters";
+import InfiniteParameter from "./infinite-parameter";
+var Infinite;
+(function (Infinite) {
+    Infinite.Parameters = InfiniteParameters;
+    Infinite.Parameter = InfiniteParameter;
+})(Infinite || (Infinite = {}));
+export default Infinite;
 //# sourceMappingURL=infinite.js.map

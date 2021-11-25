@@ -1,11 +1,9 @@
-/**
- * check if {@param number} is greater than {@param minimum} or equal if {@param inclusive} is true
- *
- * @param number
- * @param minimum
- * @param inclusive
- */
-export default function Greater(number, minimum, inclusive = false) {
-    return inclusive ? number >= minimum : number > minimum;
-}
+import GreaterParameters from "./greater-parameters";
+import GreaterParameter from "./greater-parameter";
+var Greater;
+(function (Greater) {
+    Greater.Parameters = GreaterParameters;
+    Greater.Parameter = GreaterParameter;
+})(Greater || (Greater = {}));
+export default Greater;
 //# sourceMappingURL=greater.js.map

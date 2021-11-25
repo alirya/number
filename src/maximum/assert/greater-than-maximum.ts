@@ -1,8 +1,8 @@
 import Minimum from "../../minimum/minimum";
 import Maximum from "../../maximum/maximum";
-import GreaterThanMaximumBoolean from "../boolean/greater-than-minimum";
-import GreaterThanMaximumError from "./throwable/greater-than-maximum";
-import Callback from "@dikac/t-function/assert/callback";
+import GreaterThanMaximumBoolean from "../boolean/greater-than-minimum-parameter";
+import GreaterThanMaximumError from "./throwable/greater-than-minimum-parameter";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 import Inclusive from "../../inclusive/inclusive";
 
 export default function GreaterThanMaximum<Object extends  Readonly<Minimum & Maximum & Inclusive>>(

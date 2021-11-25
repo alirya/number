@@ -1,15 +1,12 @@
-import Callback from "./callback";
-import NaturalValidation from "../boolean/natural";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import NaturalParameters, {NaturalType} from "./natural-parameters";
+import NaturalParameter, {NaturalArgument} from "./natural-parameter";
 
-export default function Natural<MessageT>(
-    number : number,
-    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-) : Readonly<Validatable & Message<MessageT> & Value<number>> & ValueOf<number> & ToString<number|void> {
+namespace Natural {
 
-    return new Callback(number, NaturalValidation, message);
+    export const Parameters = NaturalParameters
+    export const Parameter = NaturalParameter
+    export type Argument<MessageT> = NaturalArgument<MessageT>
+    export type Type<MessageT> = NaturalType<MessageT>
 }
+
+export default Natural;

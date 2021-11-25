@@ -1,16 +1,10 @@
-import Minimum from "../../minimum";
-import Maximum from "../../../maximum/maximum";
-import Inclusive from "../../../inclusive/inclusive";
-import LowerThanMaximumString from "../../string/lower-than-maximum";
+import LowerThanMaximumParameters from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
 
-export default function LowerThanMaximum(
-    object : Readonly<Minimum & Maximum & Inclusive>,
-) : Error {
+namespace LowerThanMaximum {
 
-    return new Error(LowerThanMaximumString({
-        valid : false,
-        maximum : object.maximum,
-        minimum : object.minimum,
-        inclusive : object.inclusive,
-    }));
+    export const Parameters = LowerThanMaximumParameters
+    export const Parameter = LowerThanMaximumParameter
 }
+
+export default LowerThanMaximum;

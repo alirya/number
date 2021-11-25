@@ -1,21 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import IntegerParameters from "./integer-parameters";
+import IntegerParameter from "./integer-parameter";
 
-export default function Integer(
-    valid : boolean,
-    value : number,
-    subject : string = '',
-) : string {
+namespace Integer {
 
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['integer number'];
-    sentence.comma.push('expect');
-
-    if(!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = IntegerParameters
+    export const Parameter = IntegerParameter
 }
 
+export default Integer;

@@ -1,5 +1,5 @@
-import NanError from "./throwable/nan";
-import Callback from "@dikac/t-function/assert/callback";
+import NanError from "./throwable/nan-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 /**
  * assert if {@param number} is NaN
  *

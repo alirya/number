@@ -1,11 +1,11 @@
-import Positive from "../../dist/validator/positive";
-import PositiveString from "../../dist/validatable/string/positive";
+import Positive from "../../dist/validator/positive-parameters";
+import PositiveString from "../../dist/assert/string/positive-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let validator = Positive<string>( PositiveString);
+    let validator = Positive<string>(PositiveString);
     let validatable = validator(2);
 
     it('set valid', ()=>{

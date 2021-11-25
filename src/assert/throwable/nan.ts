@@ -1,9 +1,10 @@
-import NanType from "../string/nan";
+import NanParameters from "./nan-parameters";
+import NanParameter from "./nan-parameter";
 
-export default function Nan(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Nan {
 
-    return new Error(NanType(false, number, subject))
+    export const Parameters = NanParameters
+    export const Parameter = NanParameter
 }
+
+export default Nan;

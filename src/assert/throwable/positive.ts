@@ -1,9 +1,10 @@
-import PositiveType from "../string/positive";
+import PositiveParameters from "./positive-parameters";
+import PositiveParameter from "./positive-parameter";
 
-export default function Integer(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Positive {
 
-    return new Error(PositiveType( false, number, subject))
+    export const Parameters = PositiveParameters
+    export const Parameter = PositiveParameter
 }
+
+export default Positive;

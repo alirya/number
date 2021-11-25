@@ -1,4 +1,7 @@
-/**
- * message for greater validation
- */
-export default function Greater(valid: boolean, value: number, minimum: number, inclusive: boolean, subject?: string): string;
+import GreaterParameters from "./greater-parameters";
+import GreaterParameter from "./greater-parameter";
+declare namespace Greater {
+    const Parameters: typeof GreaterParameters;
+    const Parameter: typeof GreaterParameter;
+}
+export default Greater;

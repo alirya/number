@@ -1,6 +1,6 @@
 import IsNegative from "../boolean/negative";
-import NegativeError from "./throwable/negative";
-import Callback from "@dikac/t-function/assert/callback";
+import NegativeError from "./throwable/negative-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 /**
  * assert if {@param number} is negative
  *

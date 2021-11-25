@@ -1,11 +1,9 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
-export default function Negative(valid, value, subject = '') {
-    const sentence = SentencesMust(valid, [subject]);
-    sentence.expect = ['negative number'];
-    sentence.comma.push('expect');
-    if (!valid) {
-        sentence.actual.push('actual', `"${value}"`);
-    }
-    return sentence.message;
-}
+import NegativeParameters from "./negative-parameters";
+import NegativeParameter from "./negative-parameter";
+var Negative;
+(function (Negative) {
+    Negative.Parameters = NegativeParameters;
+    Negative.Parameter = NegativeParameter;
+})(Negative || (Negative = {}));
+export default Negative;
 //# sourceMappingURL=negative.js.map

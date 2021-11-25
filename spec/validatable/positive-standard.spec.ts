@@ -1,4 +1,4 @@
-import PositiveStandard from "../../dist/validatable/positive-standard";
+import PositiveStandard from "../../dist/validatable/positive-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

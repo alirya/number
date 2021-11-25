@@ -1,15 +1,11 @@
-import Callback from "./callback";
-import PositiveValidation from "../boolean/positive";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import PositiveParameters from "./positive-parameters";
+import PositiveParameter, {PositiveArgument} from "./positive-parameter";
 
-export default function Positive<MessageT>(
-    number : number,
-    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-) : Readonly<Validatable & Message<MessageT> & Value<number>> & ValueOf<number> & ToString<number|void> {
+namespace Positive {
 
-    return new Callback(number, PositiveValidation, message);
+    export const Parameters = PositiveParameters
+    export const Parameter = PositiveParameter
+    export type Argument<MessageT> = PositiveArgument<MessageT>
 }
+
+export default Positive;

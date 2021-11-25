@@ -1,1 +1,7 @@
-export default function Integer(valid: boolean, value: number, subject?: string): string;
+import IntegerParameters from "./integer-parameters";
+import IntegerParameter from "./integer-parameter";
+declare namespace Integer {
+    const Parameters: typeof IntegerParameters;
+    const Parameter: typeof IntegerParameter;
+}
+export default Integer;

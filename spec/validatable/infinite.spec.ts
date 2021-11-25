@@ -1,5 +1,5 @@
-import Infinite from "../../dist/validatable/infinite";
-import InfiniteString from "../../dist/validatable/string/infinite";
+import Infinite from "../../dist/validatable/infinite-parameters";
+import InfiniteString from "../../dist/assert/string/infinite-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

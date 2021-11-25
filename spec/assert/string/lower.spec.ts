@@ -1,15 +1,15 @@
-import lower from "../../../dist/assert/string/lower";
+import Lower from "../../../dist/assert/string/lower-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`exclusive`,function() {
 
     it(`valid`, () => {
-        expect(lower(true, 1, 10, false)).toBe('number is lower than "10".');
+        expect(Lower( 1, true,10, false)).toBe('value is lower than "10".');
     });
 
     it(`invalid`, () => {
-        expect(lower(false, -1, -10, false)).toBe('number must lower than "-10", actual "-1".');
+        expect(Lower( -1, false, -10, false)).toBe('value must lower than "-10", actual "-1".');
     });
 
 });
@@ -17,11 +17,11 @@ describe(`exclusive`,function() {
 describe(`inclusive`,function() {
 
     it(`valid`, () => {
-        expect(lower(true, 1, 1, true)).toBe('number is lower or equal than "1".');
+        expect(Lower( 1, true,1, true)).toBe('value is lower or equal than "1".');
     });
 
     it(`invalid`, () => {
-        expect(lower(false, -1, -1, true)).toBe('number must lower or equal than "-1", actual "-1".');
+        expect(Lower( -1, false, -1, true)).toBe('value must lower or equal than "-1", actual "-1".');
     });
 
 });

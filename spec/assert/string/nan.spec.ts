@@ -1,13 +1,13 @@
-import Nan from "../../../dist/assert/string/nan";
+import Nan from "../../../dist/assert/string/nan-parameters";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 
 
 it(`valid`, () => {
-    expect(Nan(true, Infinity)).toBe('is NaN.');
+    expect(Nan(Infinity, true)).toBe('value is NaN.');
 });
 
 it(`invalid`, () => {
-    expect(Nan(false, 1)).toBe('must NaN, actual "1".');
+    expect(Nan(1, false)).toBe('value must NaN, actual "1".');
 });
 

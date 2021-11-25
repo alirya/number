@@ -1,1 +1,0 @@
-{"version":3,"file":"random-float-from-object.js","sourceRoot":"","sources":["../src/random-float-from-object.ts"],"names":[],"mappings":"AAEA,OAAO,WAAW,MAAM,gBAAgB,CAAC;AAIzC,MAAM,CAAC,OAAO,UAAU,qBAAqB,CAAE,MAAuD;IAElG,OAAQ,WAAW,CAAC,MAAM,CAAC,OAAO,EAAE,MAAM,CAAC,OAAO,EAAE,MAAM,CAAC,SAAS,CAAC,CAAC;AAE1E,CAAC"}

@@ -1,5 +1,5 @@
-import RandomFloat from "../dist/random-float";
-import RandomFloatFromObject from "../dist/random-float-from-object";
+import RandomFloat from "../dist/random-float-parameters";
+import RandomFloatFromObject from "../dist/random-float-parameter";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

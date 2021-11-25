@@ -1,6 +1,9 @@
-import Callback from "./callback";
-import PositiveValidation from "../boolean/positive";
-export default function Positive(number, message) {
-    return new Callback(number, PositiveValidation, message);
-}
+import PositiveParameters from "./positive-parameters";
+import PositiveParameter from "./positive-parameter";
+var Positive;
+(function (Positive) {
+    Positive.Parameters = PositiveParameters;
+    Positive.Parameter = PositiveParameter;
+})(Positive || (Positive = {}));
+export default Positive;
 //# sourceMappingURL=positive.js.map

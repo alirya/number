@@ -1,11 +1,10 @@
-import LowerType from "../string/lower";
+import LowerParameters from "./lower-parameters";
+import LowerParameter from "./lower-parameter";
 
-export default function Lower(
-    number : number,
-    minimum : number,
-    inclusive : boolean,
-    subject ?: string
-) : Error {
+namespace Lower {
 
-    return new Error(LowerType(false, number, minimum, inclusive))
+    export const Parameters = LowerParameters
+    export const Parameter = LowerParameter
 }
+
+export default Lower;

@@ -1,0 +1,1 @@
+{"version":3,"file":"infinite-parameters.js","sourceRoot":"","sources":["../../../src/assert/throwable/infinite-parameters.ts"],"names":[],"mappings":"AAAA,OAAO,YAAY,MAAM,+BAA+B,CAAC;AAEzD,MAAM,CAAC,OAAO,UAAU,kBAAkB,CACtC,MAAe,EACf,OAAiB;IAGjB,OAAO,IAAI,KAAK,CAAC,YAAY,CAAC,MAAM,EAAE,KAAK,EAAE,OAAO,CAAC,CAAC,CAAA;AAC1D,CAAC"}

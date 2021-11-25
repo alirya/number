@@ -1,6 +1,10 @@
-import Positive from "./positive";
-import PositiveString from "../validatable/string/positive";
-export default function PositiveStandard() {
-    return Positive(PositiveString);
-}
+// import PositiveParameters from "./positive-parameters";
+// import PositiveString from "../validatable/string/positive";
+// import Validator from "@dikac/t-validator/validator";
+// import Instance from "@dikac/t-validator/validatable/validatable";
+//
+// export default function PositiveStandard() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>  {
+//
+//     return PositiveParameters(PositiveString);
+// }
 //# sourceMappingURL=positive-standard.js.map

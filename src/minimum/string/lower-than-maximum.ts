@@ -1,28 +1,10 @@
-import Minimum from "../../minimum/minimum";
-import Maximum from "../../maximum/maximum";
-import Validatable from "@dikac/t-validatable/validatable";
-import Inclusive from "../../inclusive/inclusive";
+import LowerThanMaximumParameters from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
 
-export default function LowerThanMaximum(object : Readonly<Minimum & Maximum & Validatable & Inclusive>) : string {
+namespace LowerThanMaximum {
 
-    let parts : string[] = [];
-    parts.push(`minimum "${object.maximum}"`);
-
-    if(object.valid) {
-
-        parts.push(`is lower`);
-
-    } else {
-
-        parts.push(`must lower`);
-    }
-
-    if(object.inclusive) {
-
-        parts.push('or equal');
-    }
-
-    parts.push(`than maximum "${object.minimum}"`);
-
-    return parts.join(' ');
+    export const Parameters = LowerThanMaximumParameters
+    export const Parameter = LowerThanMaximumParameter
 }
+
+export default LowerThanMaximum;

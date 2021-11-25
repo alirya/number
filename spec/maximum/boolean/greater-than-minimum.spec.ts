@@ -1,4 +1,4 @@
-import GreaterFromObject from "../../../dist/maximum/boolean/greater-than-minimum";
+import GreaterFromObject from "../../../dist/maximum/boolean/greater-than-minimum-parameter";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

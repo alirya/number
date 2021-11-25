@@ -1,16 +1,9 @@
-export default function LowerThanMaximum(object) {
-    let parts = [];
-    parts.push(`minimum "${object.maximum}"`);
-    if (object.valid) {
-        parts.push(`is lower`);
-    }
-    else {
-        parts.push(`must lower`);
-    }
-    if (object.inclusive) {
-        parts.push('or equal');
-    }
-    parts.push(`than maximum "${object.minimum}"`);
-    return parts.join(' ');
-}
+import LowerThanMaximumParameters from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
+var LowerThanMaximum;
+(function (LowerThanMaximum) {
+    LowerThanMaximum.Parameters = LowerThanMaximumParameters;
+    LowerThanMaximum.Parameter = LowerThanMaximumParameter;
+})(LowerThanMaximum || (LowerThanMaximum = {}));
+export default LowerThanMaximum;
 //# sourceMappingURL=lower-than-maximum.js.map

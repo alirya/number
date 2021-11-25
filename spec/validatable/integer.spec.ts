@@ -1,5 +1,5 @@
-import Validator from "../../dist/validatable/integer";
-import IntegerMessage from "../../dist/validatable/string/integer";
+import Validator from "../../dist/validatable/integer-parameters";
+import IntegerMessage from "../../dist/assert/string/integer-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough()});
 

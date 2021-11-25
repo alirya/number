@@ -1,5 +1,9 @@
-import NumberType from "../string/number";
-export default function Number(number, subject, conversion) {
-    return new Error(NumberType(false, number, subject, conversion));
-}
+import NumberParameters from "./number-parameters";
+import NumberParameter from "./number-parameter";
+var Number;
+(function (Number) {
+    Number.Parameters = NumberParameters;
+    Number.Parameter = NumberParameter;
+})(Number || (Number = {}));
+export default Number;
 //# sourceMappingURL=number.js.map

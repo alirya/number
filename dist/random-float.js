@@ -1,29 +1,9 @@
-import Greater from "./boolean/greater";
-import Lower from "./boolean/lower";
-import LowerThanMaximum from "./minimum/assert/lower-than-maximum";
-export default function RandomFloat(minimum, maximum, inclusive = true) {
-    LowerThanMaximum({
-        maximum: maximum,
-        minimum: minimum,
-        inclusive: inclusive,
-    });
-    if ((maximum - minimum) === 0) {
-        if (!inclusive) {
-            throw new Error(`minimum (${minimum}) and maximum (${maximum}) different must greater than 0 in exclusive mode`);
-        }
-    }
-    let random = Math.random() * (maximum - minimum);
-    let result = random + minimum;
-    if (inclusive) {
-        return result;
-    }
-    else {
-        if (Greater(result, minimum, inclusive) && Lower(result, maximum, inclusive)) {
-            return result;
-        }
-        else {
-            return RandomFloat(minimum, maximum, inclusive);
-        }
-    }
-}
+import RandomFloatParameters from "./random-float-parameters";
+import RandomFloatParameter from "./random-float-parameter";
+var RandomFloat;
+(function (RandomFloat) {
+    RandomFloat.Parameters = RandomFloatParameters;
+    RandomFloat.Parameter = RandomFloatParameter;
+})(RandomFloat || (RandomFloat = {}));
+export default RandomFloat;
 //# sourceMappingURL=random-float.js.map

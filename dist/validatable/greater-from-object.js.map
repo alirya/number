@@ -1,1 +1,0 @@
-{"version":3,"file":"greater-from-object.js","sourceRoot":"","sources":["../../src/validatable/greater-from-object.ts"],"names":[],"mappings":"AAKA,OAAO,OAAO,MAAM,WAAW,CAAC;AAIhC,MAAM,CAAC,OAAO,UAAU,iBAAiB,CACrC,MAAgF;IAGhF,OAAO,IAAI,OAAO,CAAC,MAAM,CAAC,KAAK,EAAE,MAAM,CAAC,OAAO,EAAE,MAAM,CAAC,SAAS,EAAE,MAAM,CAAC,OAAO,CAAC,CAAC;AACvF,CAAC"}

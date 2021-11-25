@@ -1,11 +1,10 @@
-/**
- * check if {@param number} is greater than {@param minimum} or equal if {@param inclusive} is true
- *
- * @param number
- * @param minimum
- * @param inclusive
- */
-export default function Greater(number : number, minimum : number, inclusive : boolean = false) : boolean {
+import GreaterParameters from "./greater-parameters";
+import GreaterParameter from "./greater-parameter";
 
-    return inclusive ? number >= minimum : number > minimum;
+namespace Greater {
+
+    export const Parameters = GreaterParameters
+    export const Parameter = GreaterParameter
 }
+
+export default Greater;

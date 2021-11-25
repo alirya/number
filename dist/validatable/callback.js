@@ -1,10 +1,9 @@
-import ValidatableCallbacks from "@dikac/t-validator/validatable/callback";
-export default class Callback extends ValidatableCallbacks {
-    valueOf() {
-        return this.value;
-    }
-    toString(radix) {
-        return this.value.toString(radix);
-    }
-}
+import CallbackParameters from "./callback-parameters";
+import CallbackParameter from "./callback-parameter";
+var Callback;
+(function (Callback) {
+    Callback.Parameters = CallbackParameters;
+    Callback.Parameter = CallbackParameter;
+})(Callback || (Callback = {}));
+export default Callback;
 //# sourceMappingURL=callback.js.map

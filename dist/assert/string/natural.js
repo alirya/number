@@ -1,11 +1,9 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
-export default function Natural(valid, value, subject = '') {
-    const sentence = SentencesMust(valid, [subject]);
-    sentence.expect = ['natural number'];
-    sentence.comma.push('expect');
-    if (!valid) {
-        sentence.actual.push('actual', `"${value}"`);
-    }
-    return sentence.message;
-}
+import NaturalParameters from "./natural-parameters";
+import NaturalParameter from "./natural-parameter";
+var Natural;
+(function (Natural) {
+    Natural.Parameters = NaturalParameters;
+    Natural.Parameter = NaturalParameter;
+})(Natural || (Natural = {}));
+export default Natural;
 //# sourceMappingURL=natural.js.map

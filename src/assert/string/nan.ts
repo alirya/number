@@ -1,20 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import NanParameters from "./nan-parameters";
+import NanParameter from "./nan-parameter";
 
-export default function Nan(
-    valid : boolean,
-    value : number,
-    subject : string = '',
-) : string {
+namespace Nan {
 
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['NaN'];
-    sentence.comma.push('expect');
-
-    if (!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = NanParameters
+    export const Parameter = NanParameter
 }
+
+export default Nan;

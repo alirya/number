@@ -1,1 +1,7 @@
-export default function Lower(number: number, minimum: number, inclusive: boolean, subject?: string): Error;
+import LowerParameters from "./lower-parameters";
+import LowerParameter from "./lower-parameter";
+declare namespace Lower {
+    const Parameters: typeof LowerParameters;
+    const Parameter: typeof LowerParameter;
+}
+export default Lower;

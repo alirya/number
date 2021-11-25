@@ -1,11 +1,9 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
-export default function Infinite(valid, value, subject = '') {
-    const sentence = SentencesMust(valid, [subject]);
-    sentence.expect = ['infinite number'];
-    sentence.comma.push('expect');
-    if (!valid) {
-        sentence.actual.push('actual', `"${value}"`);
-    }
-    return sentence.message;
-}
+import InfiniteParameters from "./infinite-parameters";
+import InfiniteParameter from "./infinite-parameter";
+var Infinite;
+(function (Infinite) {
+    Infinite.Parameters = InfiniteParameters;
+    Infinite.Parameter = InfiniteParameter;
+})(Infinite || (Infinite = {}));
+export default Infinite;
 //# sourceMappingURL=infinite.js.map

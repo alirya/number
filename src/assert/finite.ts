@@ -1,5 +1,5 @@
-import FiniteError from "./throwable/finite";
-import Callback from "@dikac/t-function/assert/callback";
+import FiniteError from "./throwable/finite-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 /**
  * assert if {@param number} is finite
  *

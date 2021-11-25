@@ -1,5 +1,7 @@
-import Validator from "@dikac/t-validator/validator";
-import Validatable from "@dikac/t-validatable/validatable";
-import Value from "@dikac/t-value/value";
-import Instance from "@dikac/t-validator/validatable/validatable";
-export default function Infinite<MessageT>(message: (result: Readonly<Value<number> & Validatable>) => MessageT): Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+import InfiniteParameters from "./infinite-parameters";
+import InfiniteParameter from "./infinite-parameter";
+declare namespace Infinite {
+    const Parameters: typeof InfiniteParameters;
+    const Parameter: typeof InfiniteParameter;
+}
+export default Infinite;

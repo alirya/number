@@ -1,0 +1,11 @@
+import Validatable from "@dikac/t-validator/value/dynamic";
+import Message from "@dikac/t-message/message";
+import Inclusive from "../inclusive/inclusive";
+import Validator from "@dikac/t-validator/validator";
+import Minimum from "../minimum/minimum";
+import Dynamic from "@dikac/t-validator/message/function/dynamic-parameter";
+import GreaterValidatable from "../validatable/greater-parameters";
+import StrictOmit from "@dikac/t-object/strict-omit";
+export declare type GreaterArgument<MessageT> = Minimum & Inclusive & Partial<Message<Dynamic<number, MessageT, Inclusive & Minimum & Validatable<number>>>>;
+export default function GreaterParameter<MessageT>({ minimum, inclusive, message, }: Required<GreaterArgument<MessageT>>): Validator<number, number, boolean, boolean, GreaterValidatable<number, MessageT>>;
+export default function GreaterParameter<MessageT>({ minimum, inclusive, }: StrictOmit<GreaterArgument<MessageT>, 'message'>): Validator<number, number, boolean, boolean, GreaterValidatable<number, MessageT>>;

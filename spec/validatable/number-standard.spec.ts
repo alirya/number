@@ -1,4 +1,4 @@
-import ValidatorStandard from "../../dist/validatable/number-standard";
+import ValidatorStandard from "../../dist/validatable/number-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough()});
 

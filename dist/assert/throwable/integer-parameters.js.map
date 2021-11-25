@@ -1,0 +1,1 @@
+{"version":3,"file":"integer-parameters.js","sourceRoot":"","sources":["../../../src/assert/throwable/integer-parameters.ts"],"names":[],"mappings":"AAAA,OAAO,WAAW,MAAM,8BAA8B,CAAC;AAEvD,MAAM,CAAC,OAAO,UAAU,iBAAiB,CACrC,KAAc,EACd,OAAiB;IAGjB,OAAO,IAAI,KAAK,CAAC,WAAW,CAAC,KAAK,EAAE,KAAK,EAAE,OAAO,CAAC,CAAC,CAAA;AACxD,CAAC"}

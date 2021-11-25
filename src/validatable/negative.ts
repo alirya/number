@@ -1,15 +1,11 @@
-import Callback from "./callback";
-import NegativeValidation from "../boolean/negative";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import NegativeParameters from "./negative-parameters";
+import NegativeParameter, {NegativeArgument} from "./negative-parameter";
 
-export default function Negative<MessageT>(
-    number : number,
-    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-) : Readonly<Validatable & Message<MessageT> & Value<number>> & ValueOf<number> & ToString<number|void> {
+namespace Negative {
 
-    return new Callback(number, NegativeValidation, message);
+    export const Parameters = NegativeParameters
+    export const Parameter = NegativeParameter
+    export type Argument<MessageT> = NegativeArgument<MessageT>
 }
+
+export default Negative;

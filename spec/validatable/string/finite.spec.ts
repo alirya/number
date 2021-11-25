@@ -1,4 +1,4 @@
-import Finite from "../../../dist/validatable/string/finite";
+import Finite from "../../../dist/assert/string/finite-parameter";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 it(`valid`, () => {

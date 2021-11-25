@@ -1,0 +1,1 @@
+{"version":3,"file":"natural-parameters.js","sourceRoot":"","sources":["../../src/validatable/natural-parameters.ts"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,MAAM,uBAAuB,CAAC;AACvD,OAAO,iBAAiB,MAAM,oBAAoB,CAAC;AAEnD,OAAO,cAAc,MAAM,qCAAqC,CAAC;AAcjE,MAAM,CAAC,OAAO,UAAU,iBAAiB,CACrC,MAAe,EACf,UAA6C,cAAc;IAG3D,OAAO,IAAI,kBAAkB,CAAC,MAAM,EAAE,iBAAiB,EAAE,OAAO,CAAC,CAAC;AACtE,CAAC"}

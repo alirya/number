@@ -1,9 +1,10 @@
-import InfiniteType from "../string/infinite";
+import InfiniteParameters from "./infinite-parameters";
+import InfiniteParameter from "./infinite-parameter";
 
-export default function Infinite(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Infinite {
 
-    return new Error(InfiniteType(false, number, subject))
+    export const Parameters = InfiniteParameters
+    export const Parameter = InfiniteParameter
 }
+
+export default Infinite;

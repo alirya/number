@@ -1,10 +1,9 @@
-import LowerThanMaximumString from "../../string/lower-than-maximum";
-export default function LowerThanMaximum(object) {
-    return new Error(LowerThanMaximumString({
-        valid: false,
-        maximum: object.maximum,
-        minimum: object.minimum,
-        inclusive: object.inclusive,
-    }));
-}
+import LowerThanMaximumParameters from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
+var LowerThanMaximum;
+(function (LowerThanMaximum) {
+    LowerThanMaximum.Parameters = LowerThanMaximumParameters;
+    LowerThanMaximum.Parameter = LowerThanMaximumParameter;
+})(LowerThanMaximum || (LowerThanMaximum = {}));
+export default LowerThanMaximum;
 //# sourceMappingURL=lower-than-maximum.js.map

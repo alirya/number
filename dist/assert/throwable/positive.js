@@ -1,5 +1,9 @@
-import PositiveType from "../string/positive";
-export default function Integer(number, subject) {
-    return new Error(PositiveType(false, number, subject));
-}
+import PositiveParameters from "./positive-parameters";
+import PositiveParameter from "./positive-parameter";
+var Positive;
+(function (Positive) {
+    Positive.Parameters = PositiveParameters;
+    Positive.Parameter = PositiveParameter;
+})(Positive || (Positive = {}));
+export default Positive;
 //# sourceMappingURL=positive.js.map

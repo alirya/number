@@ -1,11 +1,11 @@
-import Positive from "../../../dist/assert/string/positive";
+import Positive from "../../../dist/assert/string/positive-parameters";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 
 it(`valid`, () => {
-    expect(Positive(true, Infinity)).toBe('is positive number.');
+    expect(Positive(Infinity, true)).toBe('value is positive number.');
 });
 
 it(`invalid`, () => {
-    expect(Positive(false, 1)).toBe('must positive number, actual "1".');
+    expect(Positive(1, false)).toBe('value must positive number, actual "1".');
 });

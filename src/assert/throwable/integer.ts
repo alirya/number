@@ -1,9 +1,10 @@
-import IntegerType from "../string/integer";
+import IntegerParameters from "./integer-parameters";
+import IntegerParameter from "./integer-parameter";
 
-export default function Integer(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Integer {
 
-    return new Error(IntegerType(false, number, subject))
+    export const Parameters = IntegerParameters
+    export const Parameter = IntegerParameter
 }
+
+export default Integer;

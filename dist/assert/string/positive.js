@@ -1,11 +1,9 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
-export default function Positive(valid, value, subject = '') {
-    const sentence = SentencesMust(valid, [subject]);
-    sentence.expect = ['positive number'];
-    sentence.comma.push('expect');
-    if (!valid) {
-        sentence.actual.push('actual', `"${value}"`);
-    }
-    return sentence.message;
-}
+import PositiveParameters from "./positive-parameters";
+import PositiveParameter from "./positive-parameter";
+var Positive;
+(function (Positive) {
+    Positive.Parameters = PositiveParameters;
+    Positive.Parameter = PositiveParameter;
+})(Positive || (Positive = {}));
+export default Positive;
 //# sourceMappingURL=positive.js.map

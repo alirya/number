@@ -1,9 +1,10 @@
-import NaturalType from "../string/natural";
+import NaturalParameters from "./natural-parameters";
+import NaturalParameter from "./natural-parameter";
 
-export default function Natural(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Natural {
 
-    return new Error(NaturalType(false, number, subject))
+    export const Parameters = NaturalParameters
+    export const Parameter = NaturalParameter
 }
+
+export default Natural;

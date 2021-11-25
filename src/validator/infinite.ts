@@ -1,20 +1,10 @@
-import Validator from "@dikac/t-validator/validator";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import InfiniteValidatable from "../validatable/infinite";
-import Instance from "@dikac/t-validator/validatable/validatable";
-import SimpleValidatable from "@dikac/t-validator/validatable/simple";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import InfiniteParameters from "./infinite-parameters";
+import InfiniteParameter from "./infinite-parameter";
 
-export default function Infinite<MessageT>(
-    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
+namespace Infinite {
 
-    return function (value) {
-
-        return InfiniteValidatable(value, message);
-
-    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>
+    export const Parameters = InfiniteParameters
+    export const Parameter = InfiniteParameter
 }
+
+export default Infinite;

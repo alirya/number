@@ -1,4 +1,4 @@
-import Lower from "../../../dist/validatable/string/lower";
+import Lower from "../../../dist/assert/string/lower-parameter";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

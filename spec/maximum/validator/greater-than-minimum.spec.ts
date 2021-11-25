@@ -1,5 +1,5 @@
-import GreaterThanMinimum from "../../../dist/maximum/validator/greater-than-minimum";
-import GreaterString from "../../../dist/maximum/string/greater-than-minimum";
+import GreaterThanMinimum from "../../../dist/maximum/validator/greater-than-minimum-parameters";
+import GreaterString from "../../../dist/maximum/string/greater-than-minimum-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

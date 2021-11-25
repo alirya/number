@@ -1,9 +1,10 @@
-import FiniteType from "../string/finite";
+import FiniteParameters from "./finite-parameters";
+import FiniteParameter from "./finite-parameter";
 
-export default function Finite(
-    number : number,
-    subject ?: string
-) : Error {
+namespace Finite {
 
-    return new Error(FiniteType(false, number, subject))
+    export const Parameters = FiniteParameters
+    export const Parameter = FiniteParameter
 }
+
+export default Finite;

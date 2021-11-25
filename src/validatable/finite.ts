@@ -1,14 +1,12 @@
-import Callback from "./callback";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import FiniteParameters, {FiniteType} from "./finite-parameters";
+import FiniteParameter, {FiniteArgument} from "./finite-parameter";
 
-export default function Finite<MessageT>(
-    number : number,
-    message : (result:Readonly<Value<number> & Validatable>)=>MessageT
-) : Readonly<Validatable & Message<MessageT> & Value<number>> & ValueOf<number> & ToString<number|void> {
+namespace Finite {
 
-    return new Callback(number, isFinite, message);
+    export const Parameters = FiniteParameters
+    export const Parameter = FiniteParameter
+    export type Argument<MessageT> = FiniteArgument<MessageT>
+    export type Type<MessageT> = FiniteType<MessageT>
 }
+
+export default Finite;

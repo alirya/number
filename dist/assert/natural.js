@@ -1,5 +1,5 @@
-import NaturalError from "./throwable/natural";
-import Callback from "@dikac/t-function/assert/callback";
+import NaturalError from "./throwable/natural-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
 import IsNatural from "../boolean/natural";
 /**
  * assert if {@param number} is natural

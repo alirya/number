@@ -1,0 +1,1 @@
+{"version":3,"file":"lower-parameter.js","sourceRoot":"","sources":["../../src/boolean/lower-parameter.ts"],"names":[],"mappings":"AAAA,OAAO,eAAe,MAAM,oBAAoB,CAAC;AAIjD;;;;;;GAMG;AAEH,MAAM,CAAC,OAAO,UAAU,cAAc,CAClC,EACI,KAAK,EACL,OAAO,EACP,SAAS,GAC0B;IAGvC,OAAO,eAAe,CAAC,KAAK,EAAE,OAAO,EAAE,SAAS,CAAC,CAAC;AACtD,CAAC"}

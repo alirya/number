@@ -1,5 +1,5 @@
-import LowerFromObject from "../../dist/validator/lower-from-object";
-import LowerString from "../../dist/validatable/string/lower";
+import LowerFromObject from "../../dist/validator/lower-parameter";
+import LowerString from "../../dist/assert/string/lower-parameter";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

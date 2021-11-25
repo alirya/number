@@ -1,13 +1,9 @@
-import Minimum from "../../minimum/minimum";
-import Value from "@dikac/t-value/value";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import MergeWrapper from "@dikac/t-validator/validatable/readonly-merge";
-import Inclusive from "../../inclusive/inclusive";
-import Maximum from "../../maximum/maximum";
-export default class LowerThanMaximum<MessageT, ValueT extends Minimum & Maximum & Inclusive> extends MergeWrapper<Value<ValueT>, Message<MessageT>, Validatable> implements Readonly<Inclusive>, Readonly<Minimum>, Readonly<Maximum> {
-    readonly minimum: number;
-    readonly maximum: number;
-    readonly inclusive: boolean;
-    constructor(object: ValueT, message: (result: Readonly<Maximum & Inclusive & Minimum & Validatable>) => MessageT);
+import LowerThanMaximumParameters, { LowerThanMaximumArgument, LowerThanMaximumArgumentMessage } from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
+declare namespace LowerThanMaximum {
+    const Parameters: typeof LowerThanMaximumParameters;
+    const Parameter: typeof LowerThanMaximumParameter;
+    type Argument = LowerThanMaximumArgument;
+    type ArgumentMessage<Type extends LowerThanMaximumArgument, MessageT> = LowerThanMaximumArgumentMessage<Type, MessageT>;
 }
+export default LowerThanMaximum;

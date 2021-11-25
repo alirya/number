@@ -1,9 +1,10 @@
-import Minimum from "../../minimum/minimum";
-import Maximum from "../../maximum/maximum";
-import Inclusive from "../../inclusive/inclusive";
-import Greater from "../../boolean/greater";
+import LowerThanMaximumParameters from "./lower-than-maximum-parameter";
+import LowerThanMaximumParameter from "./lower-than-maximum-parameters";
 
-export default function LowerThanMaximum(object : Readonly<Minimum & Maximum & Inclusive>) : boolean {
+namespace LowerThanMaximum {
 
-    return Greater(object.maximum, object.minimum, object.inclusive);
+    export const Parameters = LowerThanMaximumParameters
+    export const Parameter = LowerThanMaximumParameter
 }
+
+export default LowerThanMaximum;

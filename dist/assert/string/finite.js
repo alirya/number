@@ -1,11 +1,9 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
-export default function Finite(valid, value, subject = '') {
-    const sentence = SentencesMust(valid, [subject]);
-    sentence.expect = ['finite number'];
-    sentence.comma.push('expect');
-    if (!valid) {
-        sentence.actual.push('actual', `"${value}"`);
-    }
-    return sentence.message;
-}
+import FiniteParameters from "./finite-parameters";
+import FiniteParameter from "./finite-parameter";
+var Finite;
+(function (Finite) {
+    Finite.Parameters = FiniteParameters;
+    Finite.Parameter = FiniteParameter;
+})(Finite || (Finite = {}));
+export default Finite;
 //# sourceMappingURL=finite.js.map

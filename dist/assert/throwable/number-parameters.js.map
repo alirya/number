@@ -1,0 +1,1 @@
+{"version":3,"file":"number-parameters.js","sourceRoot":"","sources":["../../../src/assert/throwable/number-parameters.ts"],"names":[],"mappings":"AAAA,OAAO,UAAU,MAAM,6BAA6B,CAAC;AAErD,MAAM,CAAC,OAAO,UAAU,gBAAgB,CACpC,KAAW,EACX,OAAiB,EACjB,UAAqC;IAGrC,OAAO,IAAI,KAAK,CAAC,UAAU,CAAC,KAAK,EAAE,KAAK,EAAE,OAAO,EAAE,UAAU,CAAC,CAAC,CAAA;AACnE,CAAC"}

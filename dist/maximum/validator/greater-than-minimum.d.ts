@@ -1,7 +1,7 @@
-import Validator from "@dikac/t-validator/validator";
-import Validatable from "@dikac/t-validatable/validatable";
-import GreaterThanMinimumValidatable from "../validatable/greater-than-minimum";
-import Minimum from "../../minimum/minimum";
-import Maximum from "../maximum";
-import Inclusive from "../../inclusive/inclusive";
-export default function GreaterThanMinimum<Base extends Minimum & Maximum & Inclusive, MessageT>(message: (result: Readonly<Maximum & Inclusive & Minimum & Validatable>) => MessageT): Validator<Base, Base, boolean, boolean, GreaterThanMinimumValidatable<MessageT, Base>>;
+import LowerThanMaximumParameters from "./greater-than-minimum-parameter";
+import LowerThanMaximumParameter from "./greater-than-minimum-parameters";
+declare namespace LowerThanMaximum {
+    const Parameters: typeof LowerThanMaximumParameters;
+    const Parameter: typeof LowerThanMaximumParameter;
+}
+export default LowerThanMaximum;

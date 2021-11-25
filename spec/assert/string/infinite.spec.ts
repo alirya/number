@@ -1,12 +1,12 @@
-import Infinite from "../../../dist/assert/string/infinite";
+import Infinite from "../../../dist/assert/string/infinite-parameters";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 
 it(`valid`, () => {
-    expect(Infinite(true, Infinity)).toBe('is infinite number.');
+    expect(Infinite(Infinity, true)).toBe('value is infinite number.');
 });
 
 it(`invalid`, () => {
-    expect(Infinite(false, 1)).toBe('must infinite number, actual "1".');
+    expect(Infinite(1, false)).toBe('value must infinite number, actual "1".');
 });
 

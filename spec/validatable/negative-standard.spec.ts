@@ -1,4 +1,4 @@
-import NegativeStandard from "../../dist/validatable/negative-standard";
+import NegativeStandard from "../../dist/validatable/negative-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

@@ -1,4 +1,4 @@
-import Integer from "../../../dist/validatable/string/integer";
+import Integer from "../../../dist/assert/string/integer-parameter";
 
 it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
 

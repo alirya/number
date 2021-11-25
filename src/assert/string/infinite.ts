@@ -1,21 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import InfiniteParameters from "./infinite-parameters";
+import InfiniteParameter from "./infinite-parameter";
 
+namespace Infinite {
 
-export default function Infinite(
-    valid : boolean,
-    value : number,
-    subject : string = ''
-) : string {
-
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['infinite number'];
-    sentence.comma.push('expect');
-
-    if(!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = InfiniteParameters
+    export const Parameter = InfiniteParameter
 }
+
+export default Infinite;

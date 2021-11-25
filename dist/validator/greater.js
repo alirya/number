@@ -1,7 +1,9 @@
-import GreaterValidatable from "../validatable/greater";
-export default function Greater(minimum, inclusive, message) {
-    return function (value) {
-        return new GreaterValidatable(value, minimum, inclusive, message);
-    };
-}
+import GreaterParameters from "./greater-parameters";
+import GreaterParameter from "./greater-parameter";
+var Greater;
+(function (Greater) {
+    Greater.Parameters = GreaterParameters;
+    Greater.Parameter = GreaterParameter;
+})(Greater || (Greater = {}));
+export default Greater;
 //# sourceMappingURL=greater.js.map

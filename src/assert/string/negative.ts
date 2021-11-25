@@ -1,22 +1,10 @@
-import SentencesMust from "@dikac/t-string/message/sentences-must";
+import NegativeParameters from "./negative-parameters";
+import NegativeParameter from "./negative-parameter";
 
+namespace Negative {
 
-export default function Negative(
-    valid : boolean,
-    value : number,
-    subject : string = '',
-) : string {
-
-    const sentence = SentencesMust(valid, [subject]);
-
-    sentence.expect = ['negative number'];
-    sentence.comma.push('expect');
-
-    if(!valid) {
-
-        sentence.actual.push('actual', `"${value}"`);
-    }
-
-    return sentence.message;
+    export const Parameters = NegativeParameters
+    export const Parameter = NegativeParameter
 }
 
+export default Negative;

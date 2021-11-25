@@ -1,19 +1,10 @@
-import ValidatableCallbacks from "@dikac/t-validator/validatable/callback";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import CallbackParameters from "./callback-parameters";
+import CallbackParameter from "./callback-parameter";
 
-export default class Callback<
-    Type extends number,
-    MessageType = unknown
-> extends ValidatableCallbacks<number, Type, MessageType> implements ValueOf<number>, ToString<number|void> {
+namespace Callback {
 
-    valueOf() : number {
-
-        return this.value;
-    }
-
-    toString(radix ?: number) : string {
-
-        return this.value.toString(radix);
-    }
+    export const Parameters = CallbackParameters
+    export const Parameter = CallbackParameter
 }
+
+export default Callback;

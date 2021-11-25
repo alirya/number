@@ -1,5 +1,9 @@
-import IntegerType from "../string/integer";
-export default function Integer(number, subject) {
-    return new Error(IntegerType(false, number, subject));
-}
+import IntegerParameters from "./integer-parameters";
+import IntegerParameter from "./integer-parameter";
+var Integer;
+(function (Integer) {
+    Integer.Parameters = IntegerParameters;
+    Integer.Parameter = IntegerParameter;
+})(Integer || (Integer = {}));
+export default Integer;
 //# sourceMappingURL=integer.js.map

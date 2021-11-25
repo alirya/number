@@ -1,10 +1,10 @@
-import NumberType from "../string/number";
+import NumberParameters from "./number-parameters";
+import NumberParameter from "./number-parameter";
 
-export default function Number(
-    number : any,
-    subject ?: string ,
-    conversion ?: (value:unknown)=>string
-) : Error {
+namespace Number {
 
-    return new Error(NumberType(false, number, subject, conversion))
+    export const Parameters = NumberParameters
+    export const Parameter = NumberParameter
 }
+
+export default Number;

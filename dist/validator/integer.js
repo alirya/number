@@ -1,7 +1,9 @@
-import IntegerValidatable from "../validatable/integer";
-export default function Integer(message) {
-    return function (value) {
-        return IntegerValidatable(value, message);
-    };
-}
+import IntegerParameters from "./integer-parameters";
+import IntegerParameter from "./integer-parameter";
+var Integer;
+(function (Integer) {
+    Integer.Parameters = IntegerParameters;
+    Integer.Parameter = IntegerParameter;
+})(Integer || (Integer = {}));
+export default Integer;
 //# sourceMappingURL=integer.js.map

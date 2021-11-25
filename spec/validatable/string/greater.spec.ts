@@ -1,4 +1,4 @@
-import Greater from "../../../dist/validatable/string/greater";
+import Greater from "../../../dist/assert/string/greater-parameter";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 

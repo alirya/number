@@ -1,6 +1,6 @@
-import IsLower from "../boolean/lower";
-import Callback from "@dikac/t-function/assert/callback";
-import LowerError from "./throwable/lower";
+import IsLower from "../boolean/lower-parameters";
+import Callback from "@dikac/t-function/assert/callback-parameters";
+import LowerError from "./throwable/lower-parameters";
 /**
  * assert if {@param number} is lower than {@param maximum} or equal if {@param inclusive} is true
  *
