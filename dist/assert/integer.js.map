@@ -1,1 +1,0 @@
-{"version":3,"file":"integer.js","sourceRoot":"","sources":["../../src/assert/integer.ts"],"names":[],"mappings":"AAAA,OAAO,SAAS,MAAM,oBAAoB,CAAC;AAC3C,OAAO,YAAY,MAAM,gCAAgC,CAAC;AAC1D,OAAO,QAAQ,MAAM,8CAA8C,CAAC;AACpE;;;;;;GAMG;AACH,MAAM,CAAC,OAAO,UAAU,OAAO,CAC3B,MAAe,EACf,QAAiC,YAAY;IAG7C,QAAQ,CAAC,MAAM,EAAE,SAAS,EAAE,KAAK,CAAC,CAAC;AACvC,CAAC"}

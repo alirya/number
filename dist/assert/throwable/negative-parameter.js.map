@@ -1,1 +1,0 @@
-{"version":3,"file":"negative-parameter.js","sourceRoot":"","sources":["../../../src/assert/throwable/negative-parameter.ts"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,MAAM,uBAAuB,CAAC;AAGvD,MAAM,CAAC,OAAO,UAAU,iBAAiB;AACrC,iBAAiB;AACjB,oBAAoB;AACpB,EACI,KAAK,EACL,OAAO,GAC4B;IAGvC,OAAO,kBAAkB,CAAC,KAAK,EAAE,OAAO,CAAC,CAAC;AAC9C,CAAC"}

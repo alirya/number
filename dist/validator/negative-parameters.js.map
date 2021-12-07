@@ -1,1 +1,0 @@
-{"version":3,"file":"negative-parameters.js","sourceRoot":"","sources":["../../src/validator/negative-parameters.ts"],"names":[],"mappings":"AACA,OAAO,mBAAmB,MAAM,oCAAoC,CAAC;AAGrE,OAAO,cAAc,MAAM,sCAAsC,CAAC;AAQlE,MAAM,CAAC,OAAO,UAAU,kBAAkB,CACtC,UAA6C,cAAc;IAG3D,OAAO,UAAU,KAAK;QAElB,OAAO,mBAAmB,CAAC,KAAK,EAAE,OAAO,CAAC,CAAC;IAE/C,CAAsF,CAAA;AAC1F,CAAC"}

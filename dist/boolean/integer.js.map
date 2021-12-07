@@ -1,1 +1,0 @@
-{"version":3,"file":"integer.js","sourceRoot":"","sources":["../../src/boolean/integer.ts"],"names":[],"mappings":"AAAA;;;GAGG;AACH,MAAM,CAAC,OAAO,UAAU,OAAO,CAAC,MAAe;IAE3C,IAAG,QAAQ,CAAC,MAAM,CAAC,EAAE;QAEjB,OAAO,MAAM,KAAK,IAAI,CAAC,IAAI,CAAC,MAAM,CAAC,CAAC;KAEvC;IAED,OAAO,KAAK,CAAC;AACjB,CAAC"}

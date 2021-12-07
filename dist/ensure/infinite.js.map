@@ -1,1 +1,0 @@
-{"version":3,"file":"infinite.js","sourceRoot":"","sources":["../../src/ensure/infinite.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,MAAM,oBAAoB,CAAC;AAChD,OAAO,aAAa,MAAM,yCAAyC,CAAC;AAEpE,MAAM,CAAC,OAAO,UAAU,QAAQ,CAC5B,KAAc,EACd,QAAiC,aAAa;IAG7C,cAAc,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;IAE7B,OAAO,KAAK,CAAC;AAClB,CAAC"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"greater-parameter.js","sourceRoot":"","sources":["../../src/boolean/greater-parameter.ts"],"names":[],"mappings":"AAGA,OAAO,iBAAiB,MAAM,sBAAsB,CAAC;AACrD;;;;;;GAMG;AAEH,MAAM,CAAC,OAAO,UAAU,gBAAgB;AACpC,mBAAmB;AACnB,oBAAoB;AACpB,+BAA+B;AAC/B,EACI,KAAK,EACL,OAAO,EACP,SAAS,GAC0B;IAGvC,OAAO,iBAAiB,CAAC,KAAK,EAAE,OAAO,EAAE,SAAS,CAAC,CAAC;AACxD,CAAC"}

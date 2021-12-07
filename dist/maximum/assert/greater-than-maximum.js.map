@@ -1,1 +1,0 @@
-{"version":3,"file":"greater-than-maximum.js","sourceRoot":"","sources":["../../../src/maximum/assert/greater-than-maximum.ts"],"names":[],"mappings":"AAEA,OAAO,yBAAyB,MAAM,2CAA2C,CAAC;AAClF,OAAO,uBAAuB,MAAM,4CAA4C,CAAC;AACjF,OAAO,QAAQ,MAAM,8CAA8C,CAAC;AAGpE,MAAM,CAAC,OAAO,UAAU,kBAAkB,CACtC,MAAyB,EACzB,QAAiC,uBAAuB;IAGxD,QAAQ,CAAC,MAAM,EAAE,yBAAyB,EAAE,KAAK,CAAC,CAAC;AAEvD,CAAC"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"integer.js","sourceRoot":"","sources":["../../src/ensure/integer.ts"],"names":[],"mappings":"AAAA,OAAO,aAAa,MAAM,mBAAmB,CAAC;AAC9C,OAAO,YAAY,MAAM,wCAAwC,CAAC;AAElE,MAAM,CAAC,OAAO,UAAU,OAAO,CAC3B,KAAc,EACd,QAAgC,YAAY;IAG3C,aAAa,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;IAE5B,OAAO,KAAK,CAAC;AAClB,CAAC"}

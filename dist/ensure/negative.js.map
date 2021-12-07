@@ -1,1 +1,0 @@
-{"version":3,"file":"negative.js","sourceRoot":"","sources":["../../src/ensure/negative.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,MAAM,oBAAoB,CAAC;AAChD,OAAO,aAAa,MAAM,yCAAyC,CAAC;AAEpE,MAAM,CAAC,OAAO,UAAU,QAAQ,CAC5B,KAAc,EACd,QAAgC,aAAa;IAG5C,cAAc,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;IAE7B,OAAO,KAAK,CAAC;AAClB,CAAC"}

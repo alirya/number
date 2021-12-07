@@ -1,1 +1,0 @@
-{"version":3,"file":"infinite.js","sourceRoot":"","sources":["../../src/assert/infinite.ts"],"names":[],"mappings":"AAAA,OAAO,UAAU,MAAM,qBAAqB,CAAC;AAC7C,OAAO,aAAa,MAAM,iCAAiC,CAAC;AAC5D,OAAO,QAAQ,MAAM,8CAA8C,CAAC;AACpE;;;;;;GAMG;AACH,MAAM,CAAC,OAAO,UAAU,QAAQ,CAC5B,MAAe,EACf,QAAiC,aAAa;IAG9C,QAAQ,CAAC,MAAM,EAAE,UAAU,EAAE,KAAK,CAAC,CAAC;AAExC,CAAC"}

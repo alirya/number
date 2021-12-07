@@ -1,1 +1,0 @@
-{"version":3,"file":"random-integer.js","sourceRoot":"","sources":["../src/random-integer.ts"],"names":[],"mappings":"AAAA,OAAO,uBAAuB,MAAM,6BAA6B,CAAC;AAClE,OAAO,sBAAsB,MAAM,4BAA4B,CAAC;AAEhE,IAAU,aAAa,CAItB;AAJD,WAAU,aAAa;IAEN,wBAAU,GAAG,uBAAuB,CAAA;IACpC,uBAAS,GAAG,sBAAsB,CAAA;AACnD,CAAC,EAJS,aAAa,KAAb,aAAa,QAItB;AAED,eAAe,aAAa,CAAC"}

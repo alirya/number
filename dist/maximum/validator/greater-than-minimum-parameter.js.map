@@ -1,1 +1,0 @@
-{"version":3,"file":"greater-than-minimum-parameter.js","sourceRoot":"","sources":["../../../src/maximum/validator/greater-than-minimum-parameter.ts"],"names":[],"mappings":"AAEA,OAAO,6BAA6B,MAAM,+CAA+C,CAAC;AAK1F,MAAM,CAAC,OAAO,UAAU,2BAA2B,CAC/C,OAAkF;IAGlF,OAAO,UAAU,KAAK;QAElB,OAAO,IAAI,6BAA6B,CAAC,KAAK,EAAE,OAAO,CAAC,CAAC;IAE7D,CAA2F,CAAC;AAChG,CAAC"}

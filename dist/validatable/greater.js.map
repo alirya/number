@@ -1,1 +1,0 @@
-{"version":3,"file":"greater.js","sourceRoot":"","sources":["../../src/validatable/greater.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAgC,MAAM,sBAAsB,CAAC;AACpE,OAAO,gBAAmC,MAAM,qBAAqB,CAAC;AAEtE,IAAU,OAAO,CAMhB;AAND,WAAU,OAAO;IAEA,kBAAU,GAAG,iBAAiB,CAAA;IAC9B,iBAAS,GAAG,gBAAgB,CAAA;AAG7C,CAAC,EANS,OAAO,KAAP,OAAO,QAMhB;AAED,eAAe,OAAO,CAAC"}
