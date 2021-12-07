@@ -22,11 +22,6 @@ export default function FiniteParameters(
 
     strings.push('finite number');
 
-    // const sentence = SentencesMust(valid, [subject]);
-    //
-    // sentence.expect = ['finite number'];
-    // sentence.comma.push('expect');
-
     if(!valid) {
 
         ReplaceParameters(strings, 2 , value => value+ ',')

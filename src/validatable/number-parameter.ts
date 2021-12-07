@@ -11,16 +11,12 @@ export type PositiveArgument<Argument, MessageT> = Value<Argument> & {
 };
 
 export default function NumberParameter<Argument, MessageT>(
-    // value : Argument,
-    // message : Dynamic<Argument, MessageT>,
     {
         value
     } : StrictOmit<PositiveArgument<Argument, MessageT>, 'message'>
 ) : Return<any, Argument, number, Readonly<Instance<Argument, MessageT>>>
 
 export default function NumberParameter<Argument, MessageT>(
-    // value : Argument,
-    // message : Dynamic<Argument, MessageT>,
     {
         message,
         value
@@ -28,8 +24,6 @@ export default function NumberParameter<Argument, MessageT>(
 ) : Return<any, Argument, number, Readonly<Instance<Argument, MessageT>>>
 
 export default function NumberParameter<Argument, MessageT>(
-    // value : Argument,
-    // message : Dynamic<Argument, MessageT>,
     {
         message = NumberMessage,
         value

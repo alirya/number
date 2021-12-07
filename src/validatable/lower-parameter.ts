@@ -21,12 +21,6 @@ export default class LowerParameter<ValueT extends number, MessageT> extends Low
             inclusive,
             message,
         } : LowerArgument<ValueT, MessageT>,
-        //
-        //
-        // readonly value : ValueT,
-        // readonly maximum : number,
-        // readonly inclusive : boolean,
-        // private messageFactory : (result:Readonly<Value<ValueT> & Inclusive & Maximum & Validatable>)=>MessageT
     ) {
 
         super(

@@ -2,8 +2,6 @@ import PositiveParameters from "./positive-parameters";
 import Value from "@dikac/t-value/value";
 
 export default function PositiveParameter(
-    // value : number,
-    // subject ?: string,
     {
         value,
         subject,

@@ -22,10 +22,6 @@ export default function InfiniteParameters(
 
     strings.push('infinite number');
 
-    // const sentence = SentencesMust(valid, [subject]);
-    //
-    // sentence.expect = ['infinite number'];
-    // sentence.comma.push('expect');
 
     if(!valid) {
 

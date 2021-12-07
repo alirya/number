@@ -4,10 +4,6 @@ import Inclusive from "../../inclusive/inclusive";
 import GreaterParameters from "./greater-parameters";
 
 export default function GreaterParameter(
-    //number : number,
-    //minimum : number,
-    //inclusive : boolean,
-    //subject ?: string,
     {
         value,
         minimum,

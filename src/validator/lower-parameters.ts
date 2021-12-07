@@ -11,14 +11,12 @@ export default function LowerParameters<MessageT> (
 export default function LowerParameters<MessageT> (
     maximum : number,
     inclusive : boolean,
-    // message : (result:Readonly<Value<number> & Inclusive & Maximum & Validatable>)=>MessageT,
     message : Dynamic<number, MessageT, [maximum:number, inclusive: boolean]>
 ) : Validator<number, number, boolean, boolean, LowerValidatable<number, MessageT>>
 
 export default function LowerParameters<MessageT> (
     maximum : number,
     inclusive : boolean,
-    // message : (result:Readonly<Value<number> & Inclusive & Maximum & Validatable>)=>MessageT,
     message : Dynamic<number, MessageT|string, [maximum:number, inclusive: boolean]> = LowerString
 ) : Validator<number, number, boolean, boolean, LowerValidatable<number, MessageT>> {
 

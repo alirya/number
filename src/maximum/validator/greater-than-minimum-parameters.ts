@@ -8,7 +8,6 @@ import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
 import {GreaterThanMinimumArgument} from "../validatable/greater-than-minimum-parameter";
 
 export default function GreaterThanMinimumParameters<MessageT>(
-    // message : (result:Readonly<Maximum & Inclusive & Minimum & Validatable>)=>MessageT
     message : Dynamic<number, MessageT, [minimum: number, inclusive:boolean]>
 ) : Validator<GreaterThanMinimumArgument, GreaterThanMinimumArgument, boolean, boolean, GreaterThanMinimumValidatable<MessageT>> {
 

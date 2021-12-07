@@ -22,11 +22,6 @@ export default function NanParameters(
 
     strings.push('NaN');
 
-    // const sentence = SentencesMust(valid, [subject]);
-    //
-    // sentence.expect = ['nan number'];
-    // sentence.comma.push('expect');
-
     if(!valid) {
 
         ReplaceParameters(strings, 2, value=>value+ ',')

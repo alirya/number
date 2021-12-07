@@ -3,7 +3,6 @@ export default function GreaterThanMinimumParameters(
     valid : boolean,
     minimum : number,
     inclusive : boolean,
-   // object : Readonly<Minimum & Maximum & Validatable & Inclusive>
 ) : string {
 
     let parts : string[] = [];

@@ -3,10 +3,6 @@ import Validatable from "@dikac/t-validatable/validatable";
 import NumberParameters from "./number-parameters";
 
 export default function NumberParameter(
-    // value : unknown,
-    // valid : boolean,
-    // subject : string = 'type',
-    // conversion : (value:unknown)=>string = value=>typeof value,
     {
         value,
         valid,

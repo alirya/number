@@ -3,9 +3,6 @@ import Validatable from "@dikac/t-validatable/validatable";
 import PositiveParameters from "./positive-parameters";
 
 export default function PositiveParameter(
-   //value : number,
-   //valid : boolean,
-   //subject : string = '',
     {
         value,
         valid,

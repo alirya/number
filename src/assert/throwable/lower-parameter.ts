@@ -4,10 +4,6 @@ import Minimum from "../../minimum/minimum";
 import Inclusive from "../../inclusive/inclusive";
 
 export default function LowerParameter(
-    //value : number,
-    //minimum : number,
-    //inclusive : boolean,
-    //subject ?: string,
     {
         value,
         minimum,

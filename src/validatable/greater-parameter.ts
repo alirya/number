@@ -21,12 +21,6 @@ export default class GreaterParameter<ValueT extends number, MessageT> extends G
             inclusive,
             message,
         } : GreaterArgument<ValueT, MessageT>,
-        //
-        //
-        // readonly value : ValueT,
-        // readonly minimum : number,
-        // readonly inclusive : boolean,
-        // private messageFactory : (result:Readonly<Value<ValueT> & Inclusive & Minimum & Validatable>)=>MessageT
     ) {
 
         super(

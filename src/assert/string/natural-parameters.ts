@@ -4,7 +4,6 @@ export default function NaturalParameters(
     subject : string = 'value'
 ) : string {
 
-
     const strings : string[] = [];
 
     strings.push(subject);
@@ -19,11 +18,6 @@ export default function NaturalParameters(
     }
 
     strings.push('natural number');
-
-    // const sentence = SentencesMust(valid, [subject]);
-    //
-    // sentence.expect = ['natural number'];
-    // sentence.comma.push('expect');
 
     if(!valid) {
 

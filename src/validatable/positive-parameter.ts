@@ -18,16 +18,12 @@ export default function PositiveParameter<MessageT>(
 ) : ValidatorValidatable<number, MessageT>;
 
 export default function PositiveParameter<MessageT>(
-    //value : number,
-    //message : Dynamic<number, MessageT>,
     {
         message,
         value
     } : Required<PositiveArgument<MessageT>>
 ) : ValidatorValidatable<number, MessageT>;
 export default function PositiveParameter<MessageT>(
-    // value : number,
-    // message : Dynamic<number, MessageT|string> = PositiveString,
     {
         message = PositiveString,
         value

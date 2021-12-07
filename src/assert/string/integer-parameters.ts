@@ -22,11 +22,6 @@ export default function IntegerParameters(
 
     strings.push('integer number');
 
-    // const sentence = SentencesMust(valid, [subject]);
-    //
-    // sentence.expect = ['integer number'];
-    // sentence.comma.push('expect');
-
     if(!valid) {
 
         ReplaceParameters(strings, 2 , value => value+ ',')
