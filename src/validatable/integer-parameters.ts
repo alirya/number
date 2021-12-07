@@ -5,7 +5,7 @@ import Message from "@dikac/t-message/message";
 import Value from "@dikac/t-value/value";
 import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import IntegerMessage from "../assert/string/integer-parameters";
 
 export type IntegerType<MessageT> =

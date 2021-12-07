@@ -7,8 +7,8 @@ import MessageCallback from "@dikac/t-validator/validatable/callback-function-pa
 import Inclusive from "../../inclusive/inclusive";
 import Maximum from "../../maximum/maximum";
 import GreaterThanMinimumFunction from "../boolean/lower-than-maximum-parameter";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameter";
-import DynamicValue from "@dikac/t-validator/value/dynamic";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
+import DynamicValue from "@dikac/t-validator/value/validatable";
 
 export type LowerThanMaximumArgument = Minimum & Maximum & Inclusive;
 export type LowerThanMaximumArgumentMessage<Type extends LowerThanMaximumArgument, MessageT> = Dynamic<Type, MessageT, LowerThanMaximumArgument & DynamicValue<Type>>;

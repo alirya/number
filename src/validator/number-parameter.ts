@@ -1,7 +1,7 @@
 import Validator from "@dikac/t-validator/simple";
 import NumberValidatable from "../validatable/number-parameters";
 import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameter";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
 import NumberString from "../assert/string/number-parameter";
 import NumberParameters from "./number-parameters";
 

@@ -1,6 +1,6 @@
 import Validator from "@dikac/t-validator/validator";
 import GreaterValidatable from "../validatable/greater-parameters";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import GreaterString from "../assert/string/greater-parameters";
 
 export default function GreaterParameters(

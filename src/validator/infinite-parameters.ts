@@ -1,7 +1,7 @@
 import Validator from "@dikac/t-validator/validator";
 import InfiniteValidatable from "../validatable/infinite-parameters";
 import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import InfiniteString from "../assert/string/infinite-parameters";
 
 export default function InfiniteParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;

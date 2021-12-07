@@ -4,7 +4,7 @@ import GreaterThanMinimumValidatable from "../validatable/greater-than-minimum-p
 import Minimum from "../../minimum/minimum";
 import Maximum from "../maximum";
 import Inclusive from "../../inclusive/inclusive";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import {GreaterThanMinimumArgument} from "../validatable/greater-than-minimum-parameter";
 
 export default function GreaterThanMinimumParameters<MessageT>(

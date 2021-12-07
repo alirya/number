@@ -1,11 +1,11 @@
-import Validatable from "@dikac/t-validator/value/dynamic";
+import Validatable from "@dikac/t-validator/value/validatable";
 import Message from "@dikac/t-message/message";
 import Inclusive from "../inclusive/inclusive";
 import LowerParameters from "./lower-parameters";
 import Maximum from "../maximum/maximum";
 import Validator from "@dikac/t-validator/validator";
 import LowerValidatable from "../validatable/lower-parameters";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameter";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
 import StrictOmit from "@dikac/t-object/strict-omit";
 import LowerString from "../assert/string/lower-parameter";
 

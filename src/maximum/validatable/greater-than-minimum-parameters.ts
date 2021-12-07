@@ -1,4 +1,4 @@
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import GreaterThanMinimumParameter, {GreaterThanMinimumArgument} from "./greater-than-minimum-parameter";
 
 export default class GreaterThanMinimumParameters<MessageT>

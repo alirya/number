@@ -6,8 +6,8 @@ import LowerFromObject from "../boolean/lower-parameter";
 import Inclusive from "../inclusive/inclusive";
 import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
-import ValueDynamic from "@dikac/t-validator/value/dynamic";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
+import ValueDynamic from "@dikac/t-validator/value/validatable";
 import MemoizeAccessor from "@dikac/t-object/function/memoize-accessor";
 
 export interface LowerType<ValueT extends number, MessageT> extends Readonly<Inclusive>,

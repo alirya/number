@@ -1,4 +1,4 @@
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import LowerThanMaximumParameter, {LowerThanMaximumArgument} from "./lower-than-maximum-parameter";
 
 export default class LowerThanMaximumParameters<MessageT>

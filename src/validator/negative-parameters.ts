@@ -1,7 +1,7 @@
 import Validator from "@dikac/t-validator/validator";
 import NegativeValidatable from "../validatable/negative-parameters";
 import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import NegativeString from "../assert/string/negative-parameters";
 
 export default function NegativeParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;

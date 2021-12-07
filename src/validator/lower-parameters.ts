@@ -1,6 +1,6 @@
 import Validator from "@dikac/t-validator/validator";
 import LowerValidatable from "../validatable/lower-parameters";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import LowerString from "../assert/string/lower-parameters";
 
 export default function LowerParameters<MessageT> (

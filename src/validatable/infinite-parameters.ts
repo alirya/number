@@ -2,7 +2,7 @@ import CallbackParameters from "./callback-parameters";
 import InfiniteValidation from "../boolean/infinite";
 import {IntegerType as InfiniteType} from "./integer-parameters";
 import InfiniteMessage from "../assert/string/infinite-parameters";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 
 export {InfiniteType};
 

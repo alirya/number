@@ -2,7 +2,7 @@ import Callback from "@dikac/t-validator/validatable/callback-function-parameter
 import PositiveValidation from "../boolean/positive";
 import ValidatorValidatable from "@dikac/t-validator/validatable/validatable";
 import Value from "@dikac/t-value/value";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameter";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
 import PositiveString from "../assert/string/positive-parameter";
 import StrictOmit from "@dikac/t-object/strict-omit";
 import PositiveParameters from "./positive-parameters";

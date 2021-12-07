@@ -5,7 +5,7 @@ import ToString from "@dikac/t-string/to-string";
 export default class CallbackParameters<
     Type extends number,
     MessageType = unknown
-> extends ValidatableCallbacks<number, Type, MessageType> implements ValueOf<number>, ToString<[number|void]> {
+> extends ValidatableCallbacks<Type, MessageType> implements ValueOf<number>, ToString<[number|void]> {
 
     valueOf() : number {
 

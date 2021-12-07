@@ -1,6 +1,6 @@
 import CallbackParameters from "./callback-parameters";
 import NaturalValidation from "../boolean/natural";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import NaturalMessage from "../assert/string/natural-parameters";
 import {IntegerType as NaturalType} from "./integer-parameters";
 
