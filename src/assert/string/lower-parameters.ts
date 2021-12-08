@@ -1,7 +1,6 @@
 /**
  * message for lower validation
  */
-import Replace from "@dikac/t-array/replace";
 import ReplaceParameters from "@dikac/t-array/replace-parameters";
 
 export default function LowerParameters(

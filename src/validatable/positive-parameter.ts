@@ -1,5 +1,3 @@
-import Callback from "@dikac/t-validator/validatable/callback-function-parameters";
-import PositiveValidation from "../boolean/positive";
 import ValidatorValidatable from "@dikac/t-validator/validatable/validatable";
 import Value from "@dikac/t-value/value";
 import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";

@@ -8,7 +8,6 @@ import ValueOf from "@dikac/t-value/value-of/value-of";
 import ToString from "@dikac/t-string/to-string";
 import MemoizeAccessor from "@dikac/t-object/function/memoize-accessor";
 import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
-import ValueDynamic from "@dikac/t-validator/value/validatable";
 
 export interface GreaterType<ValueT extends number, MessageT> extends
     Readonly<Inclusive>,

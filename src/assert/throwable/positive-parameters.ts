@@ -1,4 +1,3 @@
-import PositiveParameter from "./positive-parameter";
 import PositiveType from "../string/positive-parameters";
 
 export default function PositiveParameters(

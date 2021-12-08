@@ -1,5 +1,3 @@
-import CallbackParameters from "./callback-parameters";
-import NaturalValidation from "../boolean/natural";
 import NaturalMessage from "../assert/string/natural-parameter";
 import {PositiveArgument as NaturalArgument} from "./positive-parameter";
 import StrictOmit from "@dikac/t-object/strict-omit";

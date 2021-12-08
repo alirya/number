@@ -1,9 +1,5 @@
 import Validator from "@dikac/t-validator/validator";
-import Validatable from "@dikac/t-validatable/validatable";
 import GreaterThanMinimumValidatable from "../validatable/greater-than-minimum-parameters";
-import Minimum from "../../minimum/minimum";
-import Maximum from "../maximum";
-import Inclusive from "../../inclusive/inclusive";
 import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import {GreaterThanMinimumArgument} from "../validatable/greater-than-minimum-parameter";
 
