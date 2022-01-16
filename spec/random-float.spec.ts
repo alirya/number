@@ -1,4 +1,4 @@
-import RandomFloat from '../dist/random-floaparameters';
+import RandomFloat from '../dist/random-float-parameters';
 import RandomFloatFromObject from '../dist/random-floaparameter';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});

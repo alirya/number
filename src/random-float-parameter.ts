@@ -1,6 +1,6 @@
 import Minimum from './minimum/minimum';
 import Maximum from './maximum/maximum';
-import RandomFloatParameters from './random-floaparameters';
+import RandomFloatParameters from './random-float-parameters';
 import Inclusive from './inclusive/inclusive';
 
 export default function RandomFloatParameter ({
