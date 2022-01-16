@@ -1,6 +1,6 @@
-import LowerObject from "../../../dist/boolean/lower-parameter";
+import LowerObject from '../../../dist/boolean/lower-parameter';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`inclusive`,function() {
 

@@ -1,13 +1,13 @@
-import Infinite from "../../dist/ensure/infinite";
+import Infinite from '../../dist/ensure/infinite';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive infinity`, () => {
-    expect(Infinite(Infinity)).toBe(Infinity)
+    expect(Infinite(Infinity)).toBe(Infinity);
 });
 
 it(`negative infinity`, () => {
-    expect(Infinite(-Infinity)).toBe(-Infinity)
+    expect(Infinite(-Infinity)).toBe(-Infinity);
 });
 
 it(`float`, () => {

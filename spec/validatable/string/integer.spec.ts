@@ -1,6 +1,6 @@
-import Integer from "../../../dist/assert/string/integer-parameter";
+import Integer from '../../../dist/assert/string/integer-parameter';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`valid`, () => {
     expect(Integer({valid:true, value:Infinity})).toBe('value is integer number.');

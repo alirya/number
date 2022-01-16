@@ -1,8 +1,8 @@
-import Validator from "@alirya/validator/validator";
-import PositiveValidatable from "../validatable/positive-parameters";
-import Instance from "@alirya/validator/validatable/validatable";
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
-import PositiveString from "../assert/string/positive-parameters";
+import Validator from '@alirya/validator/validator';
+import PositiveValidatable from '../validatable/positive-parameters';
+import Instance from '@alirya/validator/validatable/validatable';
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
+import PositiveString from '../assert/string/positive-parameters';
 
 export default function PositiveParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
 
@@ -18,5 +18,5 @@ export default function PositiveParameters<MessageT>(
 
         return PositiveValidatable(value, message);
 
-    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>
+    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
 }

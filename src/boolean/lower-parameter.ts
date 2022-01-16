@@ -1,7 +1,7 @@
-import LowerParameters from "./lower-parameters";
-import Value from "@alirya/value/value";
-import Inclusive from "../inclusive/inclusive";
-import Maximum from "../maximum/maximum";
+import LowerParameters from './lower-parameters';
+import Value from '@alirya/value/value';
+import Inclusive from '../inclusive/inclusive';
+import Maximum from '../maximum/maximum';
 /**
  * check if {@param number} is lower than {@param maximum} or equal if {@param inclusive} is true
  *

@@ -1,4 +1,4 @@
-import Sum from "./sum";
+import Sum from './sum';
 
 export default function Average(...numbers : ReadonlyArray<number>) : number {
 

@@ -1,6 +1,6 @@
-import Nan from "../../dist/assert/nan";
+import Nan from '../../dist/assert/nan';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive infinity`, () => {
     let value = NaN;

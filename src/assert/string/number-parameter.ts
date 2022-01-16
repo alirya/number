@@ -1,6 +1,6 @@
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import NumberParameters from "./number-parameters";
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import NumberParameters from './number-parameters';
 
 export default function NumberParameter(
     {

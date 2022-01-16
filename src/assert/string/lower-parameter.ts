@@ -1,8 +1,8 @@
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import Inclusive from "../../inclusive/inclusive";
-import LowerParameters from "./lower-parameters";
-import Maximum from "../../maximum/maximum";
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import Inclusive from '../../inclusive/inclusive';
+import LowerParameters from './lower-parameters';
+import Maximum from '../../maximum/maximum';
 
 /**
  * message for lower validation

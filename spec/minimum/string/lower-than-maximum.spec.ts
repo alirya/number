@@ -1,6 +1,6 @@
-import Greater from "../../../dist/minimum/string/lower-than-maximum-parameter";
+import Greater from '../../../dist/minimum/string/lower-than-maximum-parameter';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`integer`,function() {
 

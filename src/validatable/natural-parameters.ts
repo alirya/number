@@ -1,19 +1,19 @@
-import CallbackParameters from "./callback-parameters";
-import NaturalValidation from "../boolean/natural";
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
-import NaturalMessage from "../assert/string/natural-parameters";
-import {IntegerType as NaturalType} from "./integer-parameters";
+import CallbackParameters from './callback-parameters';
+import NaturalValidation from '../boolean/natural';
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
+import NaturalMessage from '../assert/string/natural-parameters';
+import {IntegerType as NaturalType} from './integer-parameters';
 
 export type {NaturalType};
 
 export default function NaturalParameters(
     number : number,
-) : NaturalType<string>
+) : NaturalType<string>;
 
 export default function NaturalParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT>
-) : NaturalType<MessageT>
+) : NaturalType<MessageT>;
 
 export default function NaturalParameters<MessageT>(
     number : number,

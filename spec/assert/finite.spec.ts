@@ -1,6 +1,6 @@
-import Finite from "../../dist/assert/finite";
+import Finite from '../../dist/assert/finite';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive infinity`, () => {
     try {

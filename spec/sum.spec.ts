@@ -1,6 +1,6 @@
-import Sum from "../dist/sum";
+import Sum from '../dist/sum';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`2 or more`,() => {
 
@@ -12,7 +12,7 @@ it(`1`,() => {
 
     expect(Sum(1)).toEqual(1);
 
-})
+});
 
 it(`0`,() => {
 

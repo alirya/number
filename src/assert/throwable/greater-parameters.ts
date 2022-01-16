@@ -1,4 +1,4 @@
-import GreaterType from "../string/greater-parameters";
+import GreaterType from '../string/greater-parameters';
 
 export default function GreaterParameters(
     number : number,
@@ -7,5 +7,5 @@ export default function GreaterParameters(
     subject ?: string
 ) : Error {
 
-    return new Error(GreaterType(number, false, minimum, inclusive, subject))
+    return new Error(GreaterType(number, false, minimum, inclusive, subject));
 }

@@ -1,35 +1,35 @@
-import Number from "../../dist/assert/number";
+import Number from '../../dist/assert/number';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`number`,function() {
 
     it(`integer`, () => {
         let value = 1;
-        Number(value)
-        expect(value).toBe(1)
+        Number(value);
+        expect(value).toBe(1);
     });
 
     it(`float`, () => {
         let value = 1.1;
-        Number(value)
-        expect(value).toBe(1.1)
+        Number(value);
+        expect(value).toBe(1.1);
     });
 
     it(`infinity`, () => {
         let value = Infinity;
         Number(Infinity);
-        expect(value).toBe(Infinity)
+        expect(value).toBe(Infinity);
     });
 
     it(`Nan`, () => {
         let value = NaN;
         Number(NaN);
-        expect(value).toEqual(NaN)
+        expect(value).toEqual(NaN);
     });
 });
 
-describe("boolean", function() {
+describe('boolean', function() {
 
     it(`true`, () => {
         try {
@@ -51,7 +51,7 @@ describe("boolean", function() {
 
 });
 
-describe("string", function() {
+describe('string', function() {
 
     it(`primitive`, () => {
         try {
@@ -73,7 +73,7 @@ describe("string", function() {
 
 });
 
-describe("object", function() {
+describe('object', function() {
 
     it(`plain`, () => {
         try {
@@ -95,7 +95,7 @@ describe("object", function() {
 
 });
 
-describe("function", function() {
+describe('function', function() {
 
     it(`anonymous `, () => {
         try {
@@ -126,7 +126,7 @@ describe("function", function() {
 
 });
 
-describe("empty", function() {
+describe('empty', function() {
 
     it(`null `, () => {
         try {

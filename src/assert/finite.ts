@@ -1,5 +1,5 @@
-import FiniteError from "./throwable/finite-parameters";
-import Callback from "@alirya/function/assert/callback-parameters";
+import FiniteError from './throwable/finite-parameters';
+import Callback from '@alirya/function/assert/callback-parameters';
 /**
  * assert if {@param number} is finite
  *

@@ -1,7 +1,7 @@
-import RandomInteger from "../dist/random-integer-parameters";
-import RandomIntegerFromObject from "../dist/random-integer-parameter";
+import RandomInteger from '../dist/random-integer-parameters';
+import RandomIntegerFromObject from '../dist/random-integer-parameter';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`iterative`,function() {
 

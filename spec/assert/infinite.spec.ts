@@ -1,6 +1,6 @@
-import Infinite from "../../dist/assert/infinite";
+import Infinite from '../../dist/assert/infinite';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive infinity`, () => {
     let value = Infinity;

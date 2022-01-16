@@ -1,6 +1,6 @@
-import Integer from "../../dist/boolean/integer";
+import Integer from '../../dist/boolean/integer';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 it(`positive integer`, () => {

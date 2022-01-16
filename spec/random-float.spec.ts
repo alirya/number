@@ -1,7 +1,7 @@
-import RandomFloat from "../dist/random-floaparameters";
-import RandomFloatFromObject from "../dist/random-floaparameter";
+import RandomFloat from '../dist/random-floaparameters';
+import RandomFloatFromObject from '../dist/random-floaparameter';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`iterative`,function() {
 

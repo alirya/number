@@ -1,6 +1,6 @@
-import GreaterFromObject from "../../../dist/maximum/boolean/greater-than-minimum-parameter";
+import GreaterFromObject from '../../../dist/maximum/boolean/greater-than-minimum-parameter';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`inclusive`,function() {
 

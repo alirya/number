@@ -1,7 +1,7 @@
-import LowerParameters from "./lower-parameters";
-import Value from "@alirya/value/value";
-import Minimum from "../../minimum/minimum";
-import Inclusive from "../../inclusive/inclusive";
+import LowerParameters from './lower-parameters';
+import Value from '@alirya/value/value';
+import Minimum from '../../minimum/minimum';
+import Inclusive from '../../inclusive/inclusive';
 
 export default function LowerParameter(
     {

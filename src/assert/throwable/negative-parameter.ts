@@ -1,5 +1,5 @@
-import NegativeParameters from "./negative-parameters";
-import Value from "@alirya/value/value";
+import NegativeParameters from './negative-parameters';
+import Value from '@alirya/value/value';
 
 export default function NegativeParameter(
     {

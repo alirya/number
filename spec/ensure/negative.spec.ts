@@ -1,9 +1,9 @@
-import Negative from "../../dist/ensure/negative";
+import Negative from '../../dist/ensure/negative';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`negative integer`, () => {
-    expect(Negative(-1)).toBe(-1)
+    expect(Negative(-1)).toBe(-1);
 });
 
 
@@ -26,7 +26,7 @@ it(`positive float`, () => {
 });
 
 it(`negative float`, () => {
-    expect(Negative(-1.1)).toBe(-1.1)
+    expect(Negative(-1.1)).toBe(-1.1);
 });
 
 
@@ -40,7 +40,7 @@ it(`positive infinity`, () => {
 });
 
 it(`negative infinity`, () => {
-    expect(Negative(-Infinity)).toBe(-Infinity)
+    expect(Negative(-Infinity)).toBe(-Infinity);
 });
 
 it(`Nan`, () => {

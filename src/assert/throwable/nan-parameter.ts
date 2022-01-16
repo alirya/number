@@ -1,5 +1,5 @@
-import NanParameters from "./nan-parameters";
-import Value from "@alirya/value/value";
+import NanParameters from './nan-parameters';
+import Value from '@alirya/value/value';
 
 export default function NanParameter(
     {
@@ -8,5 +8,5 @@ export default function NanParameter(
     } : Value<number> & {subject ?: string}
 ) : Error {
 
-    return NanParameters(value, subject)
+    return NanParameters(value, subject);
 }

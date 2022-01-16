@@ -1,7 +1,7 @@
-import LowerFromObject from "../../dist/validator/lower-parameter";
-import LowerString from "../../dist/assert/string/lower-parameter";
+import LowerFromObject from '../../dist/validator/lower-parameter';
+import LowerString from '../../dist/assert/string/lower-parameter';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -77,7 +77,7 @@ describe(`value equal to minimum`,function() {
             expect(validatable.maximum).toBe(1);
             expect(validatable.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -92,7 +92,7 @@ describe(`value equal to minimum`,function() {
             expect(validatable.maximum).toBe(1);
             expect(validatable.inclusive).toBeFalse();
 
-        })
+        });
     });
 });
 
@@ -110,7 +110,7 @@ describe(`value greater to minimum`,function() {
             expect(validatable.maximum).toBe(1);
             expect(validatable.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -125,7 +125,7 @@ describe(`value greater to minimum`,function() {
             expect(validatable.maximum).toBe(1);
             expect(validatable.inclusive).toBeFalse();
 
-        })
+        });
     });
 });
 
@@ -143,7 +143,7 @@ describe(`value lower to minimum`,function() {
             expect(validatable.maximum).toBe(1);
             expect(validatable.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -158,6 +158,6 @@ describe(`value lower to minimum`,function() {
             expect(validatable.maximum).toBe(1);
             expect(validatable.inclusive).toBeFalse();
 
-        })
+        });
     });
 });

@@ -1,4 +1,4 @@
-import NumberType from "../string/number-parameters";
+import NumberType from '../string/number-parameters';
 
 export default function NumberParameters(
     value : any,
@@ -6,5 +6,5 @@ export default function NumberParameters(
     conversion ?: (value:unknown)=>string
 ) : Error {
 
-    return new Error(NumberType(false, value, subject, conversion))
+    return new Error(NumberType(false, value, subject, conversion));
 }

@@ -1,4 +1,4 @@
-import LowerThanMaximumString from "../../string/lower-than-maximum-parameters";
+import LowerThanMaximumString from '../../string/lower-than-maximum-parameters';
 
 export default function LowerThanMaximumParameters(
     minimum : number,

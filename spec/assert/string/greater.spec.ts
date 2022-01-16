@@ -1,6 +1,6 @@
-import Greater from "../../../dist/assert/string/greater-parameters";
+import Greater from '../../../dist/assert/string/greater-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`exclusive`,function() {
 

@@ -1,6 +1,6 @@
-import Lower from "../../dist/ensure/lower";
+import Lower from '../../dist/ensure/lower';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`inclusive`,function() {
 

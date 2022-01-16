@@ -1,6 +1,6 @@
-import Greater from "../../dist/ensure/greater";
+import Greater from '../../dist/ensure/greater';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`inclusive`,function() {
 

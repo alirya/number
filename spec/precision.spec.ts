@@ -1,7 +1,7 @@
-import RandomFloat from "../dist/random-floaparameters";
-import Precision from "../dist/precision-parameters";
+import RandomFloat from '../dist/random-floaparameters';
+import Precision from '../dist/precision-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`precision`,function() {
 

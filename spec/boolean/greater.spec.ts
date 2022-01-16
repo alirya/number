@@ -1,6 +1,6 @@
-import Greater from "../../dist/boolean/greater-parameters";
+import Greater from '../../dist/boolean/greater-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`inclusive`,function() {
 

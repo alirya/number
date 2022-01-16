@@ -1,6 +1,6 @@
-import ValidatableCallbacks from "@alirya/validator/validatable/callback-class-parameters";
-import ValueOf from "@alirya/value/value-of/value-of";
-import ToString from "@alirya/string/to-string";
+import ValidatableCallbacks from '@alirya/validator/validatable/callback-class-parameters';
+import ValueOf from '@alirya/value/value-of/value-of';
+import ToString from '@alirya/string/to-string';
 
 export default class CallbackParameters<
     Type extends number,

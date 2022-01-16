@@ -1,16 +1,16 @@
-import Minimum from "../../minimum/minimum";
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import Message from "@alirya/message/message";
-import MergeWrapper from "@alirya/validator/validatable/readonly-wrapper-parameters";
-import MessageCallback from "@alirya/validator/validatable/callback-function-parameters";
-import Inclusive from "../../inclusive/inclusive";
-import Maximum from "../maximum";
-import GreaterThanMinimumFunction from "../boolean/greater-than-minimum-parameter";
+import Minimum from '../../minimum/minimum';
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import Message from '@alirya/message/message';
+import MergeWrapper from '@alirya/validator/validatable/readonly-wrapper-parameters';
+import MessageCallback from '@alirya/validator/validatable/callback-function-parameters';
+import Inclusive from '../../inclusive/inclusive';
+import Maximum from '../maximum';
+import GreaterThanMinimumFunction from '../boolean/greater-than-minimum-parameter';
 import {
     LowerThanMaximumArgument as GreaterThanMinimumArgument,
     LowerThanMaximumArgumentMessage as GreaterThanMinimumArgumentMessage
-} from "../../minimum/validatable/lower-than-maximum-parameter";
+} from '../../minimum/validatable/lower-than-maximum-parameter';
 
 export {GreaterThanMinimumArgument, GreaterThanMinimumArgumentMessage};
 

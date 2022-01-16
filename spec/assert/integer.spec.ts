@@ -1,17 +1,17 @@
-import Integer from "../../dist/assert/integer";
+import Integer from '../../dist/assert/integer';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`negative integer`, () => {
     let value = -1;
-    Integer(value)
-    expect(value).toBe(-1)
+    Integer(value);
+    expect(value).toBe(-1);
 });
 
 it(`positive integer`, () => {
     let value = 1;
-    Integer(value)
-    expect(value).toBe(1)
+    Integer(value);
+    expect(value).toBe(1);
 });
 
 it(`positive float`, () => {

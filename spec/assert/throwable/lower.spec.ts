@@ -1,7 +1,7 @@
-import Lower from "../../../dist/assert/throwable/lower-parameters";
-import Message from "../../../dist/assert/string/lower-parameters";
+import Lower from '../../../dist/assert/throwable/lower-parameters';
+import Message from '../../../dist/assert/string/lower-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`exclusive`, () => {
     let throwable = Lower(1, 10, false);

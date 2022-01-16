@@ -1,7 +1,7 @@
-import Greater from "../../dist/validatable/greater-parameters";
-import GreaterString from "../../dist/assert/string/greater-parameters";
+import Greater from '../../dist/validatable/greater-parameters';
+import GreaterString from '../../dist/assert/string/greater-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -75,7 +75,7 @@ describe(`value equal to minimum`,function() {
             expect(greater.minimum).toBe(1);
             expect(greater.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -89,7 +89,7 @@ describe(`value equal to minimum`,function() {
             expect(greater.minimum).toBe(1);
             expect(greater.inclusive).toBeFalse();
 
-        })
+        });
     });
 });
 
@@ -106,7 +106,7 @@ describe(`value greater to minimum`,function() {
             expect(greater.minimum).toBe(1);
             expect(greater.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -120,7 +120,7 @@ describe(`value greater to minimum`,function() {
             expect(greater.minimum).toBe(1);
             expect(greater.inclusive).toBeFalse();
 
-        })
+        });
     });
 });
 
@@ -137,7 +137,7 @@ describe(`value lower to minimum`,function() {
             expect(greater.minimum).toBe(1);
             expect(greater.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -151,6 +151,6 @@ describe(`value lower to minimum`,function() {
             expect(greater.minimum).toBe(1);
             expect(greater.inclusive).toBeFalse();
 
-        })
+        });
     });
 });

@@ -1,6 +1,6 @@
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import NanParameters from "./nan-parameters";
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import NanParameters from './nan-parameters';
 
 export default function NanParameter(
     {

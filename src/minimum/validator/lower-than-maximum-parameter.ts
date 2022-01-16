@@ -1,6 +1,6 @@
-import Validator from "@alirya/validator/validator";
-import Validatable from "@alirya/validatable/validatable";
-import GreaterThanMinimumValidatable, {LowerThanMaximumArgument} from "../validatable/lower-than-maximum-parameter";
+import Validator from '@alirya/validator/validator';
+import Validatable from '@alirya/validatable/validatable';
+import GreaterThanMinimumValidatable, {LowerThanMaximumArgument} from '../validatable/lower-than-maximum-parameter';
 
 export default function LowerThanMaximumParameter<Base extends LowerThanMaximumArgument, MessageT>(
     message : (result:Readonly<LowerThanMaximumArgument & Validatable>)=>MessageT

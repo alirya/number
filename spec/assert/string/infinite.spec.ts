@@ -1,6 +1,6 @@
-import Infinite from "../../../dist/assert/string/infinite-parameters";
+import Infinite from '../../../dist/assert/string/infinite-parameters';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`valid`, () => {
     expect(Infinite(Infinity, true)).toBe('value is infinite number.');

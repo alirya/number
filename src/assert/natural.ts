@@ -1,6 +1,6 @@
-import NaturalError from "./throwable/natural-parameters";
-import Callback from "@alirya/function/assert/callback-parameters";
-import IsNatural from "../boolean/natural";
+import NaturalError from './throwable/natural-parameters';
+import Callback from '@alirya/function/assert/callback-parameters';
+import IsNatural from '../boolean/natural';
 /**
  * assert if {@param number} is natural
  *

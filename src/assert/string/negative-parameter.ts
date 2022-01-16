@@ -1,6 +1,6 @@
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import NegativeParameters from "./negative-parameters";
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import NegativeParameters from './negative-parameters';
 
 export default function NegativeParameter(
     {

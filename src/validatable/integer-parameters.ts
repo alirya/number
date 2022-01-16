@@ -1,12 +1,12 @@
-import CallbackParameters from "./callback-parameters";
-import IntegerValidation from "../boolean/integer";
-import Validatable from "@alirya/validatable/validatable";
-import Message from "@alirya/message/message";
-import Value from "@alirya/value/value";
-import ValueOf from "@alirya/value/value-of/value-of";
-import ToString from "@alirya/string/to-string";
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
-import IntegerMessage from "../assert/string/integer-parameters";
+import CallbackParameters from './callback-parameters';
+import IntegerValidation from '../boolean/integer';
+import Validatable from '@alirya/validatable/validatable';
+import Message from '@alirya/message/message';
+import Value from '@alirya/value/value';
+import ValueOf from '@alirya/value/value-of/value-of';
+import ToString from '@alirya/string/to-string';
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
+import IntegerMessage from '../assert/string/integer-parameters';
 
 export type IntegerType<MessageT> =
     Readonly<
@@ -19,12 +19,12 @@ export type IntegerType<MessageT> =
 
 export default function IntegerParameters(
     number : number,
-) : IntegerType<string>
+) : IntegerType<string>;
 
 export default function IntegerParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT>
-) : IntegerType<MessageT>
+) : IntegerType<MessageT>;
 
 export default function IntegerParameters<MessageT>(
     number : number,

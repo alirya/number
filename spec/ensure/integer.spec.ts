@@ -1,9 +1,9 @@
-import Integer from "../../dist/ensure/integer";
+import Integer from '../../dist/ensure/integer';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`integer`, () => {
-    expect(Integer(1)).toBe(1)
+    expect(Integer(1)).toBe(1);
 });
 
 it(`float`, () => {

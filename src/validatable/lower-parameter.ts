@@ -1,16 +1,16 @@
-import Maximum from "../maximum/maximum";
-import Value from "@alirya/value/value";
-import Message from "@alirya/message/message";
-import Inclusive from "../inclusive/inclusive";
-import Dynamic from "@alirya/validator/message/function/validatable-parameter";
-import ValueDynamic from "@alirya/validator/value/validatable";
-import LowerParameters from "./lower-parameters";
+import Maximum from '../maximum/maximum';
+import Value from '@alirya/value/value';
+import Message from '@alirya/message/message';
+import Inclusive from '../inclusive/inclusive';
+import Dynamic from '@alirya/validator/message/function/validatable-parameter';
+import ValueDynamic from '@alirya/validator/value/validatable';
+import LowerParameters from './lower-parameters';
 
 export type LowerArgument<ValueT extends number, MessageT> =
     Value<ValueT> &
     Maximum &
     Inclusive &
-    Message<Dynamic<ValueT, MessageT, ValueDynamic<ValueT> & Inclusive & Maximum>>
+    Message<Dynamic<ValueT, MessageT, ValueDynamic<ValueT> & Inclusive & Maximum>>;
 
 export default class LowerParameter<ValueT extends number, MessageT> extends LowerParameters<ValueT, MessageT> {
 

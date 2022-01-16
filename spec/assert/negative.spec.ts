@@ -1,6 +1,6 @@
-import Negative from "../../dist/assert/negative";
+import Negative from '../../dist/assert/negative';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`negative integer`, () => {
     let value = -1;

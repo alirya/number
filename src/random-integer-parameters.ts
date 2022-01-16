@@ -1,6 +1,6 @@
-import GreaterParameters from "./boolean/greater-parameters";
-import LowerParameters from "./boolean/lower-parameters";
-import LowerThanMaximum from "./minimum/assert/lower-than-maximum";
+import GreaterParameters from './boolean/greater-parameters';
+import LowerParameters from './boolean/lower-parameters';
+import LowerThanMaximum from './minimum/assert/lower-than-maximum';
 
 /**
  * get random integer

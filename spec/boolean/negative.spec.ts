@@ -1,6 +1,6 @@
-import Negative from "../../dist/boolean/negative";
+import Negative from '../../dist/boolean/negative';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 it(`negative integer`, () => {

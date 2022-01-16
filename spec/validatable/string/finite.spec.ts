@@ -1,6 +1,6 @@
-import Finite from "../../../dist/assert/string/finite-parameter";
+import Finite from '../../../dist/assert/string/finite-parameter';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 it(`valid`, () => {
     expect(Finite({valid:true, value:Infinity})).toBe('value is finite number.');
 });

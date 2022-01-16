@@ -1,7 +1,7 @@
-import GreaterThanMinimum from "../../../dist/maximum/validator/greater-than-minimum-parameters";
-import GreaterString from "../../../dist/maximum/string/greater-than-minimum-parameters";
+import GreaterThanMinimum from '../../../dist/maximum/validator/greater-than-minimum-parameters';
+import GreaterString from '../../../dist/maximum/string/greater-than-minimum-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -75,7 +75,7 @@ describe(`value equal to minimum`,function() {
             expect(validatable.value.minimum).toBe(1);
             expect(validatable.value.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -90,7 +90,7 @@ describe(`value equal to minimum`,function() {
             expect(validatable.value.minimum).toBe(1);
             expect(validatable.value.inclusive).toBeFalse();
 
-        })
+        });
     });
 });
 
@@ -108,7 +108,7 @@ describe(`value greater to minimum`,function() {
             expect(validatable.value.minimum).toBe(1);
             expect(validatable.value.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -123,7 +123,7 @@ describe(`value greater to minimum`,function() {
             expect(validatable.value.minimum).toBe(1);
             expect(validatable.value.inclusive).toBeFalse();
 
-        })
+        });
     });
 });
 
@@ -141,7 +141,7 @@ describe(`value lower to minimum`,function() {
             expect(validatable.value.minimum).toBe(1);
             expect(validatable.value.inclusive).toBeTrue();
 
-        })
+        });
     });
 
     describe(`exclusive`,function() {
@@ -156,6 +156,6 @@ describe(`value lower to minimum`,function() {
             expect(validatable.value.minimum).toBe(1);
             expect(validatable.value.inclusive).toBeFalse();
 
-        })
+        });
     });
 });

@@ -1,4 +1,4 @@
-import LowerType from "../string/lower-parameters";
+import LowerType from '../string/lower-parameters';
 
 export default function LowerParameters(
     value : number,
@@ -7,5 +7,5 @@ export default function LowerParameters(
     subject ?: string
 ) : Error {
 
-    return new Error(LowerType(value, false, minimum, inclusive))
+    return new Error(LowerType(value, false, minimum, inclusive));
 }

@@ -1,4 +1,4 @@
-import GreaterParameters from "../../boolean/greater-parameters";
+import GreaterParameters from '../../boolean/greater-parameters';
 
 export default function LowerThanMaximumParameters(
     maximum : number,

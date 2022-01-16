@@ -1,13 +1,13 @@
-import Minimum from "../minimum/minimum";
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import Message from "@alirya/message/message";
-import GreaterObject from "../boolean/greater-parameter";
-import Inclusive from "../inclusive/inclusive";
-import ValueOf from "@alirya/value/value-of/value-of";
-import ToString from "@alirya/string/to-string";
-import MemoizeAccessor from "@alirya/object/function/memoize-accessor";
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
+import Minimum from '../minimum/minimum';
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import Message from '@alirya/message/message';
+import GreaterObject from '../boolean/greater-parameter';
+import Inclusive from '../inclusive/inclusive';
+import ValueOf from '@alirya/value/value-of/value-of';
+import ToString from '@alirya/string/to-string';
+import MemoizeAccessor from '@alirya/object/function/memoize-accessor';
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
 
 export interface GreaterType<ValueT extends number, MessageT> extends
     Readonly<Inclusive>,

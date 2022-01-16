@@ -1,7 +1,7 @@
-import Finite from "../../dist/validatable/finite-parameters";
-import FiniteString from "../../dist/assert/string/finite-parameters";
+import Finite from '../../dist/validatable/finite-parameters';
+import FiniteString from '../../dist/assert/string/finite-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -72,7 +72,7 @@ describe(`integer`,function() {
 
             expect(greater.valid).toBeTrue();
             expect(greater.value).toBe(1);
-        })
+        });
     });
 
     describe(`positive`,function() {
@@ -83,7 +83,7 @@ describe(`integer`,function() {
 
             expect(greater.valid).toBeTrue();
             expect(greater.value).toBe(-1);
-        })
+        });
     });
 });
 
@@ -97,7 +97,7 @@ describe(`float`,function() {
 
             expect(greater.valid).toBeTrue();
             expect(greater.value).toBe(1.1);
-        })
+        });
     });
 
     describe(`positive`,function() {
@@ -108,7 +108,7 @@ describe(`float`,function() {
 
             expect(greater.valid).toBeTrue();
             expect(greater.value).toBe(-1.1);
-        })
+        });
     });
 });
 
@@ -122,7 +122,7 @@ describe(`infinity`,function() {
 
             expect(greater.valid).toBeFalse();
             expect(greater.value).toBe(Infinity);
-        })
+        });
     });
 
     describe(`positive`,function() {
@@ -133,6 +133,6 @@ describe(`infinity`,function() {
 
             expect(greater.valid).toBeFalse();
             expect(greater.value).toBe(-Infinity);
-        })
+        });
     });
 });

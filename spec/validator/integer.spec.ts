@@ -1,7 +1,7 @@
-import Validator from "../../dist/validator/integer-parameters";
-import IntegerMessage from "../../dist/assert/string/integer-parameters";
+import Validator from '../../dist/validator/integer-parameters';
+import IntegerMessage from '../../dist/assert/string/integer-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -19,7 +19,7 @@ describe(`compiler compatible`,function() {
         } else {
 
             let integer : number = validatable.value;
-            fail('validatable.valid should false')
+            fail('validatable.valid should false');
         }
     });
 
@@ -60,7 +60,7 @@ describe(`integer`,function() {
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1);
-        expect(typeof validatable.message).toBe("string");
+        expect(typeof validatable.message).toBe('string');
 
     });
 
@@ -71,7 +71,7 @@ describe(`integer`,function() {
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1);
-        expect(typeof validatable.message).toBe("string");
+        expect(typeof validatable.message).toBe('string');
 
     });
 });
@@ -86,7 +86,7 @@ describe(`float`,function() {
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1.0);
-        expect(typeof validatable.message).toBe("string");
+        expect(typeof validatable.message).toBe('string');
 
     });
 
@@ -97,7 +97,7 @@ describe(`float`,function() {
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1.0);
-        expect(typeof validatable.message).toBe("string");
+        expect(typeof validatable.message).toBe('string');
 
     });
 });
@@ -111,7 +111,7 @@ describe(`infinity`,function() {
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(Infinity);
-        expect(typeof validatable.message).toBe("string");
+        expect(typeof validatable.message).toBe('string');
 
     });
 
@@ -122,7 +122,7 @@ describe(`infinity`,function() {
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(-Infinity);
-        expect(typeof validatable.message).toBe("string");
+        expect(typeof validatable.message).toBe('string');
 
     });
 });
@@ -135,7 +135,7 @@ it(`NaN`,function() {
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toEqual(NaN);
-    expect(typeof validatable.message).toBe("string");
+    expect(typeof validatable.message).toBe('string');
 
 });
 

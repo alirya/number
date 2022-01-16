@@ -1,5 +1,5 @@
-import PositiveParameters from "./positive-parameters";
-import Value from "@alirya/value/value";
+import PositiveParameters from './positive-parameters';
+import Value from '@alirya/value/value';
 
 export default function PositiveParameter(
     {
@@ -8,5 +8,5 @@ export default function PositiveParameter(
     } : Value<number> & {subject ?: string}
 ) : Error {
 
-    return PositiveParameters(value, subject)
+    return PositiveParameters(value, subject);
 }

@@ -1,6 +1,6 @@
-import Lower from "../../dist/assert/lower";
+import Lower from '../../dist/assert/lower';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`inclusive`,function() {
 

@@ -1,6 +1,6 @@
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import IntegerParameters from "./integer-parameters";
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import IntegerParameters from './integer-parameters';
 
 export default function IntegerParameter(
     {

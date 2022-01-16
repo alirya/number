@@ -1,6 +1,6 @@
-import Positive from "../../dist/assert/positive";
+import Positive from '../../dist/assert/positive';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive integer`, () => {
     let value = 1;

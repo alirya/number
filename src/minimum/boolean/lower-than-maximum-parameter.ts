@@ -1,7 +1,7 @@
-import Minimum from "../../minimum/minimum";
-import Maximum from "../../maximum/maximum";
-import Inclusive from "../../inclusive/inclusive";
-import GreaterParameters from "../../boolean/greater-parameters";
+import Minimum from '../../minimum/minimum';
+import Maximum from '../../maximum/maximum';
+import Inclusive from '../../inclusive/inclusive';
+import GreaterParameters from '../../boolean/greater-parameters';
 
 export default function LowerThanMaximumParameter({
     maximum,

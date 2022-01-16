@@ -1,5 +1,5 @@
-import NanError from "./throwable/nan-parameters";
-import Callback from "@alirya/function/assert/callback-parameters";
+import NanError from './throwable/nan-parameters';
+import Callback from '@alirya/function/assert/callback-parameters';
 /**
  * assert if {@param number} is NaN
  *

@@ -1,4 +1,4 @@
-import ReplaceParameters from "@alirya/array/replace-parameters";
+import ReplaceParameters from '@alirya/array/replace-parameters';
 
 export default function IntegerParameters(
     value : number,
@@ -24,7 +24,7 @@ export default function IntegerParameters(
 
     if(!valid) {
 
-        ReplaceParameters(strings, 2 , value => value+ ',')
+        ReplaceParameters(strings, 2 , value => value+ ',');
 
         strings.push('actual', `"${value}"`);
     }

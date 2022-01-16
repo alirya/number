@@ -1,6 +1,6 @@
-import Number from "../../../dist/assert/string/number-parameter";
+import Number from '../../../dist/assert/string/number-parameter';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive`, () => {
     expect(Number({value:Infinity, valid:false})).toBe('type must number, actual number.');

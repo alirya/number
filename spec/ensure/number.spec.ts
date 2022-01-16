@@ -1,27 +1,27 @@
-import Number from "../../dist/ensure/number";
+import Number from '../../dist/ensure/number';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`number`,function() {
 
     it(`integer`, () => {
-        expect(Number(1)).toBe(1)
+        expect(Number(1)).toBe(1);
     });
 
     it(`float`, () => {
-        expect(Number(1.1)).toBe(1.1)
+        expect(Number(1.1)).toBe(1.1);
     });
 
     it(`infinity`, () => {
-        expect(Number(Infinity)).toBe(Infinity)
+        expect(Number(Infinity)).toBe(Infinity);
     });
 
     it(`Nan`, () => {
-        expect(Number(NaN)).toEqual(NaN)
+        expect(Number(NaN)).toEqual(NaN);
     });
 });
 
-describe("boolean", function() {
+describe('boolean', function() {
 
     it(`true`, () => {
         try {
@@ -43,7 +43,7 @@ describe("boolean", function() {
 
 });
 
-describe("string", function() {
+describe('string', function() {
 
     it(`primitive`, () => {
         try {
@@ -65,7 +65,7 @@ describe("string", function() {
 
 });
 
-describe("object", function() {
+describe('object', function() {
 
     it(`plain`, () => {
         try {
@@ -87,7 +87,7 @@ describe("object", function() {
 
 });
 
-describe("function", function() {
+describe('function', function() {
 
     it(`anonymous `, () => {
         try {
@@ -118,7 +118,7 @@ describe("function", function() {
 
 });
 
-describe("empty", function() {
+describe('empty', function() {
 
     it(`null `, () => {
         try {

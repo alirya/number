@@ -1,5 +1,5 @@
-import InfiniteParameters from "./infinite-parameters";
-import Value from "@alirya/value/value";
+import InfiniteParameters from './infinite-parameters';
+import Value from '@alirya/value/value';
 
 export default function InfiniteParameter(
     {

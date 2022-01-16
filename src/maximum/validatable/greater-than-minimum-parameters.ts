@@ -1,5 +1,5 @@
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
-import GreaterThanMinimumParameter, {GreaterThanMinimumArgument} from "./greater-than-minimum-parameter";
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
+import GreaterThanMinimumParameter, {GreaterThanMinimumArgument} from './greater-than-minimum-parameter';
 
 export default class GreaterThanMinimumParameters<MessageT>
     extends GreaterThanMinimumParameter<MessageT, GreaterThanMinimumArgument>
@@ -18,9 +18,9 @@ export default class GreaterThanMinimumParameters<MessageT>
             inclusive,
             message :({minimum, valid, maximum, inclusive}) => {
 
-                return message(minimum, valid, maximum, inclusive)
+                return message(minimum, valid, maximum, inclusive);
             }
-        })
+        });
 
     }
 }

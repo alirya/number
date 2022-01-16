@@ -1,6 +1,6 @@
-import Lower from "../../../dist/assert/string/lower-parameters";
+import Lower from '../../../dist/assert/string/lower-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`exclusive`,function() {
 

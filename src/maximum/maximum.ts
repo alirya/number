@@ -1,4 +1,4 @@
 export default interface Maximum {
 
-    maximum : number
+    maximum : number;
 }

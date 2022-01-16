@@ -1,5 +1,5 @@
-import AssertNegative from "../assert/negative";
-import NegativeError from "../assert/throwable/negative-parameters";
+import AssertNegative from '../assert/negative';
+import NegativeError from '../assert/throwable/negative-parameters';
 
 export default function Negative(
     value : number,

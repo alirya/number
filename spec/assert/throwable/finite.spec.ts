@@ -1,7 +1,7 @@
-import Finite from "../../../dist/assert/throwable/finite-parameters";
-import Message from "../../../dist/assert/string/finite-parameters";
+import Finite from '../../../dist/assert/throwable/finite-parameters';
+import Message from '../../../dist/assert/string/finite-parameters';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`check value`, () => {
 

@@ -1,7 +1,7 @@
-import Integer from "../../../dist/assert/throwable/integer-parameters";
-import Message from "../../../dist/assert/string/integer-parameters";
+import Integer from '../../../dist/assert/throwable/integer-parameters';
+import Message from '../../../dist/assert/string/integer-parameters';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`check value`, () => {
     let throwable = Integer(Infinity);

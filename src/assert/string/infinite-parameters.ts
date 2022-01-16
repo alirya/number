@@ -1,4 +1,4 @@
-import ReplaceParameters from "@alirya/array/replace-parameters";
+import ReplaceParameters from '@alirya/array/replace-parameters';
 
 export default function InfiniteParameters(
     value : number,
@@ -25,7 +25,7 @@ export default function InfiniteParameters(
 
     if(!valid) {
 
-        ReplaceParameters(strings, 2 , value => value+ ',')
+        ReplaceParameters(strings, 2 , value => value+ ',');
 
         strings.push('actual', `"${value}"`);
     }

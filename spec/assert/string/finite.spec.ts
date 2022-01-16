@@ -1,6 +1,6 @@
-import Finite from "../../../dist/assert/string/finite-parameters";
+import Finite from '../../../dist/assert/string/finite-parameters';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 
 it(`valid`, () => {

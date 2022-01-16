@@ -1,7 +1,7 @@
-import Minimum from "../../minimum";
-import Maximum from "../../../maximum/maximum";
-import Inclusive from "../../../inclusive/inclusive";
-import LowerThanMaximumParameters from "./lower-than-maximum-parameters";
+import Minimum from '../../minimum';
+import Maximum from '../../../maximum/maximum';
+import Inclusive from '../../../inclusive/inclusive';
+import LowerThanMaximumParameters from './lower-than-maximum-parameters';
 
 export default function LowerThanMaximumParameter(
     {

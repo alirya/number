@@ -1,6 +1,6 @@
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import NaturalParameters from "./natural-parameters";
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import NaturalParameters from './natural-parameters';
 
 export default function NaturalParameter(
     {

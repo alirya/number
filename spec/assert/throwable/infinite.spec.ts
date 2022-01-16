@@ -1,7 +1,7 @@
-import Infinite from "../../../dist/assert/throwable/infinite-parameters";
-import Message from "../../../dist/assert/string/infinite-parameters";
+import Infinite from '../../../dist/assert/throwable/infinite-parameters';
+import Message from '../../../dist/assert/string/infinite-parameters';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`check value`, () => {
     let throwable = Infinite(Infinity);

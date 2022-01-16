@@ -1,8 +1,8 @@
-import NaturalMessage from "../assert/string/natural-parameter";
-import {PositiveArgument as NaturalArgument} from "./positive-parameter";
-import StrictOmit from "@alirya/object/strict-omit";
-import {NegativeType as NaturalType} from "./negative-parameters";
-import NaturalParameters from "./natural-parameters";
+import NaturalMessage from '../assert/string/natural-parameter';
+import {PositiveArgument as NaturalArgument} from './positive-parameter';
+import StrictOmit from '@alirya/object/strict-omit';
+import {NegativeType as NaturalType} from './negative-parameters';
+import NaturalParameters from './natural-parameters';
 
 export {NaturalArgument};
 
@@ -10,14 +10,14 @@ export default function NaturalParameter<MessageT>(
     {
         value
     } : StrictOmit<NaturalArgument<MessageT>, 'message'>
-) : NaturalType<string>
+) : NaturalType<string>;
 
 export default function NaturalParameter<MessageT>(
     {
         message,
         value
     } : Required<NaturalArgument<MessageT>>
-) : NaturalType<MessageT>
+) : NaturalType<MessageT>;
 
 export default function NaturalParameter<MessageT>(
     {
@@ -26,5 +26,5 @@ export default function NaturalParameter<MessageT>(
     } : NaturalArgument<MessageT|string>
 ) : NaturalType<MessageT|string> {
 
-    return NaturalParameters(value, (value, valid) => message({value, valid}))
+    return NaturalParameters(value, (value, valid) => message({value, valid}));
 }

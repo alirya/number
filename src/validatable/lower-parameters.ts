@@ -1,13 +1,13 @@
-import Maximum from "../maximum/maximum";
-import Value from "@alirya/value/value";
-import Validatable from "@alirya/validatable/validatable";
-import Message from "@alirya/message/message";
-import LowerFromObject from "../boolean/lower-parameter";
-import Inclusive from "../inclusive/inclusive";
-import ValueOf from "@alirya/value/value-of/value-of";
-import ToString from "@alirya/string/to-string";
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
-import MemoizeAccessor from "@alirya/object/function/memoize-accessor";
+import Maximum from '../maximum/maximum';
+import Value from '@alirya/value/value';
+import Validatable from '@alirya/validatable/validatable';
+import Message from '@alirya/message/message';
+import LowerFromObject from '../boolean/lower-parameter';
+import Inclusive from '../inclusive/inclusive';
+import ValueOf from '@alirya/value/value-of/value-of';
+import ToString from '@alirya/string/to-string';
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
+import MemoizeAccessor from '@alirya/object/function/memoize-accessor';
 
 export interface LowerType<ValueT extends number, MessageT> extends Readonly<Inclusive>,
     Readonly<Maximum>,
@@ -40,7 +40,7 @@ export default class LowerParameters<ValueT extends number, MessageT> implements
     @MemoizeAccessor()
     get message() : MessageT {
 
-        return this.#message(this.value, this.valid, this.maximum, this.inclusive)
+        return this.#message(this.value, this.valid, this.maximum, this.inclusive);
     }
 
     valueOf() : number {

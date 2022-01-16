@@ -1,4 +1,4 @@
-import ReplaceParameters from "@alirya/array/replace-parameters";
+import ReplaceParameters from '@alirya/array/replace-parameters';
 
 /**
  * message for greater validation
@@ -34,10 +34,10 @@ export default function GreaterParameters(
 
     if(!valid) {
 
-        ReplaceParameters(strings, 3 + (inclusive ? 1 : 0), value=>value+ ',')
+        ReplaceParameters(strings, 3 + (inclusive ? 1 : 0), value=>value+ ',');
 
-        strings.push('actual', `"${value}"`)
+        strings.push('actual', `"${value}"`);
     }
 
-    return strings.join(' ') + '.'
+    return strings.join(' ') + '.';
 }

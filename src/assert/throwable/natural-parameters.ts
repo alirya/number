@@ -1,9 +1,9 @@
-import NaturalType from "../string/natural-parameters";
+import NaturalType from '../string/natural-parameters';
 
 export default function NaturalParameters(
     value : number,
     subject ?: string
 ) : Error {
 
-    return new Error(NaturalType(value, false, subject))
+    return new Error(NaturalType(value, false, subject));
 }

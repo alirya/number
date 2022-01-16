@@ -1,7 +1,7 @@
-import Positive from "../../dist/validator/positive-parameters";
-import PositiveString from "../../dist/assert/string/positive-parameters";
+import Positive from '../../dist/validator/positive-parameters';
+import PositiveString from '../../dist/assert/string/positive-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -74,7 +74,7 @@ describe(`integer`,function() {
 
             expect(validatable.valid).toBeTrue();
             expect(validatable.value).toBe(1);
-        })
+        });
     });
 
     describe(`positive`,function() {
@@ -86,7 +86,7 @@ describe(`integer`,function() {
 
             expect(validatable.valid).toBeFalse();
             expect(validatable.value).toBe(-1);
-        })
+        });
     });
 });
 
@@ -101,7 +101,7 @@ describe(`float`,function() {
 
             expect(validatable.valid).toBeTrue();
             expect(validatable.value).toBe(1.1);
-        })
+        });
     });
 
     describe(`positive`,function() {
@@ -113,7 +113,7 @@ describe(`float`,function() {
 
             expect(validatable.valid).toBeFalse();
             expect(validatable.value).toBe(-1.1);
-        })
+        });
     });
 });
 
@@ -128,7 +128,7 @@ describe(`infinity`,function() {
 
             expect(validatable.valid).toBeTrue();
             expect(validatable.value).toBe(Infinity);
-        })
+        });
     });
 
     describe(`positive`,function() {
@@ -140,6 +140,6 @@ describe(`infinity`,function() {
 
             expect(validatable.valid).toBeFalse();
             expect(validatable.value).toBe(-Infinity);
-        })
+        });
     });
 });

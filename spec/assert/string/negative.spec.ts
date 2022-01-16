@@ -1,6 +1,6 @@
-import Negative from "../../../dist/assert/string/negative-parameters";
+import Negative from '../../../dist/assert/string/negative-parameters';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`valid`, () => {
     expect(Negative(Infinity, true)).toBe('value is negative number.');

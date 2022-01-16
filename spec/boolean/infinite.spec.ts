@@ -1,6 +1,6 @@
-import Infinite from "../../dist/boolean/infinite";
+import Infinite from '../../dist/boolean/infinite';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`infinite`, () => {
     expect(Infinite(1)).toBeFalse();

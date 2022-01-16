@@ -1,6 +1,6 @@
-import Nan from "../../../dist/assert/string/nan-parameter";
+import Nan from '../../../dist/assert/string/nan-parameter';
 
-it("enable console log", () => {spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 
 it(`positive`, () => {

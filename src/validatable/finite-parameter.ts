@@ -1,8 +1,8 @@
-import {IntegerType as FiniteType} from "./integer-parameters";
-import StrictOmit from "@alirya/object/strict-omit";
-import FiniteMessage from "../assert/string/finite-parameter";
-import {IntegerArgument as FiniteArgument} from "./integer-parameter";
-import FiniteParameters from "./finite-parameters";
+import {IntegerType as FiniteType} from './integer-parameters';
+import StrictOmit from '@alirya/object/strict-omit';
+import FiniteMessage from '../assert/string/finite-parameter';
+import {IntegerArgument as FiniteArgument} from './integer-parameter';
+import FiniteParameters from './finite-parameters';
 
 export {FiniteArgument};
 
@@ -10,14 +10,14 @@ export default function FiniteParameter<MessageT>(
     {
         value
     } : StrictOmit<FiniteArgument<MessageT>, 'message'>
-) : FiniteType<string>
+) : FiniteType<string>;
 
 export default function FiniteParameter<MessageT>(
     {
         message,
         value
     } : Required<FiniteArgument<MessageT>>
-) : FiniteType<MessageT>
+) : FiniteType<MessageT>;
 
 export default function FiniteParameter<MessageT>(
     {

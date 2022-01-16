@@ -1,6 +1,6 @@
-import Natural from "../../dist/boolean/natural";
+import Natural from '../../dist/boolean/natural';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`natural`, () => {
     expect(Natural(1)).toBeTrue();

@@ -1,9 +1,9 @@
-import Minimum from "../../minimum/minimum";
-import Maximum from "../../maximum/maximum";
-import LowerThanMaximumBoolean from "../boolean/lower-than-maximum-parameter";
-import LowerThanMaximumError from "./throwable/lower-than-maximum-parameter";
-import Callback from "@alirya/function/assert/callback-parameters";
-import Inclusive from "../../inclusive/inclusive";
+import Minimum from '../../minimum/minimum';
+import Maximum from '../../maximum/maximum';
+import LowerThanMaximumBoolean from '../boolean/lower-than-maximum-parameter';
+import LowerThanMaximumError from './throwable/lower-than-maximum-parameter';
+import Callback from '@alirya/function/assert/callback-parameters';
+import Inclusive from '../../inclusive/inclusive';
 
 export default function LowerThanMaximum<Object extends Readonly<Minimum & Maximum & Inclusive>>(
     object : Readonly<Object>,
