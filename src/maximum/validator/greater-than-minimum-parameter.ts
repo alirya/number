@@ -1,5 +1,5 @@
-import Validator from "@dikac/t-validator/validator";
-import Validatable from "@dikac/t-validatable/validatable";
+import Validator from "@alirya/validator/validator";
+import Validatable from "@alirya/validatable/validatable";
 import GreaterThanMinimumValidatable from "../validatable/greater-than-minimum-parameter";
 import Minimum from "../../minimum/minimum";
 import Maximum from "../maximum";

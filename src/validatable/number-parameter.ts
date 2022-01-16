@@ -1,8 +1,8 @@
-import Return from "@dikac/t-validator/validatable/simple";
-import Value from "@dikac/t-value/value";
-import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import Return from "@alirya/validator/validatable/simple";
+import Value from "@alirya/value/value";
+import Instance from "@alirya/validator/validatable/validatable";
+import Dynamic from "@alirya/validator/message/function/validatable-parameter";
+import StrictOmit from "@alirya/object/strict-omit";
 import NumberMessage from "../assert/string/number-parameter";
 import NumberParameters from "./number-parameters";
 

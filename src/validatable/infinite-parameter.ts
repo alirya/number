@@ -1,5 +1,5 @@
 import {IntegerType as InfiniteType} from "./integer-parameters";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import StrictOmit from "@alirya/object/strict-omit";
 import InfiniteMessage from "../assert/string/infinite-parameter";
 import {IntegerArgument as InfiniteArgument} from "./integer-parameter";
 import InfiniteParameters from "./infinite-parameters";

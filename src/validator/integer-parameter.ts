@@ -1,6 +1,6 @@
-import Validator from "@dikac/t-validator/validator";
-import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
+import Validator from "@alirya/validator/validator";
+import Instance from "@alirya/validator/validatable/validatable";
+import Dynamic from "@alirya/validator/message/function/validatable-parameter";
 import IntegerString from "../assert/string/integer-parameter";
 import IntegerParameters from "./integer-parameters";
 

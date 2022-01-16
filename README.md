@@ -1,2 +1,2 @@
-# t-number
+# number
 typescript number

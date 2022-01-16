@@ -1,7 +1,7 @@
-import Validator from "@dikac/t-validator/validator";
+import Validator from "@alirya/validator/validator";
 import IntegerValidatable from "../validatable/integer-parameters";
-import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
+import Instance from "@alirya/validator/validatable/validatable";
+import Dynamic from "@alirya/validator/message/function/validatable-parameters";
 import IntegerString from "../assert/string/integer-parameters";
 
 export default function IntegerParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>

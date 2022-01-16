@@ -1,4 +1,4 @@
-import RandomFloat from "../dist/random-float-parameters";
+import RandomFloat from "../dist/random-floaparameters";
 import Precision from "../dist/precision-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});

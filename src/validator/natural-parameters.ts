@@ -1,7 +1,7 @@
-import Validator from "@dikac/t-validator/validator";
+import Validator from "@alirya/validator/validator";
 import NaturalValidatable from "../validatable/natural-parameters";
-import Instance from "@dikac/t-validator/validatable/validatable";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
+import Instance from "@alirya/validator/validatable/validatable";
+import Dynamic from "@alirya/validator/message/function/validatable-parameters";
 import NaturalString from "../assert/string/natural-parameters";
 
 export default function NaturalParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>

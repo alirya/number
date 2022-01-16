@@ -1,11 +1,11 @@
 import CallbackParameters from "./callback-parameters";
 import IntegerValidation from "../boolean/integer";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
+import Validatable from "@alirya/validatable/validatable";
+import Message from "@alirya/message/message";
+import Value from "@alirya/value/value";
+import ValueOf from "@alirya/value/value-of/value-of";
+import ToString from "@alirya/string/to-string";
+import Dynamic from "@alirya/validator/message/function/validatable-parameters";
 import IntegerMessage from "../assert/string/integer-parameters";
 
 export type IntegerType<MessageT> =

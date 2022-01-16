@@ -1,5 +1,5 @@
 import IntegerParameters from "./integer-parameters";
-import Value from "@dikac/t-value/value";
+import Value from "@alirya/value/value";
 
 export default function IntegerParameter(
     {

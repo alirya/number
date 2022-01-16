@@ -1,6 +1,6 @@
 import NaturalMessage from "../assert/string/natural-parameter";
 import {PositiveArgument as NaturalArgument} from "./positive-parameter";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import StrictOmit from "@alirya/object/strict-omit";
 import {NegativeType as NaturalType} from "./negative-parameters";
 import NaturalParameters from "./natural-parameters";
 

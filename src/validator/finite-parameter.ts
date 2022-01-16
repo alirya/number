@@ -1,7 +1,7 @@
-import Validator from "@dikac/t-validator/validator";
-import Instance from "@dikac/t-validator/validatable/validatable";
+import Validator from "@alirya/validator/validator";
+import Instance from "@alirya/validator/validatable/validatable";
 import FiniteString from "../assert/string/finite-parameter";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
+import Dynamic from "@alirya/validator/message/function/validatable-parameter";
 import FiniteParameters from "./finite-parameters";
 
 export default function FiniteParameter()

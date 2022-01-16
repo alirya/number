@@ -1,6 +1,6 @@
 import Minimum from "../../minimum/minimum";
 import Maximum from "../maximum";
-import Validatable from "@dikac/t-validatable/validatable";
+import Validatable from "@alirya/validatable/validatable";
 import Inclusive from "../../inclusive/inclusive";
 import GreaterThanMinimumParameters from "./greater-than-minimum-parameters";
 

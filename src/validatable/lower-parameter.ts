@@ -1,9 +1,9 @@
 import Maximum from "../maximum/maximum";
-import Value from "@dikac/t-value/value";
-import Message from "@dikac/t-message/message";
+import Value from "@alirya/value/value";
+import Message from "@alirya/message/message";
 import Inclusive from "../inclusive/inclusive";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
-import ValueDynamic from "@dikac/t-validator/value/validatable";
+import Dynamic from "@alirya/validator/message/function/validatable-parameter";
+import ValueDynamic from "@alirya/validator/value/validatable";
 import LowerParameters from "./lower-parameters";
 
 export type LowerArgument<ValueT extends number, MessageT> =

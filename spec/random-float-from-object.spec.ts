@@ -1,3 +1,3 @@
 /**
- * already tested in "random-float-spec"
+ * already tested in "random-floaspec"
  */

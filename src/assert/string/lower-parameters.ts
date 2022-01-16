@@ -1,7 +1,7 @@
 /**
  * message for lower validation
  */
-import ReplaceParameters from "@dikac/t-array/replace-parameters";
+import ReplaceParameters from "@alirya/array/replace-parameters";
 
 export default function LowerParameters(
     value : number,

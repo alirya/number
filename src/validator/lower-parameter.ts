@@ -1,12 +1,12 @@
-import Validatable from "@dikac/t-validator/value/validatable";
-import Message from "@dikac/t-message/message";
+import Validatable from "@alirya/validator/value/validatable";
+import Message from "@alirya/message/message";
 import Inclusive from "../inclusive/inclusive";
 import LowerParameters from "./lower-parameters";
 import Maximum from "../maximum/maximum";
-import Validator from "@dikac/t-validator/validator";
+import Validator from "@alirya/validator/validator";
 import LowerValidatable from "../validatable/lower-parameters";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import Dynamic from "@alirya/validator/message/function/validatable-parameter";
+import StrictOmit from "@alirya/object/strict-omit";
 import LowerString from "../assert/string/lower-parameter";
 
 export type LowerArgument<MessageT> =

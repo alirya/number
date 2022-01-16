@@ -1,8 +1,8 @@
-import ValidatorValidatable from "@dikac/t-validator/validatable/validatable";
-import Value from "@dikac/t-value/value";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameter";
+import ValidatorValidatable from "@alirya/validator/validatable/validatable";
+import Value from "@alirya/value/value";
+import Dynamic from "@alirya/validator/message/function/validatable-parameter";
 import PositiveString from "../assert/string/positive-parameter";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import StrictOmit from "@alirya/object/strict-omit";
 import PositiveParameters from "./positive-parameters";
 
 export type PositiveArgument<MessageT> = Value<number> & {

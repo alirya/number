@@ -1,5 +1,5 @@
 import {IntegerType as FiniteType} from "./integer-parameters";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import StrictOmit from "@alirya/object/strict-omit";
 import FiniteMessage from "../assert/string/finite-parameter";
 import {IntegerArgument as FiniteArgument} from "./integer-parameter";
 import FiniteParameters from "./finite-parameters";

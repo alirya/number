@@ -1,5 +1,5 @@
 import LowerParameters from "./lower-parameters";
-import Value from "@dikac/t-value/value";
+import Value from "@alirya/value/value";
 import Inclusive from "../inclusive/inclusive";
 import Maximum from "../maximum/maximum";
 /**

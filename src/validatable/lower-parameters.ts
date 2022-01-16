@@ -1,13 +1,13 @@
 import Maximum from "../maximum/maximum";
-import Value from "@dikac/t-value/value";
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
+import Value from "@alirya/value/value";
+import Validatable from "@alirya/validatable/validatable";
+import Message from "@alirya/message/message";
 import LowerFromObject from "../boolean/lower-parameter";
 import Inclusive from "../inclusive/inclusive";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
-import MemoizeAccessor from "@dikac/t-object/function/memoize-accessor";
+import ValueOf from "@alirya/value/value-of/value-of";
+import ToString from "@alirya/string/to-string";
+import Dynamic from "@alirya/validator/message/function/validatable-parameters";
+import MemoizeAccessor from "@alirya/object/function/memoize-accessor";
 
 export interface LowerType<ValueT extends number, MessageT> extends Readonly<Inclusive>,
     Readonly<Maximum>,

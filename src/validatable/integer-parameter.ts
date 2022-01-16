@@ -1,10 +1,10 @@
-import Validatable from "@dikac/t-validatable/validatable";
-import Message from "@dikac/t-message/message";
-import Value from "@dikac/t-value/value";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import Validatable from "@alirya/validatable/validatable";
+import Message from "@alirya/message/message";
+import Value from "@alirya/value/value";
+import ValueOf from "@alirya/value/value-of/value-of";
+import ToString from "@alirya/string/to-string";
 import {PositiveArgument as IntegerArgument} from "./positive-parameter";
-import StrictOmit from "@dikac/t-object/strict-omit";
+import StrictOmit from "@alirya/object/strict-omit";
 import NaturalMessage from "../assert/string/natural-parameter";
 import IntegerParameters, {IntegerType} from "./integer-parameters";
 

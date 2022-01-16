@@ -1,4 +1,4 @@
-import ReplaceParameters from "@dikac/t-array/replace-parameters";
+import ReplaceParameters from "@alirya/array/replace-parameters";
 
 /**
  * message for greater validation

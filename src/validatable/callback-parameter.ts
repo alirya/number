@@ -1,6 +1,6 @@
-import ValidatableCallbacks from "@dikac/t-validator/validatable/callback-class-parameter";
-import ValueOf from "@dikac/t-value/value-of/value-of";
-import ToString from "@dikac/t-string/to-string";
+import ValidatableCallbacks from "@alirya/validator/validatable/callback-class-parameter";
+import ValueOf from "@alirya/value/value-of/value-of";
+import ToString from "@alirya/string/to-string";
 
 export default class CallbackParameters<
     Type extends number,
