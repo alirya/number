@@ -10,7 +10,7 @@ describe(`compiler compatible`,function() {
     it('set valid', ()=>{
 
         try {
-            // @ts-expecerror
+            // @ts-expect-error
             greater.valid = true;
 
         } catch (e) {
@@ -23,7 +23,7 @@ describe(`compiler compatible`,function() {
     it('set value', ()=>{
 
         try {
-            // @ts-expecerror
+            // @ts-expect-error
             greater.value = 3;
 
         } catch (e) {
@@ -36,7 +36,7 @@ describe(`compiler compatible`,function() {
     it('set minimum', ()=>{
 
         try {
-            // @ts-expecerror
+            // @ts-expect-error
             greater.minimum = 3;
 
         } catch (e) {
@@ -49,7 +49,7 @@ describe(`compiler compatible`,function() {
     it('set inclusive', ()=>{
 
         try {
-            // @ts-expecerror
+            // @ts-expect-error
             greater.inclusive = true;
 
         } catch (e) {

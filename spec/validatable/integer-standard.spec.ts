@@ -26,18 +26,18 @@ describe(`compiler compatible`,function() {
         let validatable = ValidatorStandard(1);
 
         try {
-            // @ts-expecerror
+            // @ts-expect-error
             validatable.valid = true;
             fail('exception should thrown');
         } catch (e) {
             expect(e).toBeInstanceOf(Error);
         }
 
-        // @ts-expecerror
+        // @ts-expect-error
         validatable.value = true;
 
         try {
-            // @ts-expecerror
+            // @ts-expect-error
             validatable.message = 'message';
             fail('exception should thrown');
         } catch (e) {

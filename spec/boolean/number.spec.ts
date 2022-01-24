@@ -2,7 +2,7 @@ import Number from '../../dist/boolean/number';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe(`compiler compatible`,function() {
+it(`compiler compatible`,function() {
 
     let a : unknown = 1;
 
@@ -12,7 +12,7 @@ describe(`compiler compatible`,function() {
 
     } else {
 
-        // @ts-expecerror
+        // @ts-expect-error
         let n : number = a;
     }
 
