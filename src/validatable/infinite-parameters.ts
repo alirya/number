@@ -1,24 +1,24 @@
 import CallbackParameters from './callback-parameters';
 import InfiniteValidation from '../boolean/infinite';
-import {IntegerType as InfiniteType} from './integer-parameters';
+import {IntegerReturn as InfiniteReturn} from './integer-parameters';
 import InfiniteMessage from '../assert/string/infinite-parameters';
 import Dynamic from '@alirya/validator/message/function/validatable-parameters';
 
-export {InfiniteType};
+export {InfiniteReturn};
 
 export default function InfiniteParameters<MessageT>(
     number : number,
-) : InfiniteType<string>;
+) : InfiniteReturn<string>;
 
 export default function InfiniteParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT>
-) : InfiniteType<MessageT>;
+) : InfiniteReturn<MessageT>;
 
 export default function InfiniteParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT|string> = InfiniteMessage
-) : InfiniteType<MessageT|string> {
+) : InfiniteReturn<MessageT|string> {
 
     return new CallbackParameters(number, InfiniteValidation, message);
 }

@@ -2,23 +2,23 @@ import CallbackParameters from './callback-parameters';
 import NaturalValidation from '../boolean/natural';
 import Dynamic from '@alirya/validator/message/function/validatable-parameters';
 import NaturalMessage from '../assert/string/natural-parameters';
-import {IntegerType as NaturalType} from './integer-parameters';
+import {IntegerReturn as NaturalReturn} from './integer-parameters';
 
-export type {NaturalType};
+export type {NaturalReturn};
 
 export default function NaturalParameters(
     number : number,
-) : NaturalType<string>;
+) : NaturalReturn<string>;
 
 export default function NaturalParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT>
-) : NaturalType<MessageT>;
+) : NaturalReturn<MessageT>;
 
 export default function NaturalParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT|string> = NaturalMessage
-) : NaturalType<MessageT|string> {
+) : NaturalReturn<MessageT|string> {
 
     return new CallbackParameters(number, NaturalValidation, message);
 }

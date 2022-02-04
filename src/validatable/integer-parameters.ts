@@ -8,7 +8,7 @@ import ToString from '@alirya/string/to-string';
 import Dynamic from '@alirya/validator/message/function/validatable-parameters';
 import IntegerMessage from '../assert/string/integer-parameters';
 
-export type IntegerType<MessageT> =
+export type IntegerReturn<MessageT> =
     Readonly<
         Validatable &
         Message<MessageT> &
@@ -19,17 +19,17 @@ export type IntegerType<MessageT> =
 
 export default function IntegerParameters(
     number : number,
-) : IntegerType<string>;
+) : IntegerReturn<string>;
 
 export default function IntegerParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT>
-) : IntegerType<MessageT>;
+) : IntegerReturn<MessageT>;
 
 export default function IntegerParameters<MessageT>(
     number : number,
     message : Dynamic<number, MessageT|string> = IntegerMessage
-) : IntegerType<MessageT|string> {
+) : IntegerReturn<MessageT|string> {
 
     return new CallbackParameters(number, IntegerValidation, message);
 }

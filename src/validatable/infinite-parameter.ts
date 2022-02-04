@@ -1,30 +1,30 @@
-import {IntegerType as InfiniteType} from './integer-parameters';
+import {IntegerReturn as InfiniteReturn} from './integer-parameters';
 import StrictOmit from '@alirya/object/strict-omit';
 import InfiniteMessage from '../assert/string/infinite-parameter';
 import {IntegerArgument as InfiniteArgument} from './integer-parameter';
 import InfiniteParameters from './infinite-parameters';
 
-export {InfiniteArgument};
+export {InfiniteArgument, InfiniteReturn};
 
 export default function InfiniteParameter<MessageT>(
     {
         value
     } : StrictOmit<InfiniteArgument<MessageT>, 'message'>
-) : InfiniteType<string>;
+) : InfiniteReturn<string>;
 
 export default function InfiniteParameter<MessageT>(
     {
         message,
         value
     } : Required<InfiniteArgument<MessageT>>
-) : InfiniteType<MessageT>;
+) : InfiniteReturn<MessageT>;
 
 export default function InfiniteParameter<MessageT>(
     {
         message = InfiniteMessage,
         value
     } : InfiniteArgument<MessageT|string>
-) : InfiniteType<MessageT|string> {
+) : InfiniteReturn<MessageT|string> {
 
     return InfiniteParameters(value, (value, valid) => message({value, valid}));
 }
