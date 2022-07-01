@@ -1,5 +1,5 @@
-import Validator from '../../dist/validatable/integer-parameters';
-import IntegerMessage from '../../dist/assert/string/integer-parameters';
+import {IntegerParameters} from '../../dist/validatable/integer';
+import IntegerMessage from '../../dist/assert/string/integer';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -7,7 +7,7 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validatable = Validator(10, IntegerMessage);
+        let validatable = IntegerParameters(10, IntegerMessage.Parameters);
 
         // compiler pass
         if(validatable.valid) {
@@ -24,7 +24,7 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validatable = Validator(1, IntegerMessage);
+        let validatable = IntegerParameters(1, IntegerMessage.Parameters);
 
         try {
             // @ts-expect-error
@@ -53,7 +53,7 @@ describe(`integer`,function() {
 
     it(`positive`,function() {
 
-        let validatable = Validator(1, IntegerMessage);
+        let validatable = IntegerParameters(1, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1);
@@ -63,7 +63,7 @@ describe(`integer`,function() {
 
     it(`negative`,function() {
 
-        let validatable = Validator(-1, IntegerMessage);
+        let validatable = IntegerParameters(-1, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1);
@@ -77,7 +77,7 @@ describe(`float`,function() {
 
     it(`positive`,function() {
 
-        let validatable = Validator(1.0, IntegerMessage);
+        let validatable = IntegerParameters(1.0, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1.0);
@@ -87,7 +87,7 @@ describe(`float`,function() {
 
     it(`negative`,function() {
 
-        let validatable = Validator(-1.0, IntegerMessage);
+        let validatable = IntegerParameters(-1.0, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1.0);
@@ -100,7 +100,7 @@ describe(`infinity`,function() {
 
     it(`positive`,function() {
 
-        let validatable = Validator(Infinity, IntegerMessage);
+        let validatable = IntegerParameters(Infinity, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(Infinity);
@@ -110,7 +110,7 @@ describe(`infinity`,function() {
 
     it(`negative`,function() {
 
-        let validatable = Validator(-Infinity, IntegerMessage);
+        let validatable = IntegerParameters(-Infinity, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(-Infinity);
@@ -122,7 +122,7 @@ describe(`infinity`,function() {
 
 it(`NaN`,function() {
 
-    let validatable = Validator(NaN, IntegerMessage);
+    let validatable = IntegerParameters(NaN, IntegerMessage.Parameters);
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toEqual(NaN);

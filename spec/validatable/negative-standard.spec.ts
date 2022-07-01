@@ -1,10 +1,10 @@
-import NegativeStandard from '../../dist/validatable/negative-parameters';
+import {NegativeParameters} from '../../dist/validatable/negative';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let greater = NegativeStandard(2);
+    let greater = NegativeParameters(2);
 
     it('set valid', ()=>{
 
@@ -65,7 +65,7 @@ describe(`integer`,function() {
 
     describe(`negative`,function() {
 
-        let greater = NegativeStandard(-1);
+        let greater = NegativeParameters(-1);
 
         it('validate object', ()=>{
 
@@ -76,7 +76,7 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let greater = NegativeStandard(1);
+        let greater = NegativeParameters(1);
 
         it('validate object', ()=>{
 
@@ -90,7 +90,7 @@ describe(`float`,function() {
 
     describe(`negative`,function() {
 
-        let greater = NegativeStandard(-1.1);
+        let greater = NegativeParameters(-1.1);
 
         it('validate object', ()=>{
 
@@ -101,7 +101,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = NegativeStandard(1.1);
+        let greater = NegativeParameters(1.1);
 
         it('validate object', ()=>{
 
@@ -115,7 +115,7 @@ describe(`infinity`,function() {
 
     describe(`negative`,function() {
 
-        let greater = NegativeStandard(-Infinity);
+        let greater = NegativeParameters(-Infinity);
 
         it('validate object', ()=>{
 
@@ -126,7 +126,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = NegativeStandard(Infinity);
+        let greater = NegativeParameters(Infinity);
 
         it('validate object', ()=>{
 

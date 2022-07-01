@@ -1,6 +1,6 @@
 import Guard from '../boolean/number';
-import Callback from '@alirya/function/assert/callback-parameters';
-import NumberError from './throwable/number-parameters';
+import Callback from '@alirya/function/assert/callback';
+import NumberError from './throwable/number';
 /**
  * assert if {@param value} is number type
  * @param value
@@ -10,8 +10,8 @@ import NumberError from './throwable/number-parameters';
  */
 export default function Number(
     value : unknown,
-    error : (value:number)=> Error = NumberError
+    error : (value:number)=> Error = NumberError.Parameters
 ) : asserts value is number {
 
-    Callback(value, Guard, error);
+    Callback.Parameters(value, Guard, error);
 }

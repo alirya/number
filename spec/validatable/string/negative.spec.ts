@@ -1,11 +1,11 @@
-import Negative from '../../../dist/assert/string/negative-parameter';
+import {NegativeParameter} from '../../../dist/assert/string/negative';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive`, () => {
-    expect(Negative({value:Infinity, valid:true})).toBe('value is negative number.');
+    expect(NegativeParameter({value:Infinity, valid:true})).toBe('value is negative number.');
 });
 
 it(`negative`, () => {
-    expect(Negative({value:-Infinity, valid:false})).toBe('value must negative number, actual "-Infinity".');
+    expect(NegativeParameter({value:-Infinity, valid:false})).toBe('value must negative number, actual "-Infinity".');
 });

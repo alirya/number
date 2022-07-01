@@ -1,15 +1,15 @@
-import Lower from '../../../dist/assert/string/lower-parameter';
+import {LowerParameter} from '../../../dist/assert/string/lower';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`exclusive`,function() {
 
     it(`valid`, () => {
-        expect(Lower({valid:true, value: 1,maximum: 10, inclusive:false})).toBe('value is lower than "10".');
+        expect(LowerParameter({valid:true, value: 1,maximum: 10, inclusive:false})).toBe('value is lower than "10".');
     });
 
     it(`invalid`, () => {
-        expect(Lower({valid:false, value: -1, maximum:-10, inclusive:false})).toBe('value must lower than "-10", actual "-1".');
+        expect(LowerParameter({valid:false, value: -1, maximum:-10, inclusive:false})).toBe('value must lower than "-10", actual "-1".');
     });
 
 });
@@ -17,11 +17,11 @@ describe(`exclusive`,function() {
 describe(`inclusive`,function() {
 
     it(`valid`, () => {
-        expect(Lower({valid:true, value: 1,maximum: 1, inclusive:true})).toBe('value is lower or equal than "1".');
+        expect(LowerParameter({valid:true, value: 1,maximum: 1, inclusive:true})).toBe('value is lower or equal than "1".');
     });
 
     it(`invalid`, () => {
-        expect(Lower({valid:false, value: -1, maximum:-1, inclusive:true})).toBe('value must lower or equal than "-1", actual "-1".');
+        expect(LowerParameter({valid:false, value: -1, maximum:-1, inclusive:true})).toBe('value must lower or equal than "-1", actual "-1".');
     });
 
 });

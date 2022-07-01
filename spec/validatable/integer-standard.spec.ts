@@ -1,4 +1,4 @@
-import ValidatorStandard from '../../dist/validatable/integer-parameters';
+import {IntegerParameters} from '../../dist/validatable/integer';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -6,7 +6,7 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validatable = ValidatorStandard(10);
+        let validatable = IntegerParameters(10);
 
         // compiler pass
         if(validatable.valid) {
@@ -23,7 +23,7 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validatable = ValidatorStandard(1);
+        let validatable = IntegerParameters(1);
 
         try {
             // @ts-expect-error
@@ -52,7 +52,7 @@ describe(`integer`,function() {
 
     it(`positive`,function() {
 
-        let validatable = ValidatorStandard(1);
+        let validatable = IntegerParameters(1);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1);
@@ -62,7 +62,7 @@ describe(`integer`,function() {
 
     it(`negative`,function() {
 
-        let validatable = ValidatorStandard(-1);
+        let validatable = IntegerParameters(-1);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1);
@@ -76,7 +76,7 @@ describe(`float`,function() {
 
     it(`positive`,function() {
 
-        let validatable = ValidatorStandard(1.0);
+        let validatable = IntegerParameters(1.0);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1.0);
@@ -86,7 +86,7 @@ describe(`float`,function() {
 
     it(`negative`,function() {
 
-        let validatable = ValidatorStandard(-1.0);
+        let validatable = IntegerParameters(-1.0);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1.0);
@@ -99,7 +99,7 @@ describe(`infinity`,function() {
 
     it(`positive`,function() {
 
-        let validatable = ValidatorStandard(Infinity);
+        let validatable = IntegerParameters(Infinity);
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(Infinity);
@@ -109,7 +109,7 @@ describe(`infinity`,function() {
 
     it(`negative`,function() {
 
-        let validatable = ValidatorStandard(-Infinity);
+        let validatable = IntegerParameters(-Infinity);
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(-Infinity);
@@ -121,7 +121,7 @@ describe(`infinity`,function() {
 
 it(`NaN`,function() {
 
-    let validatable = ValidatorStandard(NaN);
+    let validatable = IntegerParameters(NaN);
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toEqual(NaN);

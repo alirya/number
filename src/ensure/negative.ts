@@ -1,9 +1,9 @@
 import AssertNegative from '../assert/negative';
-import NegativeError from '../assert/throwable/negative-parameters';
+import NegativeError from '../assert/throwable/negative';
 
 export default function Negative(
     value : number,
-    error : (value:number)=>Error = NegativeError
+    error : (value:number)=>Error = NegativeError.Parameters
 ) : number {
 
      AssertNegative(value, error);

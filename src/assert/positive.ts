@@ -1,6 +1,6 @@
 import IsPositive from '../boolean/positive';
-import PositiveError from './throwable/positive-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import PositiveError from './throwable/positive';
+import Callback from '@alirya/function/assert/callback';
 
 /**
  * assert if {@param number} is positive
@@ -11,9 +11,9 @@ import Callback from '@alirya/function/assert/callback-parameters';
  */
 export default function Positive(
     number : number,
-    error : (value:number)=> Error = PositiveError
+    error : (value:number)=> Error = PositiveError.Parameters
 ) : asserts number is number {
 
-    Callback(number, IsPositive, error);
+    Callback.Parameters(number, IsPositive, error);
 
 }

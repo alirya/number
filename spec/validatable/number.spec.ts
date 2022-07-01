@@ -1,5 +1,5 @@
-import Validator from '../../dist/validatable/number-parameters';
-import NumberMessage from '../../dist/assert/string/number-parameters';
+import {NumberParameters} from '../../dist/validatable/number';
+import NumberMessage from '../../dist/assert/string/number';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -7,7 +7,7 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validatable = Validator(<unknown>10, NumberMessage);
+        let validatable = NumberParameters(<unknown>10, NumberMessage.Parameters);
 
         if(validatable.valid) {
 
@@ -25,7 +25,7 @@ describe(`compiler compatible`,function() {
 
     it(`invalid value`,function() {
 
-        let validatable = Validator(<unknown>{}, NumberMessage);
+        let validatable = NumberParameters(<unknown>{}, NumberMessage.Parameters);
 
         if(validatable.valid) {
 
@@ -44,7 +44,7 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validatable = Validator(<unknown>1, NumberMessage);
+        let validatable = NumberParameters(<unknown>1, NumberMessage.Parameters);
 
         try {
             // @ts-expect-error
@@ -71,7 +71,7 @@ describe(`compiler compatible`,function() {
 
 it(`valid`,function() {
 
-    let validatable = Validator(1, NumberMessage);
+    let validatable = NumberParameters(1, NumberMessage.Parameters);
 
     expect(validatable.valid).toBe(true);
     expect(validatable.value).toBe(1);
@@ -81,7 +81,7 @@ it(`valid`,function() {
 
 it(`invalid`,function() {
 
-    let validatable = Validator('a', NumberMessage);
+    let validatable = NumberParameters('a', NumberMessage.Parameters);
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toBe('a');

@@ -1,11 +1,11 @@
-import Infinite from '../../dist/validatable/infinite-parameters';
-import InfiniteString from '../../dist/assert/string/infinite-parameters';
+import {InfiniteParameters} from '../../dist/validatable/infinite';
+import InfiniteString from '../../dist/assert/string/infinite';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let greater = Infinite<string>(2,  InfiniteString);
+    let greater = InfiniteParameters<string>(2,  InfiniteString.Parameters);
 
     it('set valid', ()=>{
 
@@ -66,7 +66,7 @@ describe(`integer`,function() {
 
     describe(``,function() {
 
-        let greater = Infinite<string>(1,  InfiniteString);
+        let greater = InfiniteParameters<string>(1,  InfiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -77,7 +77,7 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let greater = Infinite<string>(-1,  InfiniteString);
+        let greater = InfiniteParameters<string>(-1,  InfiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -91,7 +91,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = Infinite<string>(1.1,  InfiniteString);
+        let greater = InfiniteParameters<string>(1.1,  InfiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -102,7 +102,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = Infinite<string>(-1.1,  InfiniteString);
+        let greater = InfiniteParameters<string>(-1.1,  InfiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -116,7 +116,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = Infinite<string>(Infinity,  InfiniteString);
+        let greater = InfiniteParameters<string>(Infinity,  InfiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -127,7 +127,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = Infinite<string>(-Infinity,  InfiniteString);
+        let greater = InfiniteParameters<string>(-Infinity,  InfiniteString.Parameters);
 
         it('validate object', ()=>{
 

@@ -1,6 +1,6 @@
 import IsNegative from '../boolean/negative';
-import NegativeError from './throwable/negative-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import NegativeError from './throwable/negative';
+import Callback from '@alirya/function/assert/callback';
 /**
  * assert if {@param number} is negative
  *
@@ -10,9 +10,9 @@ import Callback from '@alirya/function/assert/callback-parameters';
  */
 export default function Negative(
     number : number,
-    error : (value:number)=> Error = NegativeError
+    error : (value:number)=> Error = NegativeError.Parameters
 ) : asserts number is number {
 
-    Callback(number, IsNegative, error);
+    Callback.Parameters(number, IsNegative, error);
 
 }

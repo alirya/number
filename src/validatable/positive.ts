@@ -1,0 +1,59 @@
+import {CallbackParameters} from '@alirya/validator/validatable/callback';
+import PositiveValidation from '../boolean/positive';
+import ValidatorValidatable from '@alirya/validator/validatable/validatable';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
+import PositiveString from '../assert/string/positive';
+import Value from '@alirya/value/value';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
+import StrictOmit from '@alirya/object/strict-omit';
+
+export function PositiveParameters<MessageT>(
+    value : number,
+) : Readonly<ValidatorValidatable<number, MessageT>>;
+
+export function PositiveParameters<MessageT>(
+    value : number,
+    message : ValidatableParameters<number, MessageT>
+) : Readonly<ValidatorValidatable<number, MessageT>>;
+export function PositiveParameters<MessageT>(
+    value : number,
+    message : ValidatableParameters<number, MessageT|string> = PositiveString.Parameters
+) : Readonly<ValidatorValidatable<number, MessageT>> {
+
+    return CallbackParameters(value, PositiveValidation, message) as ValidatorValidatable<number, MessageT>;
+}
+
+
+export type PositiveArgument<MessageT> = Value<number> & {
+    message ?: ValidatableParameter<number, MessageT>
+};
+
+export function PositiveParameter<MessageT>(
+    {
+        value
+    } : StrictOmit<PositiveArgument<MessageT>, 'message'>
+) : ValidatorValidatable<number, MessageT>;
+
+export function PositiveParameter<MessageT>(
+    {
+        message,
+        value
+    } : Required<PositiveArgument<MessageT>>
+) : ValidatorValidatable<number, MessageT>;
+export function PositiveParameter<MessageT>(
+    {
+        message = PositiveString.Parameter,
+        value
+    } : PositiveArgument<MessageT|string>
+) : ValidatorValidatable<number, MessageT|string> {
+
+    return PositiveParameters(value, (value, valid) => message({value, valid}));
+}
+
+
+namespace Positive {
+    export const Parameters = PositiveParameters;
+    export const Parameter = PositiveParameter;
+    export type Argument<MessageT> = PositiveArgument<MessageT>;
+}
+export default Positive;

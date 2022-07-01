@@ -1,5 +1,5 @@
-import RandomInteger from '../dist/random-integer-parameters';
-import RandomIntegerFromObject from '../dist/random-integer-parameter';
+import {RandomIntegerParameters} from '../dist/random-integer';
+import {RandomIntegerParameter} from '../dist/random-integer';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -14,13 +14,13 @@ describe(`iterative`,function() {
 
             it(`result ${min - 1} - ${i}`, () => {
                 {
-                    let random = RandomInteger(min - 1, i);
+                    let random = RandomIntegerParameters(min - 1, i);
                     expect(random).toBeLessThanOrEqual(i);
                     expect(random).toBeGreaterThanOrEqual(min - 1);
                 }
 
                 {
-                    let random = RandomIntegerFromObject({minimum:min - 1, maximum:i, inclusive : true});
+                    let random = RandomIntegerParameter({minimum:min - 1, maximum:i, inclusive : true});
                     expect(random).toBeLessThanOrEqual(i);
                     expect(random).toBeGreaterThanOrEqual(min - 1);
                 }
@@ -29,13 +29,13 @@ describe(`iterative`,function() {
 
             it(`result ${min + max} - ${i+max}`, () => {
                 {
-                    let random = RandomInteger(min + max, i+max);
+                    let random = RandomIntegerParameters(min + max, i+max);
                     expect(random).toBeLessThanOrEqual(i + max);
                     expect(random).toBeGreaterThanOrEqual(min + max);
                 }
 
                 {
-                    let random = RandomIntegerFromObject({minimum:min+max, maximum: i + max});
+                    let random = RandomIntegerParameter({minimum:min+max, maximum: i + max});
                     expect(random).toBeLessThanOrEqual(i + max);
                     expect(random).toBeGreaterThanOrEqual(min + max);
                 }
@@ -48,13 +48,13 @@ describe(`iterative`,function() {
 
             it(`result ${min} - ${val1}`, () => {
                 {
-                    let random = RandomInteger(min, val1, false);
+                    let random = RandomIntegerParameters(min, val1, false);
                     expect(random).toBeLessThan(val1);
                     expect(random).toBeGreaterThan(min);
                 }
 
                 {
-                    let random = RandomIntegerFromObject({minimum: min, maximum: val1, inclusive: false});
+                    let random = RandomIntegerParameter({minimum: min, maximum: val1, inclusive: false});
                     expect(random).toBeLessThan(val1);
                     expect(random).toBeGreaterThan(min);
                 }
@@ -63,13 +63,13 @@ describe(`iterative`,function() {
             let val2 = i + 52;
             it(`result ${min} - ${val2}`, () => {
                 {
-                    let random = RandomInteger(min, val2, false);
+                    let random = RandomIntegerParameters(min, val2, false);
                     expect(random).toBeLessThan(val2);
                     expect(random).toBeGreaterThan(min);
                 }
 
                 {
-                    let random = RandomIntegerFromObject({minimum: min, maximum: val2, inclusive: false});
+                    let random = RandomIntegerParameter({minimum: min, maximum: val2, inclusive: false});
                     expect(random).toBeLessThan(val2);
                     expect(random).toBeGreaterThan(min);
                 }
@@ -84,11 +84,11 @@ describe(`minimum & maximum equal`,function() {
     it(`inclusive`,function() {
 
         {
-            let random = RandomInteger(1, 1, true);
+            let random = RandomIntegerParameters(1, 1, true);
             expect(random).toBe(1);
         }
         {
-            let random = RandomIntegerFromObject({minimum: 1, maximum: 1, inclusive: true});
+            let random = RandomIntegerParameter({minimum: 1, maximum: 1, inclusive: true});
             expect(random).toBe(1);
         }
 
@@ -97,14 +97,14 @@ describe(`minimum & maximum equal`,function() {
     it(`exclusive`,function() {
 
         try {
-            RandomInteger(1, 1, false);
+            RandomIntegerParameters(1, 1, false);
             fail('exception should thrown');
         } catch (e) {
             expect(e).toBeInstanceOf(Error);
         }
 
         try {
-            RandomIntegerFromObject({minimum: 1, maximum: 1, inclusive: false});
+            RandomIntegerParameter({minimum: 1, maximum: 1, inclusive: false});
             fail('exception should thrown');
         } catch (e) {
             expect(e).toBeInstanceOf(Error);
@@ -119,7 +119,7 @@ describe(`minimum greater than maximum`,function() {
     it(`inclusive`,function() {
 
         try {
-            RandomInteger(1, 0, true);
+            RandomIntegerParameters(1, 0, true);
             fail('exception should thrown');
         } catch (e) {
 
@@ -127,7 +127,7 @@ describe(`minimum greater than maximum`,function() {
         }
 
         try {
-            RandomIntegerFromObject({minimum: 1, maximum: 0, inclusive: true});
+            RandomIntegerParameter({minimum: 1, maximum: 0, inclusive: true});
             fail('exception should thrown');
         } catch (e) {
 
@@ -135,7 +135,7 @@ describe(`minimum greater than maximum`,function() {
         }
 
         try {
-            RandomIntegerFromObject({minimum: 1, maximum: 0});
+            RandomIntegerParameter({minimum: 1, maximum: 0});
             fail('exception should thrown');
         } catch (e) {
 
@@ -146,7 +146,7 @@ describe(`minimum greater than maximum`,function() {
     it(`exclusive`,function() {
 
         try {
-            RandomInteger(1, 0, false);
+            RandomIntegerParameters(1, 0, false);
             fail('exception should thrown');
         } catch (e) {
 
@@ -154,7 +154,7 @@ describe(`minimum greater than maximum`,function() {
         }
 
         try {
-            RandomIntegerFromObject({minimum: 1, maximum: 0, inclusive: false});
+            RandomIntegerParameter({minimum: 1, maximum: 0, inclusive: false});
             fail('exception should thrown');
         } catch (e) {
 

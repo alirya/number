@@ -1,6 +1,6 @@
 import IsInfinite from '../boolean/infinite';
-import InfiniteError from './throwable/infinite-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import InfiniteError from './throwable/infinite';
+import Callback from '@alirya/function/assert/callback';
 /**
  * assert if {@param number} is infinite
  *
@@ -10,9 +10,9 @@ import Callback from '@alirya/function/assert/callback-parameters';
  */
 export default function Infinite(
     number : number,
-    error : (value:number)=> Error = InfiniteError
+    error : (value:number)=> Error = InfiniteError.Parameters
 ) : asserts number is number {
 
-    Callback(number, IsInfinite, error);
+    Callback.Parameters(number, IsInfinite, error);
 
 }

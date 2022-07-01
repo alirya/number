@@ -1,6 +1,6 @@
 import IsInteger from '../boolean/integer';
-import IntegerError from './throwable/integer-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import IntegerError from './throwable/integer';
+import Callback from '@alirya/function/assert/callback';
 /**
  * assert if {@param number} is integer
  * @param number
@@ -10,8 +10,8 @@ import Callback from '@alirya/function/assert/callback-parameters';
  */
 export default function Integer(
     number : number,
-    error : (value:number)=> Error = IntegerError
+    error : (value:number)=> Error = IntegerError.Parameters
 ) : asserts number is number {
 
-    Callback(number, IsInteger, error);
+    Callback.Parameters(number, IsInteger, error);
 }

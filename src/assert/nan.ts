@@ -1,5 +1,5 @@
-import NanError from './throwable/nan-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import NanError from './throwable/nan';
+import Callback from '@alirya/function/assert/callback';
 /**
  * assert if {@param number} is NaN
  *
@@ -9,9 +9,9 @@ import Callback from '@alirya/function/assert/callback-parameters';
  */
 export default function Nan(
     number : number,
-    error : (value:number)=> Error = NanError
+    error : (value:number)=> Error = NanError.Parameters
 ) : asserts number is number {
 
-    Callback(number, isNaN, error);
+    Callback.Parameters(number, isNaN, error);
 
 }

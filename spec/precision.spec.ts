@@ -1,5 +1,5 @@
-import RandomFloat from '../dist/random-float-parameters';
-import Precision from '../dist/precision-parameters';
+import {RandomFloatParameters} from '../dist/random-float';
+import Precision from '../dist/precision';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -10,7 +10,7 @@ describe(`precision`,function() {
         for(let precision = 0; precision <= 100; precision++) {
 
             let min = Math.floor(i / 2);
-            let random = Precision(RandomFloat(min, i), 2);
+            let random = Precision.Parameters(RandomFloatParameters(min, i), 2);
 
             it(`precision ${i} for 2 (${random})`,() => {
                 let length = random.toString().length;

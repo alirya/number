@@ -1,5 +1,5 @@
-import FiniteError from './throwable/finite-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import FiniteError from './throwable/finite';
+import Callback from '@alirya/function/assert/callback';
 /**
  * assert if {@param number} is finite
  *
@@ -9,9 +9,9 @@ import Callback from '@alirya/function/assert/callback-parameters';
  */
 export default function Finite(
     number : number,
-    error : (value:number)=> Error = FiniteError
+    error : (value:number)=> Error = FiniteError.Parameters
 ) : asserts number is number {
 
-    Callback(number, isFinite, error);
+    Callback.Parameters(number, isFinite, error);
 
 }

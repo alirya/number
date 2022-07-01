@@ -1,11 +1,11 @@
-import Integer from '../../../dist/assert/string/integer-parameters';
+import {IntegerParameters} from '../../../dist/assert/string/integer';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`valid`, () => {
-    expect(Integer(Infinity, true)).toBe('value is integer number.');
+    expect(IntegerParameters(Infinity, true)).toBe('value is integer number.');
 });
 
 it(`invalid`, () => {
-    expect(Integer(1, false)).toBe('value must integer number, actual "1".');
+    expect(IntegerParameters(1, false)).toBe('value must integer number, actual "1".');
 });

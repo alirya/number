@@ -1,5 +1,5 @@
-import NaturalError from './throwable/natural-parameters';
-import Callback from '@alirya/function/assert/callback-parameters';
+import NaturalError from './throwable/natural';
+import Callback from '@alirya/function/assert/callback';
 import IsNatural from '../boolean/natural';
 /**
  * assert if {@param number} is natural
@@ -10,9 +10,9 @@ import IsNatural from '../boolean/natural';
  */
 export default function Natural(
     number : number,
-    error : (value:number)=> Error = NaturalError
+    error : (value:number)=> Error = NaturalError.Parameters
 ) : asserts number is number {
 
-    Callback(number, IsNatural, error);
+    Callback.Parameters(number, IsNatural, error);
 
 }

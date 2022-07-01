@@ -1,11 +1,11 @@
-import Nan from '../../../dist/assert/throwable/nan-parameters';
-import Message from '../../../dist/assert/string/nan-parameters';
+import {NanParameters} from '../../../dist/assert/throwable/nan';
+import Message from '../../../dist/assert/string/nan';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`check value`, () => {
-    let throwable = Nan(Infinity);
-    expect(throwable.message).toBe(Message(Infinity, false));
+    let throwable = NanParameters(Infinity);
+    expect(throwable.message).toBe(Message.Parameters(Infinity, false));
     expect(throwable).toBeInstanceOf(Error);
 });
 

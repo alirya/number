@@ -1,11 +1,11 @@
-import Number from '../../../dist/assert/string/number-parameter';
+import {NumberParameter} from '../../../dist/assert/string/number';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive`, () => {
-    expect(Number({value:Infinity, valid:false})).toBe('type must number, actual number.');
+    expect(NumberParameter({value:Infinity, valid:false})).toBe('type must number, actual number.');
 });
 
 it(`number`, () => {
-    expect(Number({value:-Infinity, valid:true})).toBe('type is number.');
+    expect(NumberParameter({value:-Infinity, valid:true})).toBe('type is number.');
 });

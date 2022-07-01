@@ -1,11 +1,11 @@
-import GreaterThanMinimum from '../../../dist/maximum/validator/greater-than-minimum-parameters';
-import GreaterString from '../../../dist/maximum/string/greater-than-minimum-parameters';
+import {GreaterThanMinimumParameters} from '../../../dist/maximum/validator/greater-than-minimum';
+import GreaterString from '../../../dist/maximum/string/greater-than-minimum';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let validator = GreaterThanMinimum(GreaterString);
+    let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
     let validatable = validator({maximum:2, minimum:1, inclusive:false});
 
     it('set valid', ()=>{
@@ -65,7 +65,7 @@ describe(`value equal to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let validator = GreaterThanMinimum(GreaterString);
+        let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
         let validatable = validator({maximum:1,  minimum:1, inclusive:true});
 
         it('validate object', ()=>{
@@ -80,7 +80,7 @@ describe(`value equal to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let validator = GreaterThanMinimum(GreaterString);
+        let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
         let validatable = validator({maximum:1, minimum:1, inclusive:false});
 
         it('validate object', ()=>{
@@ -98,7 +98,7 @@ describe(`value greater to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let validator = GreaterThanMinimum(GreaterString);
+        let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
         let validatable = validator({maximum:2, minimum:1, inclusive:true});
 
         it('validate object', ()=>{
@@ -113,7 +113,7 @@ describe(`value greater to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let validator = GreaterThanMinimum(GreaterString);
+        let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
         let validatable = validator({maximum:2, minimum:1, inclusive:false});
 
         it('validate object', ()=>{
@@ -131,7 +131,7 @@ describe(`value lower to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let validator = GreaterThanMinimum(GreaterString);
+        let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
         let validatable = validator({maximum:-1, minimum:1, inclusive:true});
 
         it('validate object', ()=>{
@@ -146,7 +146,7 @@ describe(`value lower to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let validator = GreaterThanMinimum(GreaterString);
+        let validator = GreaterThanMinimumParameters(GreaterString.Parameters);
         let validatable = validator({maximum:-1, minimum:1, inclusive:false});
 
         it('validate object', ()=>{

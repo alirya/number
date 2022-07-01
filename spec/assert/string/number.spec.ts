@@ -1,12 +1,12 @@
-import Number from '../../../dist/assert/string/number-parameters';
+import {NumberParameters} from '../../../dist/assert/string/number';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 
 it(`valid`, () => {
-    expect(Number({}, true)).toBe('type is number.');
+    expect(NumberParameters({}, true)).toBe('type is number.');
 });
 
 it(`invalid`, () => {
-    expect(Number(1, false)).toBe('type must number, actual number.');
+    expect(NumberParameters(1, false)).toBe('type must number, actual number.');
 });
