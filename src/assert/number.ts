@@ -1,6 +1,6 @@
-import Guard from '../boolean/number';
-import Callback from '@alirya/function/assert/callback';
-import NumberError from './throwable/number';
+import Guard from '../boolean/number.js';
+import Callback from '@alirya/function/assert/callback.js';
+import NumberError from './throwable/number.js';
 /**
  * assert if {@param value} is number type
  * @param value

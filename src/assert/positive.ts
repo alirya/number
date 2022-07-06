@@ -1,6 +1,6 @@
-import IsPositive from '../boolean/positive';
-import PositiveError from './throwable/positive';
-import Callback from '@alirya/function/assert/callback';
+import IsPositive from '../boolean/positive.js';
+import PositiveError from './throwable/positive.js';
+import Callback from '@alirya/function/assert/callback.js';
 
 /**
  * assert if {@param number} is positive

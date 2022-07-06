@@ -1,5 +1,5 @@
-import {NegativeParameters} from '../../../dist/assert/throwable/negative';
-import Message from '../../../dist/assert/string/negative';
+import {NegativeParameters} from '../../../dist/assert/throwable/negative.js';
+import Message from '../../../dist/assert/string/negative.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

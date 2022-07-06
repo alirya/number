@@ -1,5 +1,5 @@
-import AssertNegative from '../assert/negative';
-import NegativeError from '../assert/throwable/negative';
+import AssertNegative from '../assert/negative.js';
+import NegativeError from '../assert/throwable/negative.js';
 
 export default function Negative(
     value : number,

@@ -1,5 +1,5 @@
-import {PositiveParameters} from '../../dist/validator/positive';
-import PositiveString from '../../dist/assert/string/positive';
+import {PositiveParameters} from '../../dist/validator/positive.js';
+import PositiveString from '../../dist/assert/string/positive.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

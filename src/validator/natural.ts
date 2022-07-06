@@ -1,9 +1,9 @@
-import Validator from '@alirya/validator/validator';
-import NaturalValidatable from '../validatable/natural';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import NaturalString from '../assert/string/natural';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
+import Validator from '@alirya/validator/validator.js';
+import NaturalValidatable from '../validatable/natural.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import NaturalString from '../assert/string/natural.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
 
 export function NaturalParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
 

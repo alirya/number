@@ -1,4 +1,4 @@
-import Finite from '../../dist/assert/finite';
+import Finite from '../../dist/assert/finite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

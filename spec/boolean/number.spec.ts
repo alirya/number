@@ -1,4 +1,4 @@
-import Number from '../../dist/boolean/number';
+import Number from '../../dist/boolean/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

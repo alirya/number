@@ -1,5 +1,5 @@
-import {GreaterParameters} from '../../../dist/assert/throwable/greater';
-import Message from '../../../dist/assert/string/greater';
+import {GreaterParameters} from '../../../dist/assert/throwable/greater.js';
+import Message from '../../../dist/assert/string/greater.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

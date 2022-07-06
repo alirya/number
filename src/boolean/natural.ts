@@ -1,4 +1,4 @@
-import Integer from './integer';
+import Integer from './integer.js';
 /**
  * check if {@param number} is positive finite or zero integer
  * @param number

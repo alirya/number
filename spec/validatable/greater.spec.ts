@@ -1,5 +1,5 @@
-import {GreaterParameters} from '../../dist/validatable/greater';
-import GreaterString from '../../dist/assert/string/greater';
+import {GreaterParameters} from '../../dist/validatable/greater.js';
+import GreaterString from '../../dist/assert/string/greater.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

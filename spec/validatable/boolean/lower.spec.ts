@@ -1,4 +1,4 @@
-import {LowerParameter} from '../../../dist/boolean/lower';
+import {LowerParameter} from '../../../dist/boolean/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

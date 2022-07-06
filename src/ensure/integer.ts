@@ -1,5 +1,5 @@
-import AssertInteger from '../assert/integer';
-import IntegerError from '../assert/throwable/integer';
+import AssertInteger from '../assert/integer.js';
+import IntegerError from '../assert/throwable/integer.js';
 
 export default function Integer(
     value : number,

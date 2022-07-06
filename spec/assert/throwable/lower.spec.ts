@@ -1,5 +1,5 @@
-import {LowerParameters} from '../../../dist/assert/throwable/lower';
-import Message from '../../../dist/assert/string/lower';
+import {LowerParameters} from '../../../dist/assert/throwable/lower.js';
+import Message from '../../../dist/assert/string/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

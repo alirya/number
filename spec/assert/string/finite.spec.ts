@@ -1,4 +1,4 @@
-import {FiniteParameters} from '../../../dist/assert/string/finite';
+import {FiniteParameters} from '../../../dist/assert/string/finite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

@@ -1,5 +1,5 @@
-import NaturalType from '../string/natural';
-import Value from '@alirya/value/value';
+import NaturalType from '../string/natural.js';
+import Value from '@alirya/value/value.js';
 
 export function NaturalParameters(
     value : number,

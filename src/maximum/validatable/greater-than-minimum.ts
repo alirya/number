@@ -1,17 +1,17 @@
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import Minimum from '../../minimum/minimum';
-import Value from '@alirya/value/value';
-import Validatable from '@alirya/validatable/validatable';
-import Message from '@alirya/message/message';
-import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper';
-import MessageCallback from '@alirya/validator/validatable/callback';
-import Inclusive from '../../inclusive/inclusive';
-import Maximum from '../maximum';
-import GreaterThanMinimumFunction from '../boolean/greater-than-minimum';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Minimum from '../../minimum/minimum.js';
+import Value from '@alirya/value/value.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Message from '@alirya/message/message.js';
+import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper.js';
+import MessageCallback from '@alirya/validator/validatable/callback.js';
+import Inclusive from '../../inclusive/inclusive.js';
+import Maximum from '../maximum.js';
+import GreaterThanMinimumFunction from '../boolean/greater-than-minimum.js';
 import {
     LowerThanMaximumArgument as GreaterThanMinimumArgument,
     LowerThanMaximumArgumentMessage as GreaterThanMinimumArgumentMessage
-} from '../../minimum/validatable/lower-than-maximum';
+} from '../../minimum/validatable/lower-than-maximum.js';
 
 export {GreaterThanMinimumArgument, GreaterThanMinimumArgumentMessage};
 

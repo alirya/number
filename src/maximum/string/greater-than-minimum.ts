@@ -1,7 +1,7 @@
-import Minimum from '../../minimum/minimum';
-import Maximum from '../maximum';
-import Validatable from '@alirya/validatable/validatable';
-import Inclusive from '../../inclusive/inclusive';
+import Minimum from '../../minimum/minimum.js';
+import Maximum from '../maximum.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Inclusive from '../../inclusive/inclusive.js';
 
 export function GreaterThanMinimumParameters(
     maximum : number,

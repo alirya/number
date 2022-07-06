@@ -1,6 +1,6 @@
-import IsGreater from '../boolean/greater';
-import Callback from '@alirya/function/assert/callback';
-import GreaterError from './throwable/greater';
+import IsGreater from '../boolean/greater.js';
+import Callback from '@alirya/function/assert/callback.js';
+import GreaterError from './throwable/greater.js';
 /**
  * assert if {@param number} is greater than {@param minimum} or equal if {@param inclusive} is true
  *

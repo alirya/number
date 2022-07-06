@@ -1,5 +1,5 @@
-import IntegerType from '../string/integer';
-import Value from '@alirya/value/value';
+import IntegerType from '../string/integer.js';
+import Value from '@alirya/value/value.js';
 
 export function IntegerParameters(
     value : number,

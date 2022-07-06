@@ -1,4 +1,4 @@
-import Number from '../../dist/assert/number';
+import Number from '../../dist/assert/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

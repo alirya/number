@@ -1,6 +1,6 @@
-import IsInteger from '../boolean/integer';
-import IntegerError from './throwable/integer';
-import Callback from '@alirya/function/assert/callback';
+import IsInteger from '../boolean/integer.js';
+import IntegerError from './throwable/integer.js';
+import Callback from '@alirya/function/assert/callback.js';
 /**
  * assert if {@param number} is integer
  * @param number

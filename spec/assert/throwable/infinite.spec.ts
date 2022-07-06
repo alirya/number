@@ -1,5 +1,5 @@
-import {InfiniteParameters} from '../../../dist/assert/throwable/infinite';
-import Message from '../../../dist/assert/string/infinite';
+import {InfiniteParameters} from '../../../dist/assert/throwable/infinite.js';
+import Message from '../../../dist/assert/string/infinite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

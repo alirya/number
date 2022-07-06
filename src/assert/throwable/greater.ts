@@ -1,7 +1,7 @@
-import GreaterType from '../string/greater';
-import Value from '@alirya/value/value';
-import Minimum from '../../minimum/minimum';
-import Inclusive from '../../inclusive/inclusive';
+import GreaterType from '../string/greater.js';
+import Value from '@alirya/value/value.js';
+import Minimum from '../../minimum/minimum.js';
+import Inclusive from '../../inclusive/inclusive.js';
 
 export function GreaterParameters(
     number : number,

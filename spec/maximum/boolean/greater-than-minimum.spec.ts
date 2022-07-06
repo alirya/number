@@ -1,4 +1,4 @@
-import {GreaterThanMinimumParameter} from '../../../dist/maximum/boolean/greater-than-minimum';
+import {GreaterThanMinimumParameter} from '../../../dist/maximum/boolean/greater-than-minimum.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

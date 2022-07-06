@@ -1,5 +1,5 @@
-import {RandomFloatParameters} from '../dist/random-float';
-import Precision from '../dist/precision';
+import {RandomFloatParameters} from '../dist/random-float.js';
+import Precision from '../dist/precision.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

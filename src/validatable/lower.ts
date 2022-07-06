@@ -1,14 +1,14 @@
-import Maximum from '../maximum/maximum';
-import Value from '@alirya/value/value';
-import Validatable from '@alirya/validatable/validatable';
-import Message from '@alirya/message/message';
-import LowerFromObject from '../boolean/lower';
-import Inclusive from '../inclusive/inclusive';
-import ValueOf from '@alirya/value/value-of/value-of';
-import ToString from '@alirya/string/to-string';
-import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import MemoizeAccessor from '@alirya/object/function/memoize-accessor';
-import ValueDynamic from '@alirya/validator/value/validatable';
+import Maximum from '../maximum/maximum.js';
+import Value from '@alirya/value/value.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Message from '@alirya/message/message.js';
+import LowerFromObject from '../boolean/lower.js';
+import Inclusive from '../inclusive/inclusive.js';
+import ValueOf from '@alirya/value/value-of/value-of.js';
+import ToString from '@alirya/string/to-string.js';
+import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import MemoizeAccessor from '@alirya/object/function/memoize-accessor.js';
+import ValueDynamic from '@alirya/validator/value/validatable.js';
 
 export interface LowerType<ValueT extends number, MessageT> extends Readonly<Inclusive>,
     Readonly<Maximum>,

@@ -1,4 +1,4 @@
-import Integer from '../../dist/assert/integer';
+import Integer from '../../dist/assert/integer.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

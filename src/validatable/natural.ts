@@ -1,10 +1,10 @@
-import {CallbackParameters} from './callback';
-import NaturalValidation from '../boolean/natural';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import NaturalMessage from '../assert/string/natural';
-import {IntegerReturn as NaturalReturn} from './integer';
-import {PositiveArgument as NaturalArgument} from './positive';
-import StrictOmit from '@alirya/object/strict-omit';
+import {CallbackParameters} from './callback.js';
+import NaturalValidation from '../boolean/natural.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import NaturalMessage from '../assert/string/natural.js';
+import {IntegerReturn as NaturalReturn} from './integer.js';
+import {PositiveArgument as NaturalArgument} from './positive.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
 
 export type {NaturalReturn};
 

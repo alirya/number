@@ -1,4 +1,4 @@
-import {IntegerParameters} from '../../dist/validatable/integer';
+import {IntegerParameters} from '../../dist/validatable/integer.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

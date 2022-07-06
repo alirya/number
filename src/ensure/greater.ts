@@ -1,5 +1,5 @@
-import AssertGreater from '../assert/greater';
-import GreaterError from '../assert/throwable/greater';
+import AssertGreater from '../assert/greater.js';
+import GreaterError from '../assert/throwable/greater.js';
 
 export default function Greater(
     value : number,

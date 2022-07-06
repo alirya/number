@@ -1,4 +1,4 @@
-import Nan from '../../dist/assert/nan';
+import Nan from '../../dist/assert/nan.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

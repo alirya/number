@@ -1,4 +1,4 @@
-import {NumberParameters} from '../../dist/validatable/number';
+import {NumberParameters} from '../../dist/validatable/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

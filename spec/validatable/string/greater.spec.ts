@@ -1,4 +1,4 @@
-import {GreaterParameter} from '../../../dist/assert/string/greater';
+import {GreaterParameter} from '../../../dist/assert/string/greater.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

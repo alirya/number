@@ -1,5 +1,5 @@
-import PositiveType from '../string/positive';
-import Value from '@alirya/value/value';
+import PositiveType from '../string/positive.js';
+import Value from '@alirya/value/value.js';
 
 export function PositiveParameters(
     value : number,

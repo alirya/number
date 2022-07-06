@@ -1,4 +1,4 @@
-import Infinite from '../../dist/ensure/infinite';
+import Infinite from '../../dist/ensure/infinite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

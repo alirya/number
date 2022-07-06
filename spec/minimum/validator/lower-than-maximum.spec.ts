@@ -1,5 +1,5 @@
-import {LowerThanMaximumParameters} from '../../../dist/minimum/validator/lower-than-maximum';
-import GreaterString from '../../../dist/minimum/string/lower-than-maximum';
+import {LowerThanMaximumParameters} from '../../../dist/minimum/validator/lower-than-maximum.js';
+import GreaterString from '../../../dist/minimum/string/lower-than-maximum.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

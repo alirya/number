@@ -1,14 +1,14 @@
-import Validator from '@alirya/validator/validator';
-import GreaterValidatable from '../validatable/greater';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import GreaterString from '../assert/string/greater';
-import Validatable from '@alirya/validator/value/validatable';
-import Message from '@alirya/message/message';
-import Value from '@alirya/value/value';
-import Inclusive from '../inclusive/inclusive';
-import Minimum from '../minimum/minimum';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import StrictOmit from '@alirya/object/strict-omit';
+import Validator from '@alirya/validator/validator.js';
+import GreaterValidatable from '../validatable/greater.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import GreaterString from '../assert/string/greater.js';
+import Validatable from '@alirya/validator/value/validatable.js';
+import Message from '@alirya/message/message.js';
+import Value from '@alirya/value/value.js';
+import Inclusive from '../inclusive/inclusive.js';
+import Minimum from '../minimum/minimum.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
 
 export function GreaterParameters(
     minimum : number,

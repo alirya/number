@@ -1,7 +1,7 @@
-import LowerType from '../string/lower';
-import Value from '@alirya/value/value';
-import Minimum from '../../minimum/minimum';
-import Inclusive from '../../inclusive/inclusive';
+import LowerType from '../string/lower.js';
+import Value from '@alirya/value/value.js';
+import Minimum from '../../minimum/minimum.js';
+import Inclusive from '../../inclusive/inclusive.js';
 
 export function LowerParameters(
     value : number,

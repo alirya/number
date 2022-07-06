@@ -1,4 +1,4 @@
-import Natural from '../../dist/boolean/natural';
+import Natural from '../../dist/boolean/natural.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

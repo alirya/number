@@ -1,4 +1,4 @@
-import {NegativeParameters} from '../../../dist/assert/string/negative';
+import {NegativeParameters} from '../../../dist/assert/string/negative.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

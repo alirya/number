@@ -1,4 +1,4 @@
-import {GreaterParameter} from '../../../dist/boolean/greater';
+import {GreaterParameter} from '../../../dist/boolean/greater.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

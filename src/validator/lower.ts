@@ -1,14 +1,14 @@
-import Validator from '@alirya/validator/validator';
-import LowerValidatable from '../validatable/lower';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import LowerString from '../assert/string/lower';
-import Validatable from '@alirya/validator/value/validatable';
-import Message from '@alirya/message/message';
-import Inclusive from '../inclusive/inclusive';
-import Maximum from '../maximum/maximum';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import StrictOmit from '@alirya/object/strict-omit';
-import LowerStringParameter from '../assert/string/lower';
+import Validator from '@alirya/validator/validator.js';
+import LowerValidatable from '../validatable/lower.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import LowerString from '../assert/string/lower.js';
+import Validatable from '@alirya/validator/value/validatable.js';
+import Message from '@alirya/message/message.js';
+import Inclusive from '../inclusive/inclusive.js';
+import Maximum from '../maximum/maximum.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
+import LowerStringParameter from '../assert/string/lower.js';
 
 export function LowerParameters<MessageT> (
     maximum : number,

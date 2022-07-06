@@ -1,4 +1,4 @@
-import Negative from '../../dist/assert/negative';
+import Negative from '../../dist/assert/negative.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

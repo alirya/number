@@ -1,5 +1,5 @@
-import {RandomIntegerParameters} from '../dist/random-integer';
-import {RandomIntegerParameter} from '../dist/random-integer';
+import {RandomIntegerParameters} from '../dist/random-integer.js';
+import {RandomIntegerParameter} from '../dist/random-integer.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

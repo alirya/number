@@ -1,4 +1,4 @@
-import Number from '../../dist/ensure/number';
+import Number from '../../dist/ensure/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

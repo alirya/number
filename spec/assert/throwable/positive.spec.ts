@@ -1,5 +1,5 @@
-import {PositiveParameters} from '../../../dist/assert/throwable/positive';
-import Message from '../../../dist/assert/string/positive';
+import {PositiveParameters} from '../../../dist/assert/throwable/positive.js';
+import Message from '../../../dist/assert/string/positive.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

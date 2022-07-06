@@ -1,10 +1,10 @@
-import Validator from '@alirya/validator/validator';
-import NegativeValidatable from '../validatable/negative';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import NegativeString from '../assert/string/negative';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import PositiveString from '../assert/string/positive';
+import Validator from '@alirya/validator/validator.js';
+import NegativeValidatable from '../validatable/negative.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import NegativeString from '../assert/string/negative.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import PositiveString from '../assert/string/positive.js';
 
 export function NegativeParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
 

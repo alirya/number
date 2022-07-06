@@ -1,15 +1,15 @@
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import Minimum from '../../minimum/minimum';
-import Value from '@alirya/value/value';
-import Validatable from '@alirya/validatable/validatable';
-import Message from '@alirya/message/message';
-import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper';
-import {CallbackParameters} from '@alirya/validator/validatable/callback';
-import Inclusive from '../../inclusive/inclusive';
-import Maximum from '../../maximum/maximum';
-import LowerThanMinimumFunctionParameter from '../boolean/lower-than-maximum';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import DynamicValue from '@alirya/validator/value/validatable';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Minimum from '../../minimum/minimum.js';
+import Value from '@alirya/value/value.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Message from '@alirya/message/message.js';
+import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper.js';
+import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import Inclusive from '../../inclusive/inclusive.js';
+import Maximum from '../../maximum/maximum.js';
+import LowerThanMinimumFunctionParameter from '../boolean/lower-than-maximum.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import DynamicValue from '@alirya/validator/value/validatable.js';
 
 export type LowerThanMaximumArgument = Minimum & Maximum & Inclusive;
 export type LowerThanMaximumArgumentMessage<Type extends LowerThanMaximumArgument, MessageT> =

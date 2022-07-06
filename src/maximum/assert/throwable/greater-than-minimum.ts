@@ -1,7 +1,7 @@
-import LowerThanMaximumString from '../../string/greater-than-minimum';
-import Minimum from '../../../minimum/minimum';
-import Maximum from '../../../maximum/maximum';
-import Inclusive from '../../../inclusive/inclusive';
+import LowerThanMaximumString from '../../string/greater-than-minimum.js';
+import Minimum from '../../../minimum/minimum.js';
+import Maximum from '../../../maximum/maximum.js';
+import Inclusive from '../../../inclusive/inclusive.js';
 
 export function GreaterThanMinimumParameters(
     maximum : number,

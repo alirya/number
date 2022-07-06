@@ -1,4 +1,4 @@
-import Value from '@alirya/value/value';
+import Value from '@alirya/value/value.js';
 export function PrecisionParameters(
     value: number,
     precision : number

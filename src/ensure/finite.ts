@@ -1,5 +1,5 @@
-import AssertFinite from '../assert/finite';
-import FiniteError from '../assert/throwable/finite';
+import AssertFinite from '../assert/finite.js';
+import FiniteError from '../assert/throwable/finite.js';
 
 export default function Finite(
     value : number,

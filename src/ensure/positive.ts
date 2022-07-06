@@ -1,5 +1,5 @@
-import AssertPositive from '../assert/positive';
-import PositiveError from '../assert/throwable/positive';
+import AssertPositive from '../assert/positive.js';
+import PositiveError from '../assert/throwable/positive.js';
 
 export default function Positive(
     value : number,

@@ -1,5 +1,5 @@
-import AssertNatural from '../assert/natural';
-import NaturalError from '../assert/throwable/natural';
+import AssertNatural from '../assert/natural.js';
+import NaturalError from '../assert/throwable/natural.js';
 
 export default function Natural(
     value : number,

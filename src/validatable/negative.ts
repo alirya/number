@@ -1,15 +1,15 @@
-import {CallbackParameters} from './callback';
-import NegativeValidation from '../boolean/negative';
-import NegativeMessage from '../assert/string/negative';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import {IntegerReturn as NegativeReturn} from './integer';
-import Validatable from '@alirya/validatable/validatable';
-import Message from '@alirya/message/message';
-import Value from '@alirya/value/value';
-import ValueOf from '@alirya/value/value-of/value-of';
-import ToString from '@alirya/string/to-string';
-import StrictOmit from '@alirya/object/strict-omit';
-import {PositiveArgument as NegativeArgument} from './positive';
+import {CallbackParameters} from './callback.js';
+import NegativeValidation from '../boolean/negative.js';
+import NegativeMessage from '../assert/string/negative.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {IntegerReturn as NegativeReturn} from './integer.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Message from '@alirya/message/message.js';
+import Value from '@alirya/value/value.js';
+import ValueOf from '@alirya/value/value-of/value-of.js';
+import ToString from '@alirya/string/to-string.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
+import {PositiveArgument as NegativeArgument} from './positive.js';
 
 export type {NegativeReturn};
 

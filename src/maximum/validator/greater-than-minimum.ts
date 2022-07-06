@@ -1,11 +1,11 @@
-import Validator from '@alirya/validator/validator';
-import GreaterThanMinimumValidatable from '../validatable/greater-than-minimum';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import {GreaterThanMinimumArgument} from '../validatable/greater-than-minimum';
-import Validatable from '@alirya/validatable/validatable';
-import Minimum from '../../minimum/minimum';
-import Maximum from '../maximum';
-import Inclusive from '../../inclusive/inclusive';
+import Validator from '@alirya/validator/validator.js';
+import GreaterThanMinimumValidatable from '../validatable/greater-than-minimum.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {GreaterThanMinimumArgument} from '../validatable/greater-than-minimum.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Minimum from '../../minimum/minimum.js';
+import Maximum from '../maximum.js';
+import Inclusive from '../../inclusive/inclusive.js';
 
 export function GreaterThanMinimumParameters<MessageT, Base extends GreaterThanMinimumArgument = GreaterThanMinimumArgument>(
     message : ValidatableParameters<number, MessageT, [minimum: number, inclusive:boolean]>

@@ -1,5 +1,5 @@
-import {IntegerParameters} from '../../dist/validator/integer';
-import IntegerMessage from '../../dist/assert/string/integer';
+import {IntegerParameters} from '../../dist/validator/integer.js';
+import IntegerMessage from '../../dist/assert/string/integer.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

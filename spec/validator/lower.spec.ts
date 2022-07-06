@@ -1,5 +1,5 @@
-import {LowerParameters} from '../../dist/validator/lower';
-import LowerString from '../../dist/assert/string/lower';
+import {LowerParameters} from '../../dist/validator/lower.js';
+import LowerString from '../../dist/assert/string/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
