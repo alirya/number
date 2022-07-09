@@ -1,4 +1,4 @@
-import ReplaceParameters from '@alirya/array/replace-parameters';
+import {ReplaceParameters} from '@alirya/array/replace';
 import Value from '@alirya/value/value';
 import Validatable from '@alirya/validatable/validatable';
 import Minimum from '../../minimum/minimum';
