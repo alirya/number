@@ -1,6 +1,6 @@
 {
   "name": "@alirya/number",
-  "version": "0.18.0",
+  "version": "0.18.1",
   "description": "Typescript number",
   "publishConfig": {
     "directory": "dist"
