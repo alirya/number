@@ -10,6 +10,8 @@ import Minimum from '../minimum/minimum';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
 import StrictOmit from '@alirya/object/strict-omit';
 
+export type GreaterArgumentsMessage<MessageT> = ValidatableParameters<number, MessageT, [minimum:number, inclusive: boolean]>;
+
 export function GreaterParameters(
     minimum : number,
     inclusive : boolean,
@@ -18,13 +20,13 @@ export function GreaterParameters(
 export function GreaterParameters<MessageT>(
     minimum : number,
     inclusive : boolean,
-    message : ValidatableParameters<number, MessageT, [minimum:number, inclusive: boolean]>
+    message : GreaterArgumentsMessage<MessageT>
 ) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT>>;
 
 export function GreaterParameters<MessageT>(
     minimum : number,
     inclusive : boolean,
-    message : ValidatableParameters<number, MessageT|string, [minimum:number, inclusive: boolean]> = GreaterString.Parameters
+    message : GreaterArgumentsMessage<MessageT|string> = GreaterString.Parameters
 ) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT|string>> {
 
     return function (value) {
@@ -35,11 +37,12 @@ export function GreaterParameters<MessageT>(
 
 }
 
+export type GreaterArgumentMessage<MessageT> = ValidatableParameter<number, MessageT, Inclusive & Minimum & Validatable<number>>;
 
 export type GreaterArgument<MessageT> =
     Minimum &
     Inclusive &
-    Partial<Message<ValidatableParameter<number, MessageT, Inclusive & Minimum & Validatable<number>>>>;
+    Partial<Message<GreaterArgumentMessage<MessageT>>>;
 
 export function GreaterParameter<MessageT>(
     {
@@ -76,5 +79,8 @@ export function GreaterParameter<MessageType>(
 namespace Greater {
     export const Parameters = GreaterParameters;
     export const Parameter = GreaterParameter;
+    export type Argument<MessageT> = GreaterArgument<MessageT>;
+    export type ArgumentsMessage<MessageT> = GreaterArgumentsMessage<MessageT>;
+    export type ArgumentMessage<MessageT> = GreaterArgumentMessage<MessageT>;
 }
 export default Greater;
