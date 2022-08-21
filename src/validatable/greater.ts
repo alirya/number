@@ -19,16 +19,18 @@ export interface GreaterType<ValueT extends number, MessageT> extends
     ValueOf<number>,
     ToString<[number|void]> {
 }
+export type GreaterArgumentsMessage<ValueT extends number, MessageT> = ValidatableParameters<ValueT, MessageT, [minimum:number, inclusive: boolean]>;
+
 
 export class GreaterParameters<ValueT extends number, MessageT> implements GreaterType<ValueT, MessageT>
 {
-    #message : ValidatableParameters<ValueT, MessageT, [minimum:number, inclusive: boolean]>;
+    #message : GreaterArgumentsMessage<ValueT, MessageT>;
 
     constructor(
         readonly value : ValueT,
         readonly minimum : number,
         readonly inclusive : boolean,
-        message : ValidatableParameters<ValueT, MessageT, [minimum:number, inclusive: boolean]>
+        message : GreaterArgumentsMessage<ValueT, MessageT>
     ) {
         this.#message = message;
     }
@@ -60,7 +62,10 @@ export type GreaterArgument<ValueT extends number, MessageT> =
     Value<ValueT> &
     Minimum &
     Inclusive &
-    Message<ValidatableParameter<ValueT, MessageT, ValueDynamic<ValueT> & Inclusive & Minimum>>;
+    Message<GreaterArgumentMessage<ValueT, MessageT>>;
+
+
+export type GreaterArgumentMessage<ValueT extends number, MessageT> = ValidatableParameter<ValueT, MessageT, Inclusive & Minimum & ValueDynamic<ValueT>>;
 
 export class GreaterParameter<ValueT extends number, MessageT> extends GreaterParameters<ValueT, MessageT> {
 
