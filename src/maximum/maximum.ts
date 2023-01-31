@@ -1,4 +1,4 @@
-export default interface Maximum {
+export default interface Maximum<Type = number> {
 
-    maximum : number;
+    maximum : Type;
 }

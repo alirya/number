@@ -1,4 +1,4 @@
-export default interface Minimum {
+export default interface Minimum<Type = number> {
 
-    minimum : number;
+    minimum : Type;
 }
