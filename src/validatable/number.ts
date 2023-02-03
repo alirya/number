@@ -9,19 +9,19 @@ import StrictOmit from '@alirya/object/strict-omit';
 
 export function NumberParameters<Argument>(
     value : Argument,
-) : Return<Argument, number, Readonly<Instance<Argument, string>>>;
+) : Return<Argument, number, string>;
 
 export function NumberParameters<Argument, MessageT>(
     value : Argument,
     message : ValidatableParameters<Argument, MessageT>
-) : Return<Argument, number, Readonly<Instance<Argument, MessageT>>>;
+) : Return<Argument, number, MessageT>;
 
 export function NumberParameters<Argument, MessageT>(
     value : Argument,
     message : ValidatableParameters<Argument, MessageT|string> = NumberMessage.Parameters
-) : Return<Argument, number, Readonly<Instance<Argument, MessageT>>> {
+) : Return<Argument, number, MessageT|string> {
 
-    return <Return<Argument, number, Readonly<Instance<Argument, MessageT>>>> CallbackParameters(value, NumberGuard, message);
+    return <Return<Argument, number, MessageT|string>> CallbackParameters(value, NumberGuard, message);
 }
 
 
@@ -29,25 +29,25 @@ export type PositiveArgument<Argument, MessageT> = Value<Argument> & {
     message ?: ValidatableParameter<any, MessageT>
 };
 
-export function NumberParameter<Argument, MessageT>(
+export function NumberParameter<Argument>(
     {
         value
-    } : StrictOmit<PositiveArgument<Argument, MessageT>, 'message'>
-) : Return<Argument, number, Readonly<Instance<Argument, MessageT>>>;
+    } : StrictOmit<PositiveArgument<Argument, string>, 'message'>
+) : Return<Argument, number, string>;
 
 export function NumberParameter<Argument, MessageT>(
     {
         message,
         value
     } : Readonly<PositiveArgument<Argument, MessageT>>
-) : Return<Argument, number, Readonly<Instance<Argument, MessageT>>>;
+) : Return<Argument, number, MessageT>;
 
 export function NumberParameter<Argument, MessageT>(
     {
         message = NumberMessage.Parameter,
         value
     } : PositiveArgument<Argument, MessageT|string>
-) : Return<Argument, number, Readonly<Instance<Argument, MessageT|string>>> {
+) : Return<Argument, number, MessageT|string> {
 
     return NumberParameters(
         value,

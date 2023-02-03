@@ -9,25 +9,25 @@ import Inclusive from '../../inclusive/inclusive';
 
 export function GreaterThanMinimumParameters<MessageT, Base extends GreaterThanMinimumArgument = GreaterThanMinimumArgument>(
     message : ValidatableParameters<number, MessageT, [minimum: number, inclusive:boolean]>
-) : Validator<Base, Base, boolean, boolean, GreaterThanMinimumValidatable.Type<Base, MessageT>> {
+) : Validator<Base, Base, boolean, boolean, MessageT, GreaterThanMinimumValidatable.Context> {
 
     return function ({minimum, maximum, inclusive}) {
 
         return new GreaterThanMinimumValidatable.Parameters(minimum, maximum, inclusive, message);
 
-    } as Validator<Base, Base, boolean, boolean, GreaterThanMinimumValidatable.Type<Base, MessageT>>;
+    } as Validator<Base, Base, boolean, boolean, MessageT, GreaterThanMinimumValidatable.Context>;
 }
 
 
 export function GreaterThanMinimumParameter<MessageT, Base extends GreaterThanMinimumArgument>(
     message : (result:Readonly<Maximum & Inclusive & Minimum & Validatable>)=>MessageT
-) : Validator<Base, Base, boolean, boolean, GreaterThanMinimumValidatable.Type<Base, MessageT>> {
+) : Validator<Base, Base, boolean, boolean, MessageT, GreaterThanMinimumValidatable.Context> {
 
     return function (value) {
 
         return new GreaterThanMinimumValidatable.Parameter(value, message);
 
-    } as Validator<Base, Base, boolean, boolean, GreaterThanMinimumValidatable.Type<Base, MessageT>>;
+    } as Validator<Base, Base, boolean, boolean, MessageT, GreaterThanMinimumValidatable.Context>;
 }
 
 

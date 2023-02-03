@@ -2,6 +2,7 @@ import {ValidatableParameters} from '@alirya/validator/message/function/validata
 import Minimum from '../../minimum/minimum';
 import Value from '@alirya/value/value';
 import Validatable from '@alirya/validatable/validatable';
+import ValidatorValidatable from '@alirya/validator/validatable/validatable';
 import Message from '@alirya/message/message';
 import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper';
 import {CallbackParameters} from '@alirya/validator/validatable/callback';
@@ -15,9 +16,9 @@ export type LowerThanMaximumArgument = Minimum & Maximum & Inclusive;
 export type LowerThanMaximumArgumentMessage<Type extends LowerThanMaximumArgument, MessageT> =
     ValidatableParameter<Type, MessageT, LowerThanMaximumArgument & DynamicValue<Type>>;
 
-export interface LowerThanMaximumType<MessageT, ValueT extends LowerThanMaximumArgument>
+export interface LowerThanMaximumContext/*<MessageT, ValueT extends LowerThanMaximumArgument>*/
     extends
-        ReadonlyWrapperType<Value<ValueT>, Message<MessageT>, Validatable>,
+        // ReadonlyWrapperType<Value<ValueT>, Message<MessageT>, Validatable>,
         Readonly<Inclusive>,
         Readonly<Minimum>,
         Readonly<Maximum>
@@ -25,7 +26,7 @@ export interface LowerThanMaximumType<MessageT, ValueT extends LowerThanMaximumA
 
 export class LowerThanMaximumParameter<MessageT, ValueT extends LowerThanMaximumArgument>
     extends ReadonlyWrapperParameters<Value<ValueT>, Message<MessageT>, Validatable>
-    implements LowerThanMaximumType<MessageT, ValueT>
+    implements LowerThanMaximumContext/*<MessageT, ValueT>*/ , ValidatorValidatable<ValueT, MessageT>
 {
     readonly minimum : number;
     readonly maximum : number;

@@ -1,6 +1,7 @@
 import Minimum from '../minimum/minimum';
 import Value from '@alirya/value/value';
 import Validatable from '@alirya/validatable/validatable';
+import ValidatorValidatable from '@alirya/validator/validatable/validatable';
 import Message from '@alirya/message/message';
 import GreaterObject from '../boolean/greater';
 import Inclusive from '../inclusive/inclusive';
@@ -10,11 +11,11 @@ import MemoizeAccessor from '@alirya/object/function/memoize-accessor';
 import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable';
 import ValueDynamic from '@alirya/validator/value/validatable';
 
-export interface GreaterType<ValueT extends number, MessageT> extends
+export interface GreaterContext/*<ValueT extends number, MessageT>*/ extends
     Readonly<Inclusive>,
-    Readonly<Value<ValueT>>,
-    Readonly<Message<MessageT>>,
-    Readonly<Validatable>,
+    // Readonly<Value<ValueT>>,
+    // Readonly<Message<MessageT>>,
+    // Readonly<Validatable>,
     Readonly<Minimum>,
     ValueOf<number>,
     ToString<[number|void]> {
@@ -22,7 +23,7 @@ export interface GreaterType<ValueT extends number, MessageT> extends
 export type GreaterArgumentsMessage<ValueT extends number, MessageT> = ValidatableParameters<ValueT, MessageT, [minimum:number, inclusive: boolean]>;
 
 
-export class GreaterParameters<ValueT extends number, MessageT> implements GreaterType<ValueT, MessageT>
+export class GreaterParameters<ValueT extends number, MessageT> implements ValidatorValidatable<ValueT>, GreaterContext/*<ValueT, MessageT>*/
 {
     #message : GreaterArgumentsMessage<ValueT, MessageT>;
 
@@ -94,7 +95,7 @@ export class GreaterParameter<ValueT extends number, MessageT> extends GreaterPa
 namespace Greater {
     export const Parameters = GreaterParameters;
     export const Parameter = GreaterParameter;
-    export type Type<ValueT extends number, MessageT> = GreaterType<ValueT, MessageT>;
+    export type Context/*<ValueT extends number, MessageT>*/ = GreaterContext/*<ValueT, MessageT>*/;
     export type Argument<ValueT extends number, MessageT> = GreaterArgument<ValueT, MessageT>;
 }
 export default Greater;

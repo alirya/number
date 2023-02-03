@@ -2,6 +2,7 @@ import {ValidatableParameters} from '@alirya/validator/message/function/validata
 import Minimum from '../../minimum/minimum';
 import Value from '@alirya/value/value';
 import Validatable from '@alirya/validatable/validatable';
+import ValidatorValidatable from '@alirya/validator/validatable/validatable';
 import Message from '@alirya/message/message';
 import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper';
 import MessageCallback from '@alirya/validator/validatable/callback';
@@ -15,8 +16,8 @@ import {
 
 export {GreaterThanMinimumArgument, GreaterThanMinimumArgumentMessage};
 
-export interface GreaterThanMinimumType<ValueT extends GreaterThanMinimumArgument, MessageT> extends
-    ReadonlyWrapperType<Value<ValueT>, Message<MessageT>, Validatable>,
+export interface GreaterThanMinimumContext/*<ValueT extends GreaterThanMinimumArgument, MessageT>*/ extends
+    // ReadonlyWrapperType<Value<ValueT>, Message<MessageT>, Validatable>,
     Readonly<Inclusive>,
     Readonly<Minimum>,
     Readonly<Maximum> {
@@ -25,8 +26,8 @@ export interface GreaterThanMinimumType<ValueT extends GreaterThanMinimumArgumen
 
 export class GreaterThanMinimumParameter<MessageT, ValueT extends GreaterThanMinimumArgument>
     extends ReadonlyWrapperParameters<Value<ValueT>, Message<MessageT>, Validatable>
-    implements
-        GreaterThanMinimumType<ValueT, MessageT>
+    implements ValidatorValidatable<ValueT, MessageT>,
+        GreaterThanMinimumContext/*<ValueT, MessageT>*/
 {
     readonly minimum : number;
     readonly maximum : number;
@@ -85,6 +86,6 @@ namespace GreaterThanMinimum {
     export const Parameter = GreaterThanMinimumParameter;
     export type Argument = GreaterThanMinimumArgument;
     export type ArgumentMessage<Type extends GreaterThanMinimumArgument, MessageT> = GreaterThanMinimumArgumentMessage<Type, MessageT>;
-    export type Type<ValueT extends GreaterThanMinimumArgument, MessageT> = GreaterThanMinimumType<ValueT, MessageT>;
+    export type Context/*<ValueT extends GreaterThanMinimumArgument, MessageT>*/ = GreaterThanMinimumContext/*<ValueT, MessageT>*/;
 }
 export default GreaterThanMinimum;

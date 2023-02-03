@@ -1,6 +1,7 @@
 import Maximum from '../maximum/maximum';
 import Value from '@alirya/value/value';
 import Validatable from '@alirya/validatable/validatable';
+import ValidatorValidatable from '@alirya/validator/validatable/validatable';
 import Message from '@alirya/message/message';
 import LowerFromObject from '../boolean/lower';
 import Inclusive from '../inclusive/inclusive';
@@ -10,16 +11,16 @@ import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/mes
 import MemoizeAccessor from '@alirya/object/function/memoize-accessor';
 import ValueDynamic from '@alirya/validator/value/validatable';
 
-export interface LowerType<ValueT extends number, MessageT> extends Readonly<Inclusive>,
+export interface LowerContext/*<ValueT extends number, MessageT> */extends Readonly<Inclusive>,
     Readonly<Maximum>,
-    Readonly<Value<ValueT>>,
-    Readonly<Message<MessageT>>,
-    Readonly<Validatable>,
+    // Readonly<Value<ValueT>>,
+    // Readonly<Message<MessageT>>,
+    // Readonly<Validatable>,
     ValueOf<number>,
     ToString<[number|void]> {
 }
 
-export class LowerParameters<ValueT extends number, MessageT> implements LowerType<ValueT, MessageT> {
+export class LowerParameters<ValueT extends number, MessageT> implements ValidatorValidatable<ValueT, MessageT>, LowerContext/*<ValueT, MessageT>*/ {
 
     #message : ValidatableParameters<ValueT, MessageT, [maximum:number, inclusive: boolean]>;
 
@@ -90,6 +91,6 @@ namespace Lower {
     export const Parameters = LowerParameters;
     export const Parameter = LowerParameter;
     export type Argument<ValueT extends number, MessageT> = LowerArgument<ValueT, MessageT>;
-    export type Type<ValueT extends number, MessageT> = LowerType<ValueT, MessageT>;
+    export type Context/*<ValueT extends number, MessageT>*/ = LowerContext/*<ValueT, MessageT>*/;
 }
 export default Lower;

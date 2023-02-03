@@ -1,5 +1,5 @@
 import Validator from '@alirya/validator/validator';
-import GreaterValidatable from '../validatable/greater';
+import GreaterValidatable, {GreaterContext} from '../validatable/greater';
 import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
 import GreaterString from '../assert/string/greater';
 import Validatable from '@alirya/validator/value/validatable';
@@ -9,31 +9,40 @@ import Inclusive from '../inclusive/inclusive';
 import Minimum from '../minimum/minimum';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
 import StrictOmit from '@alirya/object/strict-omit';
+import {NumberParameters} from './number';
+import Chain from '../../../validator/dist/chain';
 
 export type GreaterArgumentsMessage<MessageT> = ValidatableParameters<number, MessageT, [minimum:number, inclusive: boolean]>;
 
 export function GreaterParameters(
     minimum : number,
     inclusive : boolean,
-) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, string>>;
+) : Validator<number, number, boolean, boolean, string, GreaterContext>;
 
 export function GreaterParameters<MessageT>(
     minimum : number,
     inclusive : boolean,
     message : GreaterArgumentsMessage<MessageT>
-) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT>>;
+) : Validator<number, number, boolean, boolean, MessageT, GreaterContext>;
 
 export function GreaterParameters<MessageT>(
     minimum : number,
     inclusive : boolean,
     message : GreaterArgumentsMessage<MessageT|string> = GreaterString.Parameters
-) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT|string>> {
+) : Validator<number, number, boolean, boolean, MessageT|string, GreaterContext> {
 
-    return function (value) {
+
+    return Chain(NumberParameters(), function (value) {
 
         return new GreaterValidatable.Parameters(value, minimum, inclusive, message);
 
-    } as Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT>>;
+    }) as Validator<number, number, boolean, boolean, MessageT|string, GreaterContext>;
+
+    // return function (value) {
+    //
+    //     return new GreaterValidatable.Parameters(value, minimum, inclusive, message);
+    //
+    // } as Validator<number, number, boolean, boolean, MessageT|string>;
 
 }
 
@@ -50,14 +59,14 @@ export function GreaterParameter<MessageT>(
         inclusive,
         message,
     } : Required<GreaterArgument<MessageT>>
-) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT>>;
+) : Validator<number, number, boolean, boolean, MessageT, GreaterContext>;
 
-export function GreaterParameter<MessageT>(
+export function GreaterParameter(
     {
         minimum,
         inclusive,
-    } : StrictOmit<GreaterArgument<MessageT>, 'message'>
-) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageT>>;
+    } : StrictOmit<GreaterArgument<string>, 'message'>
+) : Validator<number, number, boolean, boolean, string, GreaterContext>;
 
 
 export function GreaterParameter<MessageType>(
@@ -66,7 +75,7 @@ export function GreaterParameter<MessageType>(
         inclusive,
         message = GreaterString.Parameter,
     } : Minimum & Inclusive & Message<(result:Readonly<Value<number> & Inclusive & Minimum & Validatable>)=>MessageType|string>
-) : Validator<number, number, boolean, boolean, GreaterValidatable.Type<number, MessageType|string>>  {
+) : Validator<number, number, boolean, boolean, MessageType|string, GreaterContext>  {
 
     return GreaterParameters(
         minimum,

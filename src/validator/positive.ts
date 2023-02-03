@@ -5,34 +5,42 @@ import {ValidatableParameters} from '@alirya/validator/message/function/validata
 import PositiveString from '../assert/string/positive';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
 import PositiveStringParameter from '../assert/string/positive';
+import Chain from '../../../validator/dist/chain';
+import {NumberParameters} from './number';
 
-export function PositiveParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
+export function PositiveParameters() : Validator<number, number, boolean, boolean, string>;
 
 export function PositiveParameters<MessageT>(
     message : ValidatableParameters<number, MessageT>
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+) : Validator<number, number, boolean, boolean, MessageT>;
 
 export function PositiveParameters<MessageT>(
     message : ValidatableParameters<number, MessageT|string> = PositiveString.Parameters
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
+) : Validator<number, number, boolean, boolean, MessageT> {
 
-    return function <Argument extends number>(value: Argument) {
+    return Chain(NumberParameters(), function <Argument extends number>(value: Argument) {
 
         return PositiveValidatable.Parameters(value, message);
 
-    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+    }) as Validator<number, number, boolean, boolean, MessageT>;
+
+    // return function <Argument extends number>(value: Argument) {
+    //
+    //     return PositiveValidatable.Parameters(value, message);
+    //
+    // } as Validator<number, number, boolean, boolean, MessageT>;
 }
 
 
-export function PositiveParameter() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
+export function PositiveParameter() : Validator<number, number, boolean, boolean, string>;
 
 export function PositiveParameter<MessageT>(
     message : ValidatableParameter<number, MessageT>
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+) : Validator<number, number, boolean, boolean, MessageT>;
 
 export function PositiveParameter<MessageT>(
     message : ValidatableParameter<number, MessageT|string> = PositiveStringParameter.Parameter
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT|string>>> {
+) : Validator<number, number, boolean, boolean, MessageT|string> {
 
     return PositiveParameters((value, valid) => message({value, valid}));
 }

@@ -5,34 +5,42 @@ import {ValidatableParameters} from '@alirya/validator/message/function/validata
 import IntegerString from '../assert/string/integer';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
 import IntegerStringParameter from '../assert/string/integer';
+import {NumberParameters} from './number';
+import Chain from '../../../validator/dist/chain';
 
-export function IntegerParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
+export function IntegerParameters() : Validator<number, number, boolean, boolean, string>;
 
 export function IntegerParameters<MessageT>(
     message : ValidatableParameters<number, MessageT>
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+) : Validator<number, number, boolean, boolean, MessageT>;
 
 export function IntegerParameters<MessageT>(
     message : ValidatableParameters<number, MessageT|string> = IntegerString.Parameters
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
+) : Validator<number, number, boolean, boolean, MessageT|string> {
 
-    return function (value) {
+    return Chain(NumberParameters(), function (value) {
 
         return IntegerValidatable.Parameters(value, message);
 
-    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+    });
+
+    // return function (value) {
+    //
+    //     return IntegerValidatable.Parameters(value, message);
+    //
+    // } as Validator<number, number, boolean, boolean, MessageT|string>;
 }
 
 
-export function IntegerParameter() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
+export function IntegerParameter() : Validator<number, number, boolean, boolean, string>;
 
 export function IntegerParameter<MessageT>(
     message : ValidatableParameter<number, MessageT>
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+) : Validator<number, number, boolean, boolean, MessageT>;
 
 export function IntegerParameter<MessageT>(
     message : ValidatableParameter<number, MessageT|string> = IntegerStringParameter.Parameter
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT|string>>> {
+) : Validator<number, number, boolean, boolean, MessageT|string> {
 
     return IntegerParameters((value, valid) => message({value, valid}));
 }

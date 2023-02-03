@@ -5,34 +5,42 @@ import {ValidatableParameters} from '@alirya/validator/message/function/validata
 import NegativeString from '../assert/string/negative';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
 import PositiveString from '../assert/string/positive';
+import Chain from '../../../validator/dist/chain';
+import {NumberParameters} from './number';
 
-export function NegativeParameters() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
+export function NegativeParameters() : Validator<number, number, boolean, boolean, string>;
 
 export function NegativeParameters<MessageT>(
     message : ValidatableParameters<number, MessageT>
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+) : Validator<number, number, boolean, boolean, MessageT>;
 
 export function NegativeParameters<MessageT>(
     message : ValidatableParameters<number, MessageT|string> = NegativeString.Parameters
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>> {
+) : Validator<number, number, boolean, boolean, MessageT|string> {
 
-    return function (value) {
+    return Chain(NumberParameters(), function (value) {
 
         return NegativeValidatable.Parameters(value, message);
 
-    } as Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+    });
+
+    // return function (value) {
+    //
+    //     return NegativeValidatable.Parameters(value, message);
+    //
+    // } as Validator<number, number, boolean, boolean, MessageT|string>;
 }
 
 
-export function NegativeParameter() : Validator<number, number, boolean, boolean, Readonly<Instance<number, string>>>;
+export function NegativeParameter() : Validator<number, number, boolean, boolean, string>;
 
 export function NegativeParameter<MessageT>(
     message : ValidatableParameter<number, MessageT>
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT>>>;
+) : Validator<number, number, boolean, boolean, MessageT>;
 
 export function NegativeParameter<MessageT>(
     message : ValidatableParameter<number, MessageT|string> = PositiveString.Parameter
-) : Validator<number, number, boolean, boolean, Readonly<Instance<number, MessageT|string>>> {
+) : Validator<number, number, boolean, boolean, MessageT|string> {
 
     return NegativeParameters((value, valid) => message({value, valid}));
 }
