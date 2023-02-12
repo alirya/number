@@ -1,4 +1,4 @@
-import Average from '../../dist/average';
+import Average from '../../dist/average.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

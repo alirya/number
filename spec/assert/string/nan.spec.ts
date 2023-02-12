@@ -1,4 +1,4 @@
-import {NanParameters} from '../../../dist/assert/string/nan';
+import {NanParameters} from '../../../dist/assert/string/nan.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

@@ -1,4 +1,4 @@
-import {LowerParameter} from '../../../dist/assert/string/lower';
+import {LowerParameter} from '../../../dist/assert/string/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

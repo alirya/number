@@ -1,11 +1,11 @@
-import {ReplaceParameters} from '@alirya/array/replace';
-import Value from '@alirya/value/value';
-import Validatable from '@alirya/validatable/validatable';
+import {ReplaceParameters} from '@alirya/array/replace.js';
+import Value from '@alirya/value/value.js';
+import Validatable from '@alirya/validatable/validatable.js';
 
 export function NanParameters(
     value : number,
     valid : boolean,
-    subject : string = 'value'
+    subject  = 'value'
 ) : string {
 
 

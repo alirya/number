@@ -1,11 +1,11 @@
-import Validator from '@alirya/validator/validator';
-import NaturalValidatable from '../validatable/natural';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import NaturalString from '../assert/string/natural';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import Chain from '../../../validator/dist/chain';
-import {NumberParameters} from './number';
+import Validator from '@alirya/validator/validator.js';
+import NaturalValidatable from '../validatable/natural.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import NaturalString from '../assert/string/natural.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import Chain from '../../../validator/dist/chain.js';
+import {NumberParameters} from './number.js';
 
 export function NaturalParameters() : Validator<number, number, boolean, boolean, string>;
 

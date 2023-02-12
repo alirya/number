@@ -1,5 +1,5 @@
-import AssertNumber from '../assert/number';
-import NumberError from '../assert/throwable/number';
+import AssertNumber from '../assert/number.js';
+import NumberError from '../assert/throwable/number.js';
 
 export default function Number(
     value : unknown,

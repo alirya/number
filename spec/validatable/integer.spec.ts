@@ -1,5 +1,5 @@
-import {IntegerParameters} from '../../dist/validatable/integer';
-import IntegerMessage from '../../dist/assert/string/integer';
+import {IntegerParameters} from '../../dist/validatable/integer.js';
+import IntegerMessage from '../../dist/assert/string/integer.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -7,24 +7,24 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validatable = IntegerParameters(10, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(10, IntegerMessage.Parameters);
 
         // compiler pass
         if(validatable.valid) {
 
-            let integer : number = validatable.value;
+            const integer : number = validatable.value;
             expect(integer).toBe(10);
 
         } else {
 
-            let integer : number = validatable.value;
+            const integer : number = validatable.value;
             fail('validatable.valid should false');
         }
     });
 
     it(`readonly`,function() {
 
-        let validatable = IntegerParameters(1, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(1, IntegerMessage.Parameters);
 
         try {
             // @ts-expect-error
@@ -39,7 +39,7 @@ describe(`compiler compatible`,function() {
 
         try {
             // @ts-expect-error
-            validatable.message = 'message';
+            validatable.message.js = 'message.js';
             fail('exception should thrown');
         } catch (e) {
             expect(e).toBeInstanceOf(Error);
@@ -53,7 +53,7 @@ describe(`integer`,function() {
 
     it(`positive`,function() {
 
-        let validatable = IntegerParameters(1, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(1, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1);
@@ -63,7 +63,7 @@ describe(`integer`,function() {
 
     it(`negative`,function() {
 
-        let validatable = IntegerParameters(-1, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(-1, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1);
@@ -77,7 +77,7 @@ describe(`float`,function() {
 
     it(`positive`,function() {
 
-        let validatable = IntegerParameters(1.0, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(1.0, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(1.0);
@@ -87,7 +87,7 @@ describe(`float`,function() {
 
     it(`negative`,function() {
 
-        let validatable = IntegerParameters(-1.0, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(-1.0, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(true);
         expect(validatable.value).toBe(-1.0);
@@ -100,7 +100,7 @@ describe(`infinity`,function() {
 
     it(`positive`,function() {
 
-        let validatable = IntegerParameters(Infinity, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(Infinity, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(Infinity);
@@ -110,7 +110,7 @@ describe(`infinity`,function() {
 
     it(`negative`,function() {
 
-        let validatable = IntegerParameters(-Infinity, IntegerMessage.Parameters);
+        const validatable = IntegerParameters(-Infinity, IntegerMessage.Parameters);
 
         expect(validatable.valid).toBe(false);
         expect(validatable.value).toBe(-Infinity);
@@ -122,7 +122,7 @@ describe(`infinity`,function() {
 
 it(`NaN`,function() {
 
-    let validatable = IntegerParameters(NaN, IntegerMessage.Parameters);
+    const validatable = IntegerParameters(NaN, IntegerMessage.Parameters);
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toEqual(NaN);

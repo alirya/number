@@ -1,5 +1,5 @@
-import AssertInfinite from '../assert/infinite';
-import InfiniteError from '../assert/throwable/infinite';
+import AssertInfinite from '../assert/infinite.js';
+import InfiniteError from '../assert/throwable/infinite.js';
 
 export default function Infinite(
     value : number,

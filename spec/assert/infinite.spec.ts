@@ -1,15 +1,15 @@
-import Infinite from '../../dist/assert/infinite';
+import Infinite from '../../dist/assert/infinite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive infinity`, () => {
-    let value = Infinity;
+    const value = Infinity;
     Infinite(value);
     expect(value).toBe(Infinity);
 });
 
 it(`negative infinity`, () => {
-    let value = -Infinity;
+    const value = -Infinity;
     Infinite(value);
     expect(value).toBe(-Infinity);
 });

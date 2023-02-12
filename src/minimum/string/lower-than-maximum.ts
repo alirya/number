@@ -1,7 +1,7 @@
-import Minimum from '../../minimum/minimum';
-import Maximum from '../../maximum/maximum';
-import Validatable from '@alirya/validatable/validatable';
-import Inclusive from '../../inclusive/inclusive';
+import Minimum from '../../minimum/minimum.js';
+import Maximum from '../../maximum/maximum.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Inclusive from '../../inclusive/inclusive.js';
 export type LowerThanMaximumArgument = Readonly<Minimum & Maximum & Validatable & Inclusive>;
 
 export function LowerThanMaximumParameters(
@@ -11,7 +11,7 @@ export function LowerThanMaximumParameters(
     inclusive : boolean,
 ) : string {
 
-    let parts : string[] = [];
+    const parts : string[] = [];
 
     parts.push(`minimum "${maximum}"`);
 

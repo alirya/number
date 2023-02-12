@@ -1,10 +1,10 @@
-import {CallbackParameters} from './callback';
-import InfiniteValidation from '../boolean/infinite';
-import {IntegerReturn as InfiniteReturn} from './integer';
-import InfiniteMessage from '../assert/string/infinite';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import StrictOmit from '@alirya/object/strict-omit';
-import {IntegerArgument as InfiniteArgument} from './integer';
+import {CallbackParameters} from './callback.js';
+import InfiniteValidation from '../boolean/infinite.js';
+import {IntegerReturn as InfiniteReturn} from './integer.js';
+import InfiniteMessage from '../assert/string/infinite.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
+import {IntegerArgument as InfiniteArgument} from './integer.js';
 
 export {InfiniteReturn};
 

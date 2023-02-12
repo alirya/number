@@ -1,10 +1,10 @@
-import Value from '@alirya/value/value';
+import Value from '@alirya/value/value.js';
 export function PrecisionParameters(
     value: number,
     precision : number
 ) : number {
 
-    let strings = value.toString().split('.');
+    const strings = value.toString().split('.');
 
     if(strings[1] !== undefined) {
 

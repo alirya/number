@@ -1,8 +1,8 @@
-import {ReplaceParameters} from '@alirya/array/replace';
-import Value from '@alirya/value/value';
-import Validatable from '@alirya/validatable/validatable';
-import Inclusive from '../../inclusive/inclusive';
-import Maximum from '../../maximum/maximum';
+import {ReplaceParameters} from '@alirya/array/replace.js';
+import Value from '@alirya/value/value.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Inclusive from '../../inclusive/inclusive.js';
+import Maximum from '../../maximum/maximum.js';
 /**
  * message for lower validation
  */
@@ -12,7 +12,7 @@ export function LowerParameters(
     valid : boolean,
     maximum : number,
     inclusive : boolean,
-    subject : string = 'value'
+    subject  = 'value'
 ) : string {
 
     const strings : string[] = [];

@@ -1,10 +1,10 @@
-import Validator from '@alirya/validator/validator';
-import FiniteValidatable from '../validatable/finite';
-import Instance from '@alirya/validator/validatable/validatable';
-import FiniteString from '../assert/string/finite';
-import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import {NumberParameters} from './number';
-import Chain from '../../../validator/dist/chain';
+import Validator from '@alirya/validator/validator.js';
+import FiniteValidatable from '../validatable/finite.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import FiniteString from '../assert/string/finite.js';
+import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import {NumberParameters} from './number.js';
+import Chain from '../../../validator/dist/chain.js';
 
 export function FiniteParameters() : Validator<number, number, boolean, boolean, string>;
 

@@ -1,4 +1,4 @@
-import Lower from '../../dist/ensure/lower';
+import Lower from '../../dist/ensure/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

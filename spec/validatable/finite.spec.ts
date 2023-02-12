@@ -1,11 +1,11 @@
-import {FiniteParameters} from '../../dist/validatable/finite';
-import FiniteString from '../../dist/assert/string/finite';
+import {FiniteParameters} from '../../dist/validatable/finite.js';
+import FiniteString from '../../dist/assert/string/finite.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let greater = FiniteParameters<string>(2,  FiniteString.Parameters);
+    const greater = FiniteParameters<string>(2,  FiniteString.Parameters);
 
     it('set valid', ()=>{
 
@@ -66,7 +66,7 @@ describe(`integer`,function() {
 
     describe(``,function() {
 
-        let greater = FiniteParameters<string>(1,  FiniteString.Parameters);
+        const greater = FiniteParameters<string>(1,  FiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -77,7 +77,7 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let greater = FiniteParameters<string>(-1,  FiniteString.Parameters);
+        const greater = FiniteParameters<string>(-1,  FiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -91,7 +91,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = FiniteParameters<string>(1.1,  FiniteString.Parameters);
+        const greater = FiniteParameters<string>(1.1,  FiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -102,7 +102,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = FiniteParameters<string>(-1.1,  FiniteString.Parameters);
+        const greater = FiniteParameters<string>(-1.1,  FiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -116,7 +116,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = FiniteParameters<string>(Infinity,  FiniteString.Parameters);
+        const greater = FiniteParameters<string>(Infinity,  FiniteString.Parameters);
 
         it('validate object', ()=>{
 
@@ -127,7 +127,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = FiniteParameters<string>(-Infinity,  FiniteString.Parameters);
+        const greater = FiniteParameters<string>(-Infinity,  FiniteString.Parameters);
 
         it('validate object', ()=>{
 

@@ -1,5 +1,5 @@
-import {RandomFloatParameters} from '../dist/random-float';
-import {RandomFloatParameter} from '../dist/random-float';
+import {RandomFloatParameters} from '../dist/random-float.js';
+import {RandomFloatParameter} from '../dist/random-float.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -15,12 +15,12 @@ describe(`iterative`,function() {
             it(`result ${min - 1} - ${i}`, () => {
 
                 {
-                    let random = RandomFloatParameters(min - 1, i);
+                    const random = RandomFloatParameters(min - 1, i);
                     expect(random).toBeLessThanOrEqual(i);
                     expect(random).toBeGreaterThanOrEqual(min - 1);
                 }
                 {
-                    let random = RandomFloatParameter({minimum:min - 1, maximum:i});
+                    const random = RandomFloatParameter({minimum:min - 1, maximum:i});
                     expect(random).toBeLessThanOrEqual(i);
                     expect(random).toBeGreaterThanOrEqual(min - 1);
                 }
@@ -30,12 +30,12 @@ describe(`iterative`,function() {
             it(`result 50 - ${i+50}`, () => {
 
                 {
-                    let random = RandomFloatParameters(min, i + max);
+                    const random = RandomFloatParameters(min, i + max);
                     expect(random).toBeLessThanOrEqual(i + max);
                     expect(random).toBeGreaterThanOrEqual(min);
                 }
                 {
-                    let random = RandomFloatParameter({minimum:min, maximum:i + max, inclusive : true});
+                    const random = RandomFloatParameter({minimum:min, maximum:i + max, inclusive : true});
                     expect(random).toBeLessThanOrEqual(i + max);
                     expect(random).toBeGreaterThanOrEqual(min);
                 }
@@ -44,34 +44,34 @@ describe(`iterative`,function() {
 
         describe(`exclusive`,function() {
 
-            let val1 = i + 1;
+            const val1 = i + 1;
 
             it(`result ${min} - ${val1}`, () => {
 
                 {
-                    let random = RandomFloatParameters(min, val1, false);
+                    const random = RandomFloatParameters(min, val1, false);
                     expect(random).toBeLessThan(val1);
                     expect(random).toBeGreaterThan(min);
                 }
 
                 {
-                    let random = RandomFloatParameter({minimum:min, maximum:val1, inclusive : false});
+                    const random = RandomFloatParameter({minimum:min, maximum:val1, inclusive : false});
                     expect(random).toBeLessThan(val1);
                     expect(random).toBeGreaterThan(min);
                 }
 
             });
 
-            let val2 = i + 51;
+            const val2 = i + 51;
             it(`result ${min} - ${val2}`, () => {
 
                 {
-                    let random = RandomFloatParameters(min, val2, false);
+                    const random = RandomFloatParameters(min, val2, false);
                     expect(random).toBeLessThan(val2);
                     expect(random).toBeGreaterThan(min);
                 }
                 {
-                    let random = RandomFloatParameter({minimum:min, maximum:val2, inclusive : false});
+                    const random = RandomFloatParameter({minimum:min, maximum:val2, inclusive : false});
                     expect(random).toBeLessThan(val2);
                     expect(random).toBeGreaterThan(min);
                 }
@@ -86,14 +86,14 @@ describe(`minimum & maximum equal`,function() {
 
     it(`inclusive`,function() {
 
-        let random = RandomFloatParameters(1, 1, true);
+        const random = RandomFloatParameters(1, 1, true);
         expect(random).toBe(1);
 
     });
 
     it(`inclusive object`,function() {
 
-        let random = RandomFloatParameter({minimum:1, maximum:1, inclusive : true});
+        const random = RandomFloatParameter({minimum:1, maximum:1, inclusive : true});
         expect(random).toBe(1);
 
     });

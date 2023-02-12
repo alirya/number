@@ -1,10 +1,10 @@
-import {PositiveParameters} from '../../dist/validatable/positive';
+import {PositiveParameters} from '../../dist/validatable/positive.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let greater = PositiveParameters(2);
+    const greater = PositiveParameters(2);
 
     it('set valid', ()=>{
 
@@ -65,7 +65,7 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let greater = PositiveParameters(1);
+        const greater = PositiveParameters(1);
 
         it('validate object', ()=>{
 
@@ -76,7 +76,7 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let greater = PositiveParameters(-1);
+        const greater = PositiveParameters(-1);
 
         it('validate object', ()=>{
 
@@ -90,7 +90,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = PositiveParameters(1.1);
+        const greater = PositiveParameters(1.1);
 
         it('validate object', ()=>{
 
@@ -101,7 +101,7 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let greater = PositiveParameters(-1.1);
+        const greater = PositiveParameters(-1.1);
 
         it('validate object', ()=>{
 
@@ -115,7 +115,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = PositiveParameters(Infinity);
+        const greater = PositiveParameters(Infinity);
 
         it('validate object', ()=>{
 
@@ -126,7 +126,7 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let greater = PositiveParameters(-Infinity);
+        const greater = PositiveParameters(-Infinity);
 
         it('validate object', ()=>{
 

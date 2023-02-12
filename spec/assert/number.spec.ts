@@ -1,29 +1,29 @@
-import Number from '../../dist/assert/number';
+import Number from '../../dist/assert/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`number`,function() {
 
     it(`integer`, () => {
-        let value = 1;
+        const value = 1;
         Number(value);
         expect(value).toBe(1);
     });
 
     it(`float`, () => {
-        let value = 1.1;
+        const value = 1.1;
         Number(value);
         expect(value).toBe(1.1);
     });
 
     it(`infinity`, () => {
-        let value = Infinity;
+        const value = Infinity;
         Number(Infinity);
         expect(value).toBe(Infinity);
     });
 
     it(`Nan`, () => {
-        let value = NaN;
+        const value = NaN;
         Number(NaN);
         expect(value).toEqual(NaN);
     });

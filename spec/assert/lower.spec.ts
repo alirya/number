@@ -1,4 +1,4 @@
-import Lower from '../../dist/assert/lower';
+import Lower from '../../dist/assert/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

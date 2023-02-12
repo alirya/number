@@ -1,4 +1,4 @@
-import Greater from '../../dist/assert/greater';
+import Greater from '../../dist/assert/greater.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

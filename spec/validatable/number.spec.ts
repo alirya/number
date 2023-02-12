@@ -1,5 +1,5 @@
-import {NumberParameters} from '../../dist/validatable/number';
-import NumberMessage from '../../dist/assert/string/number';
+import {NumberParameters} from '../../dist/validatable/number.js';
+import NumberMessage from '../../dist/assert/string/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -7,36 +7,36 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validatable = NumberParameters(<unknown>10, NumberMessage.Parameters);
+        const validatable = NumberParameters(<unknown>10, NumberMessage.Parameters);
 
         if(validatable.valid) {
 
             // compiler pass
-            let number : number = validatable.value;
+            const number : number = validatable.value;
             expect(number).toBe(10);
 
         } else {
 
             // @ts-expect-error
-            let number : number = validatable.value;
+            const number : number = validatable.value;
             fail('validatable.valid should false');
         }
     });
 
     it(`invalid value`,function() {
 
-        let validatable = NumberParameters(<unknown>{}, NumberMessage.Parameters);
+        const validatable = NumberParameters(<unknown>{}, NumberMessage.Parameters);
 
         if(validatable.valid) {
 
             // compiler pass
-            let number : number = validatable.value;
+            const number : number = validatable.value;
             fail('validatable.valid should false');
 
         } else {
 
             // @ts-expect-error
-            let number : number = validatable.value;
+            const number : number = validatable.value;
             // @ts-expect-error
             expect(number).toEqual({});
         }
@@ -44,7 +44,7 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validatable = NumberParameters(<unknown>1, NumberMessage.Parameters);
+        const validatable = NumberParameters(<unknown>1, NumberMessage.Parameters);
 
         try {
             // @ts-expect-error
@@ -59,7 +59,7 @@ describe(`compiler compatible`,function() {
 
         try {
             // @ts-expect-error
-            validatable.message = 'message';
+            validatable.message.js = 'message.js';
             fail('exception should thrown');
         } catch (e) {
             expect(e).toBeInstanceOf(Error);
@@ -71,7 +71,7 @@ describe(`compiler compatible`,function() {
 
 it(`valid`,function() {
 
-    let validatable = NumberParameters(1, NumberMessage.Parameters);
+    const validatable = NumberParameters(1, NumberMessage.Parameters);
 
     expect(validatable.valid).toBe(true);
     expect(validatable.value).toBe(1);
@@ -81,7 +81,7 @@ it(`valid`,function() {
 
 it(`invalid`,function() {
 
-    let validatable = NumberParameters('a', NumberMessage.Parameters);
+    const validatable = NumberParameters('a', NumberMessage.Parameters);
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toBe('a');

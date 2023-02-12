@@ -1,12 +1,12 @@
-import Validator from '@alirya/validator/validator';
-import IntegerValidatable from '../validatable/integer';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import IntegerString from '../assert/string/integer';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import IntegerStringParameter from '../assert/string/integer';
-import {NumberParameters} from './number';
-import Chain from '../../../validator/dist/chain';
+import Validator from '@alirya/validator/validator.js';
+import IntegerValidatable from '../validatable/integer.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import IntegerString from '../assert/string/integer.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import IntegerStringParameter from '../assert/string/integer.js';
+import {NumberParameters} from './number.js';
+import Chain from '../../../validator/dist/chain.js';
 
 export function IntegerParameters() : Validator<number, number, boolean, boolean, string>;
 

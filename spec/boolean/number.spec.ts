@@ -1,19 +1,19 @@
-import Number from '../../dist/boolean/number';
+import Number from '../../dist/boolean/number.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
-    let a : unknown = 1;
+    const a : unknown = 1;
 
     if(Number(a)) {
 
-        let n : number = a;
+        const n : number = a;
 
     } else {
 
         // @ts-expect-error
-        let n : number = a;
+        const n : number = a;
     }
 
 });

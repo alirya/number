@@ -1,4 +1,4 @@
-import Sum from '../dist/sum';
+import Sum from '../dist/sum.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

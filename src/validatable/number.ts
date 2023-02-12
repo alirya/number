@@ -1,11 +1,11 @@
-import {CallbackParameters} from '@alirya/validator/validatable/callback';
-import NumberGuard from '../boolean/number';
-import Return from '@alirya/validator/validatable/simple';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import NumberMessage from '../assert/string/number';
-import Value from '@alirya/value/value';
-import StrictOmit from '@alirya/object/strict-omit';
+import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import NumberGuard from '../boolean/number.js';
+import Return from '@alirya/validator/validatable/simple.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import NumberMessage from '../assert/string/number.js';
+import Value from '@alirya/value/value.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
 
 export function NumberParameters<Argument>(
     value : Argument,

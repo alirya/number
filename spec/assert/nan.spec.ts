@@ -1,9 +1,9 @@
-import Nan from '../../dist/assert/nan';
+import Nan from '../../dist/assert/nan.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive infinity`, () => {
-    let value = NaN;
+    const value = NaN;
     Nan(value);
     expect(value).toEqual(NaN);
 });

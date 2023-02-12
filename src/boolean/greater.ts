@@ -1,6 +1,6 @@
-import Value from '@alirya/value/value';
-import Minimum from '../minimum/minimum';
-import Inclusive from '../inclusive/inclusive';
+import Value from '@alirya/value/value.js';
+import Minimum from '../minimum/minimum.js';
+import Inclusive from '../inclusive/inclusive.js';
 /**
  * check if {@param value} is greater than {@param minimum} or equal if {@param inclusive} is true
  *
@@ -11,7 +11,7 @@ import Inclusive from '../inclusive/inclusive';
 export function GreaterParameters(
     value : number,
     minimum : number,
-    inclusive : boolean = false
+    inclusive  = false
 ) : boolean {
 
     return inclusive ? value >= minimum : value > minimum;

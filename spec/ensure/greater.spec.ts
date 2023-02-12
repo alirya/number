@@ -1,4 +1,4 @@
-import Greater from '../../dist/ensure/greater';
+import Greater from '../../dist/ensure/greater.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

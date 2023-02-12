@@ -1,5 +1,5 @@
-// import {NumericParameters} from '../../dist/validator/numeric';
-// import NumericMessage from '../../dist/assert/string/numeric';
+// import {NumericParameters} from '../../dist/validator/numeric.js';
+// import NumericMessage from '../../dist/assert/string/numeric.js';
 //
 // it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 //
@@ -62,7 +62,7 @@
 //
 //         try {
 //             // @ts-expect-error
-//             validatable.message = 'message';
+//             validatable.message.js = 'message.js';
 //             fail('exception should thrown');
 //         } catch (e) {
 //             expect(e).toBeInstanceOf(Error);

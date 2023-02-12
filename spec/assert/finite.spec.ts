@@ -1,4 +1,4 @@
-import Finite from '../../dist/assert/finite';
+import Finite from '../../dist/assert/finite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
@@ -21,25 +21,25 @@ it(`negative infinity`, () => {
 });
 
 it(`positive float`, () => {
-    let value = 1.1;
+    const value = 1.1;
     Finite(value);
     expect(value).toBe(1.1);
 });
 
 it(`negative float`, () => {
-    let value = -1.1;
+    const value = -1.1;
     Finite(value);
     expect(value).toBe(-1.1);
 });
 
 it(`positive integer`, () => {
-    let value = 1;
+    const value = 1;
     Finite(value);
     expect(value).toBe(1);
 });
 
 it(`negative integer`, () => {
-    let value = -1;
+    const value = -1;
     Finite(value);
     expect(value).toBe(-1);
 });

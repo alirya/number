@@ -1,12 +1,12 @@
-import Validator from '@alirya/validator/validator';
-import PositiveValidatable from '../validatable/positive';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import PositiveString from '../assert/string/positive';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import PositiveStringParameter from '../assert/string/positive';
-import Chain from '../../../validator/dist/chain';
-import {NumberParameters} from './number';
+import Validator from '@alirya/validator/validator.js';
+import PositiveValidatable from '../validatable/positive.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import PositiveString from '../assert/string/positive.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import PositiveStringParameter from '../assert/string/positive.js';
+import Chain from '../../../validator/dist/chain.js';
+import {NumberParameters} from './number.js';
 
 export function PositiveParameters() : Validator<number, number, boolean, boolean, string>;
 

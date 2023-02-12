@@ -1,9 +1,9 @@
-import Positive from '../../dist/assert/positive';
+import Positive from '../../dist/assert/positive.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`positive integer`, () => {
-    let value = 1;
+    const value = 1;
     Positive(value);
     expect(value).toBe(1);
 });
@@ -27,7 +27,7 @@ it(`negative float`, () => {
 });
 
 it(`positive float`, () => {
-    let value = 1.1;
+    const value = 1.1;
     Positive(value);
     expect(value).toBe(1.1);
 });
@@ -43,7 +43,7 @@ it(`positive infinity`, () => {
 });
 
 it(`positive infinity`, () => {
-    let value = Infinity;
+    const value = Infinity;
     Positive(value);
     expect(value).toBe(Infinity);
 });

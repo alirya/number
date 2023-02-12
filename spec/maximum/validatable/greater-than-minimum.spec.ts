@@ -1,11 +1,11 @@
-import {GreaterThanMinimumParameter} from '../../../dist/maximum/validatable/greater-than-minimum';
-import GreaterString from '../../../dist/maximum/string/greater-than-minimum';
+import {GreaterThanMinimumParameter} from '../../../dist/maximum/validatable/greater-than-minimum.js';
+import GreaterString from '../../../dist/maximum/string/greater-than-minimum.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let greater = new GreaterThanMinimumParameter({maximum:2, minimum:1, inclusive:false}, GreaterString.Parameter);
+    const greater = new GreaterThanMinimumParameter({maximum:2, minimum:1, inclusive:false}, GreaterString.Parameter);
 
     it('set valid', ()=>{
 
@@ -66,7 +66,7 @@ describe(`value equal to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let greater = new GreaterThanMinimumParameter({maximum:1, minimum:1, inclusive:true}, GreaterString.Parameter);
+        const greater = new GreaterThanMinimumParameter({maximum:1, minimum:1, inclusive:true}, GreaterString.Parameter);
 
         it('validate object', ()=>{
 
@@ -80,7 +80,7 @@ describe(`value equal to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let greater = new GreaterThanMinimumParameter({maximum:1, minimum:1, inclusive:false}, GreaterString.Parameter);
+        const greater = new GreaterThanMinimumParameter({maximum:1, minimum:1, inclusive:false}, GreaterString.Parameter);
 
         it('validate object', ()=>{
 
@@ -97,7 +97,7 @@ describe(`value greater to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let greater = new GreaterThanMinimumParameter({maximum:2, minimum:1, inclusive:true}, GreaterString.Parameter);
+        const greater = new GreaterThanMinimumParameter({maximum:2, minimum:1, inclusive:true}, GreaterString.Parameter);
 
         it('validate object', ()=>{
 
@@ -111,7 +111,7 @@ describe(`value greater to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let greater = new GreaterThanMinimumParameter({maximum:2, minimum:1, inclusive:false}, GreaterString.Parameter);
+        const greater = new GreaterThanMinimumParameter({maximum:2, minimum:1, inclusive:false}, GreaterString.Parameter);
 
         it('validate object', ()=>{
 
@@ -128,7 +128,7 @@ describe(`value lower to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let greater = new GreaterThanMinimumParameter({maximum:-1, minimum:1, inclusive:true}, GreaterString.Parameter);
+        const greater = new GreaterThanMinimumParameter({maximum:-1, minimum:1, inclusive:true}, GreaterString.Parameter);
 
         it('validate object', ()=>{
 
@@ -142,7 +142,7 @@ describe(`value lower to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let greater = new GreaterThanMinimumParameter({maximum:-1, minimum:1, inclusive:false}, GreaterString.Parameter);
+        const greater = new GreaterThanMinimumParameter({maximum:-1, minimum:1, inclusive:false}, GreaterString.Parameter);
 
         it('validate object', ()=>{
 

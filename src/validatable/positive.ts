@@ -1,11 +1,11 @@
-import {CallbackParameters} from '@alirya/validator/validatable/callback';
-import PositiveValidation from '../boolean/positive';
-import ValidatorValidatable from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import PositiveString from '../assert/string/positive';
-import Value from '@alirya/value/value';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import StrictOmit from '@alirya/object/strict-omit';
+import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import PositiveValidation from '../boolean/positive.js';
+import ValidatorValidatable from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import PositiveString from '../assert/string/positive.js';
+import Value from '@alirya/value/value.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
 
 export function PositiveParameters<MessageT>(
     value : number,

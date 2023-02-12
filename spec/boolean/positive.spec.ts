@@ -1,4 +1,4 @@
-import Positive from '../../dist/boolean/positive';
+import Positive from '../../dist/boolean/positive.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

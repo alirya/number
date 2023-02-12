@@ -1,12 +1,12 @@
-import Validator from '@alirya/validator/validator';
-import InfiniteValidatable from '../validatable/infinite';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import InfiniteString from '../assert/string/infinite';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import InfiniteStringParameter from '../assert/string/infinite';
-import {NumberParameters} from './number';
-import Chain from '../../../validator/dist/chain';
+import Validator from '@alirya/validator/validator.js';
+import InfiniteValidatable from '../validatable/infinite.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import InfiniteString from '../assert/string/infinite.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import InfiniteStringParameter from '../assert/string/infinite.js';
+import {NumberParameters} from './number.js';
+import Chain from '../../../validator/dist/chain.js';
 
 export function InfiniteParameters() : Validator<number, number, boolean, boolean, string>;
 

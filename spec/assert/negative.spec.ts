@@ -1,9 +1,9 @@
-import Negative from '../../dist/assert/negative';
+import Negative from '../../dist/assert/negative.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 
 it(`negative integer`, () => {
-    let value = -1;
+    const value = -1;
     Negative(value);
     expect(value).toBe(-1);
 });
@@ -27,7 +27,7 @@ it(`positive float`, () => {
 });
 
 it(`negative float`, () => {
-    let value = -1.1;
+    const value = -1.1;
     Negative(value);
     expect(value).toBe(-1.1);
 });
@@ -43,7 +43,7 @@ it(`positive infinity`, () => {
 });
 
 it(`negative infinity`, () => {
-    let value = -Infinity;
+    const value = -Infinity;
     Negative(value);
     expect(value).toBe(-Infinity);
 });

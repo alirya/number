@@ -1,9 +1,9 @@
-import {CallbackParameters} from './callback';
-import FiniteMessage from '../assert/string/finite';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import {IntegerReturn as FiniteReturn} from './integer';
-import StrictOmit from '@alirya/object/strict-omit';
-import {IntegerArgument as FiniteArgument} from './integer';
+import {CallbackParameters} from './callback.js';
+import FiniteMessage from '../assert/string/finite.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {IntegerReturn as FiniteReturn} from './integer.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
+import {IntegerArgument as FiniteArgument} from './integer.js';
 
 export {FiniteReturn};
 

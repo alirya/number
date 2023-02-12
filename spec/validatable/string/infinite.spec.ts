@@ -1,4 +1,4 @@
-import {InfiniteParameter} from '../../../dist/assert/string/infinite';
+import {InfiniteParameter} from '../../../dist/assert/string/infinite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

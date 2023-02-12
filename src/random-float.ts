@@ -1,14 +1,14 @@
-import {GreaterParameters} from './boolean/greater';
-import {LowerParameters} from './boolean/lower';
-import LowerThanMaximum from './minimum/assert/lower-than-maximum';
-import Minimum from './minimum/minimum';
-import Maximum from './maximum/maximum';
-import Inclusive from './inclusive/inclusive';
+import {GreaterParameters} from './boolean/greater.js';
+import {LowerParameters} from './boolean/lower.js';
+import LowerThanMaximum from './minimum/assert/lower-than-maximum.js';
+import Minimum from './minimum/minimum.js';
+import Maximum from './maximum/maximum.js';
+import Inclusive from './inclusive/inclusive.js';
 
 export  function RandomFloatParameters (
     minimum : number,
     maximum : number,
-    inclusive : boolean = true
+    inclusive  = true
 ) : number {
 
     LowerThanMaximum({
@@ -25,9 +25,9 @@ export  function RandomFloatParameters (
         }
     }
 
-    let random = Math.random() * (maximum - minimum);
+    const random = Math.random() * (maximum - minimum);
 
-    let result = random + minimum;
+    const result = random + minimum;
 
     if(inclusive) {
 

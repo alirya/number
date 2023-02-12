@@ -1,15 +1,15 @@
-import {CallbackParameters} from './callback';
-import IntegerValidation from '../boolean/integer';
-import Validatable from '@alirya/validatable/validatable';
-import Message from '@alirya/message/message';
-import Value from '@alirya/value/value';
-import ValueOf from '@alirya/value/value-of/value-of';
-import ToString from '@alirya/string/to-string';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import IntegerMessage from '../assert/string/integer';
-import {PositiveArgument as IntegerArgument} from './positive';
-import StrictOmit from '@alirya/object/strict-omit';
-import NaturalMessage from '../assert/string/natural';
+import {CallbackParameters} from './callback.js';
+import IntegerValidation from '../boolean/integer.js';
+import Validatable from '@alirya/validatable/validatable.js';
+import Message from '@alirya/message/message.js';
+import Value from '@alirya/value/value.js';
+import ValueOf from '@alirya/value/value-of/value-of.js';
+import ToString from '@alirya/string/to-string.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import IntegerMessage from '../assert/string/integer.js';
+import {PositiveArgument as IntegerArgument} from './positive.js';
+import StrictOmit from '@alirya/object/strict-omit.js';
+import NaturalMessage from '../assert/string/natural.js';
 
 export type IntegerReturn<MessageT> =
     Readonly<

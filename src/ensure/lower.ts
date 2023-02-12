@@ -1,5 +1,5 @@
-import AssertLower from '../assert/lower';
-import LowerError from '../assert/throwable/lower';
+import AssertLower from '../assert/lower.js';
+import LowerError from '../assert/throwable/lower.js';
 
 export default function Lower(
     value : number,

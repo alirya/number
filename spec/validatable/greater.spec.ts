@@ -1,11 +1,11 @@
-import {GreaterParameters} from '../../dist/validatable/greater';
-import GreaterString from '../../dist/assert/string/greater';
+import {GreaterParameters} from '../../dist/validatable/greater.js';
+import GreaterString from '../../dist/assert/string/greater.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let greater = new GreaterParameters(2, 1, false, GreaterString.Parameters);
+    const greater = new GreaterParameters(2, 1, false, GreaterString.Parameters);
 
     it('set valid', ()=>{
 
@@ -66,7 +66,7 @@ describe(`value equal to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let greater = new GreaterParameters<number, string>(1, 1, true, GreaterString.Parameters);
+        const greater = new GreaterParameters<number, string>(1, 1, true, GreaterString.Parameters);
 
         it('validate object', ()=>{
 
@@ -80,7 +80,7 @@ describe(`value equal to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let greater = new GreaterParameters<number, string>(1, 1, false, GreaterString.Parameters);
+        const greater = new GreaterParameters<number, string>(1, 1, false, GreaterString.Parameters);
 
         it('validate object', ()=>{
 
@@ -97,7 +97,7 @@ describe(`value greater to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let greater = new GreaterParameters<number, string>(2, 1, true, GreaterString.Parameters);
+        const greater = new GreaterParameters<number, string>(2, 1, true, GreaterString.Parameters);
 
         it('validate object', ()=>{
 
@@ -111,7 +111,7 @@ describe(`value greater to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let greater = new GreaterParameters<number, string>(2, 1, false, GreaterString.Parameters);
+        const greater = new GreaterParameters<number, string>(2, 1, false, GreaterString.Parameters);
 
         it('validate object', ()=>{
 
@@ -128,7 +128,7 @@ describe(`value lower to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let greater = new GreaterParameters<number, string>(-1, 1, true, GreaterString.Parameters);
+        const greater = new GreaterParameters<number, string>(-1, 1, true, GreaterString.Parameters);
 
         it('validate object', ()=>{
 
@@ -142,7 +142,7 @@ describe(`value lower to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let greater = new GreaterParameters<number, string>(-1, 1, false, GreaterString.Parameters);
+        const greater = new GreaterParameters<number, string>(-1, 1, false, GreaterString.Parameters);
 
         it('validate object', ()=>{
 

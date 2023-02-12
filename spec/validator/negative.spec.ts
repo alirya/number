@@ -1,12 +1,12 @@
-import {NegativeParameters} from '../../dist/validator/negative';
-import NegativeString from '../../dist/assert/string/negative';
+import {NegativeParameters} from '../../dist/validator/negative.js';
+import NegativeString from '../../dist/assert/string/negative.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let validator = NegativeParameters<string>(NegativeString.Parameters);
-    let validatable = validator(2);
+    const validator = NegativeParameters<string>(NegativeString.Parameters);
+    const validatable = validator(2);
 
     it('set valid', ()=>{
 
@@ -67,8 +67,8 @@ describe(`integer`,function() {
 
     describe(`negative`,function() {
 
-        let validator = NegativeParameters<string>(NegativeString.Parameters);
-        let validatable = validator(-1);
+        const validator = NegativeParameters<string>(NegativeString.Parameters);
+        const validatable = validator(-1);
 
         it('validate object', ()=>{
 
@@ -79,8 +79,8 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let validator = NegativeParameters<string>(NegativeString.Parameters);
-        let validatable = validator(1);
+        const validator = NegativeParameters<string>(NegativeString.Parameters);
+        const validatable = validator(1);
 
         it('validate object', ()=>{
 
@@ -94,8 +94,8 @@ describe(`float`,function() {
 
     describe(`negative`,function() {
 
-        let validator = NegativeParameters<string>(NegativeString.Parameters);
-        let validatable = validator(-1.1);
+        const validator = NegativeParameters<string>(NegativeString.Parameters);
+        const validatable = validator(-1.1);
 
         it('validate object', ()=>{
 
@@ -106,8 +106,8 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let validator = NegativeParameters<string>(NegativeString.Parameters);
-        let validatable = validator(1.1);
+        const validator = NegativeParameters<string>(NegativeString.Parameters);
+        const validatable = validator(1.1);
 
         it('validate object', ()=>{
 
@@ -121,8 +121,8 @@ describe(`infinity`,function() {
 
     describe(`negative`,function() {
 
-        let validator = NegativeParameters<string>(NegativeString.Parameters);
-        let validatable = validator(-Infinity);
+        const validator = NegativeParameters<string>(NegativeString.Parameters);
+        const validatable = validator(-Infinity);
 
         it('validate object', ()=>{
 
@@ -133,8 +133,8 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let validator = NegativeParameters<string>(NegativeString.Parameters);
-        let validatable = validator(Infinity);
+        const validator = NegativeParameters<string>(NegativeString.Parameters);
+        const validatable = validator(Infinity);
 
         it('validate object', ()=>{
 

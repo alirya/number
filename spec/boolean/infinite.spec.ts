@@ -1,4 +1,4 @@
-import Infinite from '../../dist/boolean/infinite';
+import Infinite from '../../dist/boolean/infinite.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

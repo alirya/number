@@ -1,7 +1,7 @@
-import {GreaterParameters} from '../../boolean/greater';
-import Minimum from '../../minimum/minimum';
-import Maximum from '../../maximum/maximum';
-import Inclusive from '../../inclusive/inclusive';
+import {GreaterParameters} from '../../boolean/greater.js';
+import Minimum from '../../minimum/minimum.js';
+import Maximum from '../../maximum/maximum.js';
+import Inclusive from '../../inclusive/inclusive.js';
 export type LowerThanMaximumArgument = Readonly<Minimum & Maximum & Inclusive>;
 
 export function LowerThanMaximumParameters(

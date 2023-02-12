@@ -1,9 +1,9 @@
-import {GreaterParameters} from './boolean/greater';
-import {LowerParameters} from './boolean/lower';
-import LowerThanMaximum from './minimum/assert/lower-than-maximum';
-import Minimum from './minimum/minimum';
-import Maximum from './maximum/maximum';
-import Inclusive from './inclusive/inclusive';
+import {GreaterParameters} from './boolean/greater.js';
+import {LowerParameters} from './boolean/lower.js';
+import LowerThanMaximum from './minimum/assert/lower-than-maximum.js';
+import Minimum from './minimum/minimum.js';
+import Maximum from './maximum/maximum.js';
+import Inclusive from './inclusive/inclusive.js';
 
 /**
  * get random integer
@@ -14,7 +14,7 @@ import Inclusive from './inclusive/inclusive';
 export function RandomIntegerParameters (
     minimum : number,
     maximum : number,
-    inclusive : boolean = true
+    inclusive  = true
 ) : number {
 
     LowerThanMaximum({

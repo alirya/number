@@ -1,4 +1,4 @@
-import Finite from '../../dist/ensure/finite';
+import Finite from '../../dist/ensure/finite.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

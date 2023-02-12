@@ -1,4 +1,4 @@
-import {PositiveParameters} from '../../../dist/assert/string/positive';
+import {PositiveParameters} from '../../../dist/assert/string/positive.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

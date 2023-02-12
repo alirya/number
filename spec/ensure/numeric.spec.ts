@@ -1,4 +1,4 @@
-// import NUmeric from '../../dist/ensure/numeric';
+// import NUmeric from '../../dist/ensure/numeric.js';
 //
 // it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 //

@@ -1,4 +1,4 @@
-import {LowerThanMaximumParameter} from '../../../dist/minimum/string/lower-than-maximum';
+import {LowerThanMaximumParameter} from '../../../dist/minimum/string/lower-than-maximum.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

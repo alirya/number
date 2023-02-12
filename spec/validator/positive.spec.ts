@@ -1,12 +1,12 @@
-import {PositiveParameters} from '../../dist/validator/positive';
-import PositiveString from '../../dist/assert/string/positive';
+import {PositiveParameters} from '../../dist/validator/positive.js';
+import PositiveString from '../../dist/assert/string/positive.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let validator = PositiveParameters<string>(PositiveString.Parameters);
-    let validatable = validator(2);
+    const validator = PositiveParameters<string>(PositiveString.Parameters);
+    const validatable = validator(2);
 
     it('set valid', ()=>{
 
@@ -67,8 +67,8 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let validator = PositiveParameters<string>(PositiveString.Parameters);
-        let validatable = validator(1);
+        const validator = PositiveParameters<string>(PositiveString.Parameters);
+        const validatable = validator(1);
 
         it('validate object', ()=>{
 
@@ -79,8 +79,8 @@ describe(`integer`,function() {
 
     describe(`positive`,function() {
 
-        let validator = PositiveParameters<string>(PositiveString.Parameters);
-        let validatable = validator(-1);
+        const validator = PositiveParameters<string>(PositiveString.Parameters);
+        const validatable = validator(-1);
 
         it('validate object', ()=>{
 
@@ -94,8 +94,8 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let validator = PositiveParameters<string>(PositiveString.Parameters);
-        let validatable = validator(1.1);
+        const validator = PositiveParameters<string>(PositiveString.Parameters);
+        const validatable = validator(1.1);
 
         it('validate object', ()=>{
 
@@ -106,8 +106,8 @@ describe(`float`,function() {
 
     describe(`positive`,function() {
 
-        let validator = PositiveParameters<string>(PositiveString.Parameters);
-        let validatable = validator(-1.1);
+        const validator = PositiveParameters<string>(PositiveString.Parameters);
+        const validatable = validator(-1.1);
 
         it('validate object', ()=>{
 
@@ -121,8 +121,8 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let validator = PositiveParameters<string>(PositiveString.Parameters);
-        let validatable = validator(Infinity);
+        const validator = PositiveParameters<string>(PositiveString.Parameters);
+        const validatable = validator(Infinity);
 
         it('validate object', ()=>{
 
@@ -133,8 +133,8 @@ describe(`infinity`,function() {
 
     describe(`positive`,function() {
 
-        let validator = PositiveParameters<string>(PositiveString.Parameters);
-        let validatable = validator(-Infinity);
+        const validator = PositiveParameters<string>(PositiveString.Parameters);
+        const validatable = validator(-Infinity);
 
         it('validate object', ()=>{
 

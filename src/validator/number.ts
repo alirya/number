@@ -1,10 +1,10 @@
-import Validator from '@alirya/validator/simple';
-import NumberValidatable from '../validatable/number';
-import Instance from '@alirya/validator/validatable/validatable';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import NumberString from '../assert/string/number';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable';
-import NumberStringParameter from '../assert/string/number';
+import Validator from '@alirya/validator/simple.js';
+import NumberValidatable from '../validatable/number.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import NumberString from '../assert/string/number.js';
+import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import NumberStringParameter from '../assert/string/number.js';
 
 export function NumberParameters() : Validator<unknown, number, string>;
 

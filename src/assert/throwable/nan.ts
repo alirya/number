@@ -1,5 +1,5 @@
-import NanType from '../string/nan';
-import Value from '@alirya/value/value';
+import NanType from '../string/nan.js';
+import Value from '@alirya/value/value.js';
 
 export function NanParameters(
     value : number,

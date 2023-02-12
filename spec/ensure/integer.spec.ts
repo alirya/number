@@ -1,4 +1,4 @@
-import Integer from '../../dist/ensure/integer';
+import Integer from '../../dist/ensure/integer.js';
 
 it('enable console log', () => {spyOn(console, 'log').and.callThrough();});
 

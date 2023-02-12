@@ -1,12 +1,12 @@
-import {LowerParameters} from '../../dist/validator/lower';
-import LowerString from '../../dist/assert/string/lower';
+import {LowerParameters} from '../../dist/validator/lower.js';
+import LowerString from '../../dist/assert/string/lower.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
-    let validator = LowerParameters<string>(1, false, LowerString.Parameters);
-    let validatable = validator(2);
+    const validator = LowerParameters<string>(1, false, LowerString.Parameters);
+    const validatable = validator(2);
 
     it('set valid', ()=>{
 
@@ -67,8 +67,8 @@ describe(`value equal to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let validator = LowerParameters<string>(1, true, LowerString.Parameters);
-        let validatable = validator(1);
+        const validator = LowerParameters<string>(1, true, LowerString.Parameters);
+        const validatable = validator(1);
 
         it('validate object', ()=>{
 
@@ -82,8 +82,8 @@ describe(`value equal to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let validator = LowerParameters<string>(1, false, LowerString.Parameters);
-        let validatable = validator(1);
+        const validator = LowerParameters<string>(1, false, LowerString.Parameters);
+        const validatable = validator(1);
 
         it('validate object', ()=>{
 
@@ -100,8 +100,8 @@ describe(`value greater to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let validator = LowerParameters<string>( 1, true, LowerString.Parameters);
-        let validatable = validator(2);
+        const validator = LowerParameters<string>( 1, true, LowerString.Parameters);
+        const validatable = validator(2);
 
         it('validate object', ()=>{
 
@@ -115,8 +115,8 @@ describe(`value greater to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let validator = LowerParameters<string>( 1, false, LowerString.Parameters);
-        let validatable = validator(2);
+        const validator = LowerParameters<string>( 1, false, LowerString.Parameters);
+        const validatable = validator(2);
 
         it('validate object', ()=>{
 
@@ -133,8 +133,8 @@ describe(`value lower to minimum`,function() {
 
     describe(`inclusive`,function() {
 
-        let validator = LowerParameters<string>( 1, true, LowerString.Parameters);
-        let validatable = validator(-1);
+        const validator = LowerParameters<string>( 1, true, LowerString.Parameters);
+        const validatable = validator(-1);
 
         it('validate object', ()=>{
 
@@ -148,8 +148,8 @@ describe(`value lower to minimum`,function() {
 
     describe(`exclusive`,function() {
 
-        let validator = LowerParameters<string>( 1, false, LowerString.Parameters);
-        let validatable = validator(-1);
+        const validator = LowerParameters<string>( 1, false, LowerString.Parameters);
+        const validatable = validator(-1);
 
         it('validate object', ()=>{
 
