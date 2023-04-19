@@ -12,3 +12,5 @@ export default function Integer(number : number) : boolean {
 
     return false;
 }
+
+export {Integer as IsInteger};

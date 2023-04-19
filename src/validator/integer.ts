@@ -6,7 +6,7 @@ import IntegerString from '../assert/string/integer.js';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
 import IntegerStringParameter from '../assert/string/integer.js';
 import {NumberParameters} from './number.js';
-import Chain from '../../../validator/dist/chain.js';
+import Chain from '@alirya/validator/chain.js';
 
 export function IntegerParameters() : Validator<number, number, boolean, boolean, string>;
 

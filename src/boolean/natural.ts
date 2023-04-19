@@ -8,3 +8,5 @@ export default function Natural(number : number) : boolean {
 
     return number >= 0 && number !== Infinity && Integer(number);
 }
+
+export {Natural as IsNatural};

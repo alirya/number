@@ -44,3 +44,7 @@ namespace Greater {
     export type Argument = GreaterArgument;
 }
 export default Greater;
+
+export {Greater as IsGreater};
+export {GreaterParameters as IsGreaterParameters};
+export {GreaterParameter as IsGreaterParameter};

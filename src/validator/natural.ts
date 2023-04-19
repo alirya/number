@@ -4,7 +4,7 @@ import Instance from '@alirya/validator/validatable/validatable.js';
 import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
 import NaturalString from '../assert/string/natural.js';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import Chain from '../../../validator/dist/chain.js';
+import Chain from '@alirya/validator/chain.js';
 import {NumberParameters} from './number.js';
 
 export function NaturalParameters() : Validator<number, number, boolean, boolean, string>;

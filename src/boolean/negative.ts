@@ -6,3 +6,5 @@ export default function Negative(number : number) : boolean {
 
     return number < 0;
 }
+
+export {Negative as IsNegative};

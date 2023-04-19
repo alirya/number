@@ -43,3 +43,7 @@ namespace Lower {
     export type Argument = LowerArgument;
 }
 export default Lower;
+
+export {Lower as IsLower};
+export {LowerParameters as IsLowerParameters};
+export {LowerParameter as IsLowerParameter};

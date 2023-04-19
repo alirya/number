@@ -11,6 +11,6 @@ export default function Infinite (number : number) : boolean {
     }
 
     return false;
-
 }
 
+export {Infinite as IsInfinite};

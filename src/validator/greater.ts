@@ -10,7 +10,7 @@ import Minimum from '../minimum/minimum.js';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
 import StrictOmit from '@alirya/object/strict-omit.js';
 import {NumberParameters} from './number.js';
-import Chain from '../../../validator/dist/chain.js';
+import Chain from '@alirya/validator/chain.js';
 
 export type GreaterArgumentsMessage<MessageT> = ValidatableParameters<number, MessageT, [minimum:number, inclusive: boolean]>;
 

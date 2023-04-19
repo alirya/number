@@ -10,7 +10,7 @@ import {ValidatableParameter} from '@alirya/validator/message/function/validatab
 import StrictOmit from '@alirya/object/strict-omit.js';
 import LowerStringParameter from '../assert/string/lower.js';
 import {NumberParameters} from './number.js';
-import Chain from '../../../validator/dist/chain.js';
+import Chain from '@alirya/validator/chain.js';
 
 export function LowerParameters (
     maximum : number,

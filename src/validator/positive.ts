@@ -5,7 +5,7 @@ import {ValidatableParameters} from '@alirya/validator/message/function/validata
 import PositiveString from '../assert/string/positive.js';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
 import PositiveStringParameter from '../assert/string/positive.js';
-import Chain from '../../../validator/dist/chain.js';
+import Chain from '@alirya/validator/chain.js';
 import {NumberParameters} from './number.js';
 
 export function PositiveParameters() : Validator<number, number, boolean, boolean, string>;

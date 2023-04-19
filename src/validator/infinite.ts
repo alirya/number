@@ -6,7 +6,7 @@ import InfiniteString from '../assert/string/infinite.js';
 import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
 import InfiniteStringParameter from '../assert/string/infinite.js';
 import {NumberParameters} from './number.js';
-import Chain from '../../../validator/dist/chain.js';
+import Chain from '@alirya/validator/chain.js';
 
 export function InfiniteParameters() : Validator<number, number, boolean, boolean, string>;
 
