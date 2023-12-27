@@ -1,10 +1,10 @@
 :root {
-    --lighcode-background: #FFFFFF;
+    --light-code-background: #F5F5F5;
     --dark-code-background: #1E1E1E;
 }
 
 @media (prefers-color-scheme: light) { :root {
-    --code-background: var(--lighcode-background);
+    --code-background: var(--light-code-background);
 } }
 
 @media (prefers-color-scheme: dark) { :root {
@@ -12,7 +12,7 @@
 } }
 
 body.light {
-    --code-background: var(--lighcode-background);
+    --code-background: var(--light-code-background);
 }
 
 body.dark {
