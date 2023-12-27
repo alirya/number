@@ -1,16 +1,16 @@
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import Minimum from '../../minimum/minimum.js';
-import Value from '@alirya/value/value.js';
-import Validatable from '@alirya/validatable/validatable.js';
-import ValidatorValidatable from '@alirya/validator/validatable/validatable.js';
-import Message from '@alirya/message/message.js';
-import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper.js';
-import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import Value from '@axiona/value/value.js';
+import Validatable from '@axiona/validatable/validatable.js';
+import ValidatorValidatable from '@axiona/validator/validatable/validatable.js';
+import Message from '@axiona/message/message.js';
+import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@axiona/validator/validatable/readonly-wrapper.js';
+import {CallbackParameters} from '@axiona/validator/validatable/callback.js';
 import Inclusive from '../../inclusive/inclusive.js';
 import Maximum from '../../maximum/maximum.js';
 import LowerThanMinimumFunctionParameter from '../boolean/lower-than-maximum.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import DynamicValue from '@alirya/validator/value/validatable.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
+import DynamicValue from '@axiona/validator/value/validatable.js';
 
 export type LowerThanMaximumArgument = Minimum & Maximum & Inclusive;
 export type LowerThanMaximumArgumentMessage<Type extends LowerThanMaximumArgument, MessageT> =

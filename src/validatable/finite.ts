@@ -1,8 +1,8 @@
 import {CallbackParameters} from './callback.js';
 import FiniteMessage from '../assert/string/finite.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import {IntegerReturn as FiniteReturn} from './integer.js';
-import StrictOmit from '@alirya/object/strict-omit.js';
+import StrictOmit from '@axiona/object/strict-omit.js';
 import {IntegerArgument as FiniteArgument} from './integer.js';
 
 export {FiniteReturn};

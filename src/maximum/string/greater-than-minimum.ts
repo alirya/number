@@ -1,6 +1,6 @@
 import Minimum from '../../minimum/minimum.js';
 import Maximum from '../maximum.js';
-import Validatable from '@alirya/validatable/validatable.js';
+import Validatable from '@axiona/validatable/validatable.js';
 import Inclusive from '../../inclusive/inclusive.js';
 
 export function GreaterThanMinimumParameters(

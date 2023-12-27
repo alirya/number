@@ -1,5 +1,5 @@
 import NaturalError from './throwable/natural.js';
-import Callback from '@alirya/function/assert/callback.js';
+import Callback from '@axiona/function/assert/callback.js';
 import IsNatural from '../boolean/natural.js';
 /**
  * assert if {@param number} is natural

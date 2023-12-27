@@ -1,10 +1,10 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import FiniteValidatable from '../validatable/finite.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
 import FiniteString from '../assert/string/finite.js';
-import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameters, ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
 import {NumberParameters} from './number.js';
-import Chain from '@alirya/validator/chain.js';
+import Chain from '@axiona/validator/chain.js';
 
 export function FiniteParameters() : Validator<number, number, boolean, boolean, string>;
 

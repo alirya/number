@@ -1,16 +1,16 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import GreaterValidatable, {GreaterContext} from '../validatable/greater.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import GreaterString from '../assert/string/greater.js';
-import Validatable from '@alirya/validator/value/validatable.js';
-import Message from '@alirya/message/message.js';
-import Value from '@alirya/value/value.js';
+import Validatable from '@axiona/validator/value/validatable.js';
+import Message from '@axiona/message/message.js';
+import Value from '@axiona/value/value.js';
 import Inclusive from '../inclusive/inclusive.js';
 import Minimum from '../minimum/minimum.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import StrictOmit from '@alirya/object/strict-omit.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
+import StrictOmit from '@axiona/object/strict-omit.js';
 import {NumberParameters} from './number.js';
-import Chain from '@alirya/validator/chain.js';
+import Chain from '@axiona/validator/chain.js';
 
 export type GreaterArgumentsMessage<MessageT> = ValidatableParameters<number, MessageT, [minimum:number, inclusive: boolean]>;
 

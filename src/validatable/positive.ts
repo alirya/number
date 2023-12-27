@@ -1,11 +1,11 @@
-import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import {CallbackParameters} from '@axiona/validator/validatable/callback.js';
 import PositiveValidation from '../boolean/positive.js';
-import ValidatorValidatable from '@alirya/validator/validatable/validatable.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import ValidatorValidatable from '@axiona/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import PositiveString from '../assert/string/positive.js';
-import Value from '@alirya/value/value.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import StrictOmit from '@alirya/object/strict-omit.js';
+import Value from '@axiona/value/value.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
+import StrictOmit from '@axiona/object/strict-omit.js';
 
 export function PositiveParameters<MessageT>(
     value : number,

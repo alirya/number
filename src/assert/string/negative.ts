@@ -1,6 +1,6 @@
-import {ReplaceParameters} from '@alirya/array/replace.js';
-import Value from '@alirya/value/value.js';
-import Validatable from '@alirya/validatable/validatable.js';
+import {ReplaceParameters} from '@axiona/array/replace.js';
+import Value from '@axiona/value/value.js';
+import Validatable from '@axiona/validatable/validatable.js';
 
 export function NegativeParameters(
     value : number,

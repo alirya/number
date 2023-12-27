@@ -1,9 +1,9 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import Minimum from '../../minimum/minimum.js';
 import Maximum from '../../maximum/maximum.js';
 import Inclusive from '../../inclusive/inclusive.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
-import Validatable from '@alirya/validatable/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
+import Validatable from '@axiona/validatable/validatable.js';
 import GreaterThanMinimumValidatable, {LowerThanMaximumArgument, LowerThanMaximumContext} from '../validatable/lower-than-maximum.js';
 
 export function LowerThanMaximumParameters<Base extends Minimum & Maximum & Inclusive, MessageT>(

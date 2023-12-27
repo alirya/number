@@ -1,11 +1,11 @@
-import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import {CallbackParameters} from '@axiona/validator/validatable/callback.js';
 import NumberGuard from '../boolean/number.js';
-import Return from '@alirya/validator/validatable/simple.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
-import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import Return from '@axiona/validator/validatable/simple.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
+import {ValidatableParameters, ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
 import NumberMessage from '../assert/string/number.js';
-import Value from '@alirya/value/value.js';
-import StrictOmit from '@alirya/object/strict-omit.js';
+import Value from '@axiona/value/value.js';
+import StrictOmit from '@axiona/object/strict-omit.js';
 
 export function NumberParameters<Argument>(
     value : Argument,

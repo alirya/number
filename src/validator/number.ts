@@ -1,9 +1,9 @@
-import Validator from '@alirya/validator/simple.js';
+import Validator from '@axiona/validator/simple.js';
 import NumberValidatable from '../validatable/number.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import NumberString from '../assert/string/number.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
 import NumberStringParameter from '../assert/string/number.js';
 
 export function NumberParameters() : Validator<unknown, number, string>;

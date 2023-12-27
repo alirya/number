@@ -1,4 +1,4 @@
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 import Inclusive from '../inclusive/inclusive.js';
 import Maximum from '../maximum/maximum.js';
 /**

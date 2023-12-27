@@ -1,10 +1,10 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import NaturalValidatable from '../validatable/natural.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import NaturalString from '../assert/string/natural.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import Chain from '@alirya/validator/chain.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
+import Chain from '@axiona/validator/chain.js';
 import {NumberParameters} from './number.js';
 
 export function NaturalParameters() : Validator<number, number, boolean, boolean, string>;

@@ -1,6 +1,6 @@
-import {CallbackClassParameters, CallbackClassParameter, CallbackType as BaseCallbackType} from '@alirya/validator/validatable/callback.js';
-import ValueOf from '@alirya/value/value-of/value-of.js';
-import ToString from '@alirya/string/to-string.js';
+import {CallbackClassParameters, CallbackClassParameter, CallbackType as BaseCallbackType} from '@axiona/validator/validatable/callback.js';
+import ValueOf from '@axiona/value/value-of/value-of.js';
+import ToString from '@axiona/string/to-string.js';
 
 export interface CallbackType<Type extends number, MessageType>
     extends

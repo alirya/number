@@ -1,11 +1,11 @@
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import Minimum from '../../minimum/minimum.js';
-import Value from '@alirya/value/value.js';
-import Validatable from '@alirya/validatable/validatable.js';
-import ValidatorValidatable from '@alirya/validator/validatable/validatable.js';
-import Message from '@alirya/message/message.js';
-import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@alirya/validator/validatable/readonly-wrapper.js';
-import MessageCallback from '@alirya/validator/validatable/callback.js';
+import Value from '@axiona/value/value.js';
+import Validatable from '@axiona/validatable/validatable.js';
+import ValidatorValidatable from '@axiona/validator/validatable/validatable.js';
+import Message from '@axiona/message/message.js';
+import {ReadonlyWrapperParameters, ReadonlyWrapperType} from '@axiona/validator/validatable/readonly-wrapper.js';
+import MessageCallback from '@axiona/validator/validatable/callback.js';
 import Inclusive from '../../inclusive/inclusive.js';
 import Maximum from '../maximum.js';
 import GreaterThanMinimumFunction from '../boolean/greater-than-minimum.js';

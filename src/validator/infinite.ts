@@ -1,12 +1,12 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import InfiniteValidatable from '../validatable/infinite.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import InfiniteString from '../assert/string/infinite.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
 import InfiniteStringParameter from '../assert/string/infinite.js';
 import {NumberParameters} from './number.js';
-import Chain from '@alirya/validator/chain.js';
+import Chain from '@axiona/validator/chain.js';
 
 export function InfiniteParameters() : Validator<number, number, boolean, boolean, string>;
 

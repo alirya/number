@@ -1,11 +1,11 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import NegativeValidatable from '../validatable/negative.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import NegativeString from '../assert/string/negative.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
 import PositiveString from '../assert/string/positive.js';
-import Chain from '@alirya/validator/chain.js';
+import Chain from '@axiona/validator/chain.js';
 import {NumberParameters} from './number.js';
 
 export function NegativeParameters() : Validator<number, number, boolean, boolean, string>;

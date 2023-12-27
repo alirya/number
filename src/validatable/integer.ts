@@ -1,14 +1,14 @@
 import {CallbackParameters} from './callback.js';
 import IntegerValidation from '../boolean/integer.js';
-import Validatable from '@alirya/validatable/validatable.js';
-import Message from '@alirya/message/message.js';
-import Value from '@alirya/value/value.js';
-import ValueOf from '@alirya/value/value-of/value-of.js';
-import ToString from '@alirya/string/to-string.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Validatable from '@axiona/validatable/validatable.js';
+import Message from '@axiona/message/message.js';
+import Value from '@axiona/value/value.js';
+import ValueOf from '@axiona/value/value-of/value-of.js';
+import ToString from '@axiona/string/to-string.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import IntegerMessage from '../assert/string/integer.js';
 import {PositiveArgument as IntegerArgument} from './positive.js';
-import StrictOmit from '@alirya/object/strict-omit.js';
+import StrictOmit from '@axiona/object/strict-omit.js';
 import NaturalMessage from '../assert/string/natural.js';
 
 export type IntegerReturn<MessageT> =

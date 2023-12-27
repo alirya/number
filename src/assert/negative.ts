@@ -1,6 +1,6 @@
 import IsNegative from '../boolean/negative.js';
 import NegativeError from './throwable/negative.js';
-import Callback from '@alirya/function/assert/callback.js';
+import Callback from '@axiona/function/assert/callback.js';
 /**
  * assert if {@param number} is negative
  *

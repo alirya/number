@@ -1,5 +1,5 @@
 import NegativeType from '../string/negative.js';
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 
 export function NegativeParameters(
     value : number,

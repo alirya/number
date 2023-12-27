@@ -1,16 +1,16 @@
-import Validator from '@alirya/validator/validator.js';
+import Validator from '@axiona/validator/validator.js';
 import LowerValidatable, {LowerContext} from '../validatable/lower.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
 import LowerString from '../assert/string/lower.js';
-import Validatable from '@alirya/validator/value/validatable.js';
-import Message from '@alirya/message/message.js';
+import Validatable from '@axiona/validator/value/validatable.js';
+import Message from '@axiona/message/message.js';
 import Inclusive from '../inclusive/inclusive.js';
 import Maximum from '../maximum/maximum.js';
-import {ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import StrictOmit from '@alirya/object/strict-omit.js';
+import {ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
+import StrictOmit from '@axiona/object/strict-omit.js';
 import LowerStringParameter from '../assert/string/lower.js';
 import {NumberParameters} from './number.js';
-import Chain from '@alirya/validator/chain.js';
+import Chain from '@axiona/validator/chain.js';
 
 export function LowerParameters (
     maximum : number,

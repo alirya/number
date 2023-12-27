@@ -1,15 +1,15 @@
 import Maximum from '../maximum/maximum.js';
-import Value from '@alirya/value/value.js';
-import Validatable from '@alirya/validatable/validatable.js';
-import ValidatorValidatable from '@alirya/validator/validatable/validatable.js';
-import Message from '@alirya/message/message.js';
+import Value from '@axiona/value/value.js';
+import Validatable from '@axiona/validatable/validatable.js';
+import ValidatorValidatable from '@axiona/validator/validatable/validatable.js';
+import Message from '@axiona/message/message.js';
 import LowerFromObject from '../boolean/lower.js';
 import Inclusive from '../inclusive/inclusive.js';
-import ValueOf from '@alirya/value/value-of/value-of.js';
-import ToString from '@alirya/string/to-string.js';
-import {ValidatableParameters, ValidatableParameter} from '@alirya/validator/message/function/validatable.js';
-import MemoizeAccessor from '@alirya/object/function/memoize-accessor.js';
-import ValueDynamic from '@alirya/validator/value/validatable.js';
+import ValueOf from '@axiona/value/value-of/value-of.js';
+import ToString from '@axiona/string/to-string.js';
+import {ValidatableParameters, ValidatableParameter} from '@axiona/validator/message/function/validatable.js';
+import MemoizeAccessor from '@axiona/object/function/memoize-accessor.js';
+import ValueDynamic from '@axiona/validator/value/validatable.js';
 
 export interface LowerContext/*<ValueT extends number, MessageT> */extends Readonly<Inclusive>,
     Readonly<Maximum>,

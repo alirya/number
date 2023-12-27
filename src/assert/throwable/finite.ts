@@ -1,5 +1,5 @@
 import FiniteType from '../string/finite.js';
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 
 export function FiniteParameters(
     value : number,
